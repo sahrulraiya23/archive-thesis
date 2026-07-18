@@ -1,0 +1,197 @@
+@extends('layouts.admin')
+
+@section('title', 'Kelola Tugas Akhir - Admin')
+
+@section('content')
+    {{-- Header Halaman --}}
+    <header class="py-10 mb-4 bg-gradient-primary-to-secondary">
+        <div class="container-xl px-4">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h1 class="text-white">Kelola Tugas Akhir</h1>
+                    <p class="lead mb-0 text-white-50">Panel administrasi untuk mengelola data tugas akhir</p>
+                </div>
+                <a href="{{ route('admin.thesis.create') }}" class="btn btn-lg btn-outline-light">
+                    <i class="me-2" data-feather="plus"></i>
+                    Tambah Data
+                </a>
+            </div>
+        </div>
+    </header>
+
+    {{-- Konten Utama --}}
+    <div class="container-xl px-4">
+        @php
+            $totalThesis = App\Models\Thesis::count();
+            $skripsiCount = App\Models\Thesis::where('type', 'skripsi')->count();
+            $tesisCount = App\Models\Thesis::where('type', 'tesis')->count();
+            $disertasiCount = App\Models\Thesis::where('type', 'disertasi')->count();
+        @endphp
+
+        <div class="row">
+            <div class="col-lg-6 col-xl-3 mb-4">
+                <div class="card bg-primary text-white h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="me-3">
+                                <div class="text-white-75 small">Total Data</div>
+                                <div class="text-lg fw-bold">{{ $totalThesis }}</div>
+                            </div>
+                            <i class="feather-xl" data-feather="database"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-3 mb-4">
+                <div class="card bg-success text-white h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="me-3">
+                                <div class="text-white-75 small">Skripsi</div>
+                                <div class="text-lg fw-bold">{{ $skripsiCount }}</div>
+                            </div>
+                            <i class="feather-xl" data-feather="book"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-3 mb-4">
+                <div class="card bg-warning text-white h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="me-3">
+                                <div class="text-white-75 small">Tesis</div>
+                                <div class="text-lg fw-bold">{{ $tesisCount }}</div>
+                            </div>
+                            <i class="feather-xl" data-feather="award"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-3 mb-4">
+                <div class="card bg-danger text-white h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="me-3">
+                                <div class="text-white-75 small">Disertasi</div>
+                                <div class="text-lg fw-bold">{{ $disertasiCount }}</div>
+                            </div>
+                            {{-- PERBAIKAN: Mengganti ikon 'graduation-cap' dengan 'book-open' --}}
+                            <i class="feather-xl" data-feather="book-open"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header"><i class="me-2" data-feather="list"></i>Data Tugas Akhir</div>
+            <div class="card-body">
+                <form method="GET" action="{{ route('admin.thesis.index') }}" class="mb-4">
+                    <div class="row gx-3">
+                        <div class="col-md-4 mb-3">
+                            <input type="text" name="search" id="search" value="{{ request('search') }}"
+                                placeholder="Cari judul atau penulis..." class="form-control">
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <select name="type" id="type" class="form-select">
+                                <option value="">Semua Jenis</option>
+                                @foreach ($types as $key => $value)
+                                    <option value="{{ $key }}" {{ request('type') == $key ? 'selected' : '' }}>
+                                        {{ $value }}
+                                    </option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <select name="year" id="year" class="form-select">
+                                <option value="">Semua Tahun</option>
+                                @foreach ($years as $year)
+                                    <option value="{{ $year }}" {{ request('year') == $year ? 'selected' : '' }}>
+                                        {{ $year }}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="col-md-2 mb-3">
+                            <div class="d-grid gap-2 d-md-flex">
+                                <button type="submit" class="btn btn-primary flex-grow-1"><i class="me-2"
+                                        data-feather="filter"></i>Filter</button>
+                                <a href="{{ route('admin.thesis.index') }}" class="btn btn-secondary"
+                                    title="Reset Filter"><i data-feather="refresh-cw"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Judul & Penulis</th>
+                                <th>Jenis</th>
+                                <th>Program Studi</th>
+                                <th>Tahun</th>
+                                <th class="text-end">Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @forelse($theses as $thesis)
+                                <tr>
+                                    <td>
+                                        <div class="fw-bold">{{ $thesis->title }}</div>
+                                        <div class="small text-muted">{{ $thesis->author }}</div>
+                                    </td>
+                                    <td>
+                                        <span
+                                            class="badge bg-primary bg-opacity-25 text-primary">{{ ucfirst($thesis->type) }}</span>
+                                    </td>
+                                    <td>{{ $thesis->program_study }}</td>
+                                    <td>{{ $thesis->year }}</td>
+                                    <td class="text-end">
+                                        <a href="{{ route('admin.thesis.show', $thesis) }}"
+                                            class="btn btn-sm btn-outline-primary" title="Lihat"><i
+                                                data-feather="eye"></i></a>
+                                        <a href="{{ route('admin.thesis.edit', $thesis) }}"
+                                            class="btn btn-sm btn-outline-warning" title="Edit"><i
+                                                data-feather="edit-2"></i></a>
+                                        <form action="{{ route('admin.thesis.destroy', $thesis) }}" method="POST"
+                                            class="d-inline" onsubmit="return confirmDelete('{{ $thesis->title }}')">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-sm btn-outline-danger"
+                                                title="Hapus"><i data-feather="trash-2"></i></button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            @empty
+                                <tr>
+                                    <td colspan="5" class="text-center py-5">
+                                        <i class="mx-auto mb-3" data-feather="database"
+                                            style="width: 48px; height: 48px;"></i>
+                                        <h5>Tidak ada data ditemukan</h5>
+                                        <p class="text-muted">Data tidak ditemukan sesuai filter atau belum ada data sama
+                                            sekali.</p>
+                                        <a href="{{ route('admin.thesis.create') }}" class="btn btn-primary mt-2">Tambah
+                                            Data Pertama</a>
+                                    </td>
+                                </tr>
+                            @endforelse
+                        </tbody>
+                    </table>
+                </div>
+
+                @if ($theses->hasPages())
+                    <div class="d-flex justify-content-center mt-4">
+                        {{ $theses->withQueryString()->links('pagination::bootstrap-5') }}
+                    </div>
+                @endif
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function confirmDelete(title) {
+            return confirm(`Apakah Anda yakin ingin menghapus tugas akhir "${title}"?\nAksi ini tidak dapat dibatalkan.`);
+        }
+    </script>
+@endsection
