@@ -27,9 +27,19 @@ class Thesis extends Model
     public static function getTypes()
     {
         return [
-            'skripsi' => 'Skripsi',
-            'tesis' => 'Tesis',
-            'disertasi' => 'Disertasi'
+            'kcv' => 'Komputasi Cerdas dan Visual',
+            'kbj' => 'Komputasi Berbasis Jaringan',
+            'rpl' => 'Rekayasa Perangkat Lunak',
         ];
+    }
+
+    public function getTypeLabelAttribute(): string
+    {
+        return self::getTypes()[$this->type] ?? strtoupper((string) $this->type);
+    }
+
+    public function getTypeCodeUpperAttribute(): string
+    {
+        return strtoupper((string) $this->type);
     }
 }

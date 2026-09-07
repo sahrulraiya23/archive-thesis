@@ -58,11 +58,11 @@
 
                             <div class="row gx-3">
                                 <div class="col-md-6 mb-3">
-                                    <label for="type" class="form-label">Jenis <span
+                                    <label for="type" class="form-label">Peminatan <span
                                             class="text-danger">*</span></label>
                                     <select name="type" id="type"
                                         class="form-select @error('type') is-invalid @enderror" required>
-                                        <option value="">Pilih Jenis</option>
+                                        <option value="">Pilih Peminatan</option>
                                         @foreach ($types as $key => $value)
                                             <option value="{{ $key }}"
                                                 {{ old('type', $thesis->type ?? '') == $key ? 'selected' : '' }}>
@@ -85,17 +85,6 @@
                                         <div class="invalid-feedback">{{ $message }}</div>
                                     @enderror
                                 </div>
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="program_study" class="form-label">Program Studi <span
-                                        class="text-danger">*</span></label>
-                                <input type="text" name="program_study" id="program_study"
-                                    value="{{ old('program_study', $thesis->program_study ?? '') }}"
-                                    class="form-control @error('program_study') is-invalid @enderror" required>
-                                @error('program_study')
-                                    <div class="invalid-feedback">{{ $message }}</div>
-                                @enderror
                             </div>
 
                             <div class="mb-3">

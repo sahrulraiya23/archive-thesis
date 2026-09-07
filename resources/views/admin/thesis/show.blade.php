@@ -32,7 +32,7 @@
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <div>
                                 <span
-                                    class="badge bg-primary bg-opacity-25 text-primary">{{ ucfirst($thesis->type) }}</span>
+                                    class="badge bg-primary bg-opacity-25 text-primary">{{ $thesis->type_code_upper }}</span>
                                 <span class="text-muted ms-2"><i class="me-1"
                                         data-feather="calendar"></i>{{ $thesis->year }}</span>
                             </div>
@@ -40,13 +40,9 @@
                         </div>
                         <h1 class="card-title">{{ $thesis->title }}</h1>
                         <div class="row gx-4 mt-4">
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <p class="small text-muted mb-0">Penulis</p>
-                                <p class="fw-bold">{{ $thesis->author }}</p>
-                            </div>
-                            <div class="col-md-6">
-                                <p class="small text-muted mb-0">Program Studi</p>
-                                <p class="fw-bold">{{ $thesis->program_study }}</p>
+                                <p class="fw-bold mb-0">{{ $thesis->author }}</p>
                             </div>
                         </div>
                     </div>

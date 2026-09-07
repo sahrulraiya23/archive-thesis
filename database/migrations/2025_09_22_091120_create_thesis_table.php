@@ -12,7 +12,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('abstract');
-            $table->enum('type', ['skripsi', 'tesis', 'disertasi']);
+            $table->enum('type', ['kcv', 'kbj', 'rpl']);
             $table->string('author');
             $table->string('program_study');
             $table->year('year');

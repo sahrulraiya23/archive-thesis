@@ -31,6 +31,7 @@ Route::middleware(['auth', 'admin'])
     ->prefix('admin')
     ->name('admin.')
     ->group(function () {
+        Route::get('thesis-export', [AdminThesisController::class, 'export'])->name('thesis.export');
         Route::resource('thesis', AdminThesisController::class);
     });
 

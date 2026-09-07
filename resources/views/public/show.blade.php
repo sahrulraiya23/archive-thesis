@@ -2,13 +2,35 @@
 
 @section('title', $thesis->title)
 
+@section('styles')
+    <style>
+        @media print {
+            .top-header, .main-navbar, .public-footer, header, .card-footer, .card:nth-child(2), nav, .btn {
+                display: none !important;
+            }
+            body {
+                background-color: #ffffff !important;
+                padding: 0 !important;
+            }
+            .container-xl {
+                max-width: 100% !important;
+                padding: 0 !important;
+            }
+            .card {
+                border: none !important;
+                box-shadow: none !important;
+            }
+        }
+    </style>
+@endsection
+
 @section('content')
     {{-- Header Halaman --}}
     <header class="py-5 mb-5 text-white" style="background-color: #0f2c59; border-bottom: 4px solid #ffc107;">
         <div class="container-xl px-4">
             <div class="d-flex justify-content-between align-items-center">
                 <div>
-                    <h1 class="text-white fw-bold">{{ ucfirst($thesis->type) }} - {{ $thesis->year }}</h1>
+                    <h1 class="text-white fw-bold">{{ $thesis->type_code_upper }} - {{ $thesis->year }}</h1>
                     <p class="lead mb-0 text-white-50">Detail Tugas Akhir Mahasiswa S1 Teknik Informatika UHO</p>
                 </div>
                 <a href="{{ route('public.thesis.index') }}" class="btn btn-outline-light">
@@ -27,7 +49,7 @@
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <div>
                                 <span
-                                    class="badge bg-primary bg-opacity-25 text-primary">{{ ucfirst($thesis->type) }}</span>
+                                    class="badge bg-primary bg-opacity-25 text-primary">{{ $thesis->type_code_upper }}</span>
                                 <span class="text-muted ms-2"><i class="me-1"
                                         data-feather="calendar"></i>{{ $thesis->year }}</span>
                             </div>
@@ -37,13 +59,9 @@
                         <h1 class="card-title">{{ $thesis->title }}</h1>
 
                         <div class="row gx-4 mt-4">
-                            <div class="col-md-6">
+                            <div class="col-md-12">
                                 <p class="small text-muted mb-0">Penulis</p>
-                                <p class="fw-bold">{{ $thesis->author }}</p>
-                            </div>
-                            <div class="col-md-6">
-                                <p class="small text-muted mb-0">Program Studi</p>
-                                <p class="fw-bold">{{ $thesis->program_study }}</p>
+                                <p class="fw-bold mb-0">{{ $thesis->author }}</p>
                             </div>
                         </div>
                     </div>
@@ -56,18 +74,9 @@
                     </div>
 
                     <div class="card-footer p-4 bg-transparent border-top-0">
-                        <div class="d-flex flex-wrap gap-2">
-                            <a href="{{ route('plagiarism.check') }}?title={{ urlencode($thesis->title) }}"
-                                class="btn btn-primary">
-                                <i class="me-2" data-feather="shield"></i>Cek Plagiarisme Judul
-                            </a>
-                            <button onclick="window.print()" class="btn btn-outline-secondary">
-                                <i class="me-2" data-feather="printer"></i>Print Detail
-                            </button>
-                            <button onclick="sharePage()" class="btn btn-outline-secondary">
-                                <i class="me-2" data-feather="share-2"></i>Share
-                            </button>
-                        </div>
+                        <button onclick="window.print()" class="btn btn-primary">
+                            <i class="fas fa-print me-2"></i> Cetak / Simpan PDF
+                        </button>
                     </div>
                 </div>
 
@@ -104,20 +113,4 @@
             </div>
         </div>
     </div>
-
-    <script>
-        function sharePage() {
-            if (navigator.share) {
-                navigator.share({
-                    title: '{{ $thesis->title }}',
-                    text: 'Lihat tugas akhir: {{ $thesis->title }} oleh {{ $thesis->author }}',
-                    url: window.location.href
-                });
-            } else {
-                navigator.clipboard.writeText(window.location.href).then(function() {
-                    alert('Link telah disalin ke clipboard!');
-                });
-            }
-        }
-    </script>
 @endsection

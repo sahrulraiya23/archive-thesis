@@ -86,20 +86,38 @@
                                                 } elseif ($similarity['percentage'] > 30) {
                                                     $itemColorClass = 'warning';
                                                 }
+
+                                                $highlightedTitle = e($similarity['thesis']->title);
+                                                if (!empty($similarity['sharedWords'])) {
+                                                    foreach ($similarity['sharedWords'] as $sw) {
+                                                        if (mb_strlen($sw) > 2) {
+                                                            $pattern = '/\b(' . preg_quote($sw, '/') . ')\b/i';
+                                                            $highlightedTitle = preg_replace($pattern, '<mark class="bg-warning text-dark px-1 rounded fw-semibold">$1</mark>', $highlightedTitle);
+                                                        }
+                                                    }
+                                                }
                                             @endphp
-                                            <div class="list-group-item">
-                                                <div class="d-flex w-100 justify-content-between">
-                                                    <h6 class="mb-1">{{ $similarity['thesis']->title }}</h6>
+                                            <div class="list-group-item py-3">
+                                                <div class="d-flex w-100 justify-content-between align-items-start mb-2">
+                                                    <h6 class="mb-1">{!! $highlightedTitle !!}</h6>
                                                     <span
-                                                        class="badge bg-{{ $itemColorClass }} rounded-pill">{{ number_format($similarity['percentage'], 1) }}%</span>
+                                                        class="badge bg-{{ $itemColorClass }} rounded-pill ms-2 fs-6 px-3 py-2">{{ number_format($similarity['percentage'], 1) }}%</span>
                                                 </div>
                                                 <p class="mb-1 small text-muted">
-                                                    {{ $similarity['thesis']->author }}
-                                                    ({{ $similarity['thesis']->year }}) -
-                                                    {{ $similarity['thesis']->program_study }}
+                                                    Penulis: <strong>{{ $similarity['thesis']->author }}</strong> • Tahun: {{ $similarity['thesis']->year }} • Peminatan: <strong>{{ $similarity['thesis']->type_code_upper }}</strong>
                                                 </p>
-                                                <a href="{{ route('public.thesis.show', $similarity['thesis']) }}"
-                                                    class="small">Lihat Detail →</a>
+                                                @if (!empty($similarity['sharedWords']))
+                                                    <div class="mt-2 mb-2">
+                                                        <span class="small text-muted me-2"><i class="fas fa-check-circle text-success me-1"></i>Kata Kunci Cocok:</span>
+                                                        @foreach ($similarity['sharedWords'] as $sw)
+                                                            <span class="badge bg-warning bg-opacity-25 text-dark border border-warning me-1 px-2 py-1">{{ $sw }}</span>
+                                                        @endforeach
+                                                    </div>
+                                                @endif
+                                                <div class="mt-2">
+                                                    <a href="{{ route('public.thesis.show', $similarity['thesis']) }}"
+                                                        class="small text-decoration-none fw-semibold">Lihat Detail Tugas Akhir →</a>
+                                                </div>
                                             </div>
                                         @endif
                                     @endforeach

@@ -26,7 +26,11 @@ class ThesisSeeder extends Seeder
             Thesis::create([
                 'title' => preg_replace('/\s+/', ' ', trim($row[4])),
                 'abstract' => 'Abstrak belum tersedia.',
-                'type' => 'skripsi',
+                'type' => match (true) {
+                    str_contains(strtolower($row[2]), 'jaringan') => 'kbj',
+                    str_contains(strtolower($row[2]), 'rpl') => 'rpl',
+                    default => 'kcv',
+                },
                 'author' => trim($row[1]),
                 'program_study' => trim($row[2]),
                 'year' => 2026,

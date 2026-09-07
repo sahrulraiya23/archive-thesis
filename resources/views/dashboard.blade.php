@@ -54,30 +54,49 @@
                 </div>
             </div>
             <div class="col-lg-6 col-xl-3 mb-4">
-                <div class="card bg-warning text-white h-100">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="me-3">
-                                <div class="text-white-75 small">Skripsi</div>
-                                <div class="text-lg fw-bold">{{ $thesisTypes['skripsi'] ?? 0 }}</div>
+                <a href="{{ route('public.thesis.index', ['type' => 'kcv']) }}" class="text-decoration-none">
+                    <div class="card bg-warning text-white h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="me-3">
+                                    <div class="text-white-75 small">KCV</div>
+                                    <div class="text-lg fw-bold">{{ $thesisTypes['kcv'] ?? 0 }}</div>
+                                </div>
+                                <i class="feather-xl" data-feather="file-text"></i>
                             </div>
-                            <i class="feather-xl" data-feather="file-text"></i>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-lg-6 col-xl-3 mb-4">
-                <div class="card bg-danger text-white h-100">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="me-3">
-                                <div class="text-white-75 small">Tesis</div>
-                                <div class="text-lg fw-bold">{{ $thesisTypes['tesis'] ?? 0 }}</div>
+                <a href="{{ route('public.thesis.index', ['type' => 'kbj']) }}" class="text-decoration-none">
+                    <div class="card bg-info text-white h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="me-3">
+                                    <div class="text-white-75 small">KBJ</div>
+                                    <div class="text-lg fw-bold">{{ $thesisTypes['kbj'] ?? 0 }}</div>
+                                </div>
+                                <i class="feather-xl" data-feather="wifi"></i>
                             </div>
-                            <i class="feather-xl" data-feather="award"></i>
                         </div>
                     </div>
-                </div>
+                </a>
+            </div>
+            <div class="col-lg-6 col-xl-3 mb-4">
+                <a href="{{ route('public.thesis.index', ['type' => 'rpl']) }}" class="text-decoration-none">
+                    <div class="card bg-secondary text-white h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="me-3">
+                                    <div class="text-white-75 small">RPL</div>
+                                    <div class="text-lg fw-bold">{{ $thesisTypes['rpl'] ?? 0 }}</div>
+                                </div>
+                                <i class="feather-xl" data-feather="film"></i>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
 
@@ -97,9 +116,9 @@
                                             <h6 class="mb-1">{{ Str::limit($thesis->title, 80) }}</h6>
                                             <small class="text-muted">{{ $thesis->created_at->diffForHumans() }}</small>
                                         </div>
-                                        <p class="mb-1 small">{{ $thesis->author }} • {{ $thesis->program_study }}</p>
+                                        <p class="mb-1 small">{{ $thesis->author }}</p>
                                         <small><span
-                                                class="badge bg-primary bg-opacity-25 text-primary">{{ ucfirst($thesis->type) }}</span></small>
+                                                class="badge bg-primary bg-opacity-25 text-primary">{{ $thesis->type_code_upper }}</span></small>
                                     </a>
                                 @endforeach
                             </div>
@@ -149,7 +168,7 @@
                                 @endphp
                                 <div class="mb-3">
                                     <div class="d-flex justify-content-between">
-                                        <span class="small">{{ ucfirst($type) }}</span>
+                                        <span class="small">{{ strtoupper($type) }}</span>
                                         <span class="small">{{ $count }} ({{ $percentage }}%)</span>
                                     </div>
                                     <div class="progress" style="height: 8px;">

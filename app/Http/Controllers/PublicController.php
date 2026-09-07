@@ -19,12 +19,15 @@ class PublicController extends Controller
         $query = Thesis::query();
 
         if ($request->filled('search')) {
-            $query->where('title', 'like', '%' . $request->search . '%')
-                ->orWhere('author', 'like', '%' . $request->search . '%');
+            $search = trim($request->search);
+            $query->where(function ($q) use ($search) {
+                $q->where('title', 'like', '%' . $search . '%')
+                    ->orWhere('author', 'like', '%' . $search . '%');
+            });
         }
 
         if ($request->filled('type')) {
-            $query->where('type', $request->type);
+            $query->where('type', strtolower(trim($request->type)));
         }
 
         if ($request->filled('year')) {
@@ -55,18 +58,32 @@ class PublicController extends Controller
         ]);
 
         $inputTitle = strtolower(trim($request->title));
+        $words1 = $this->importantWords($inputTitle);
         $allTheses = Thesis::all();
 
         $similarities = [];
 
         foreach ($allTheses as $thesis) {
             $existingTitle = strtolower(trim($thesis->title));
-            $similarity = $this->calculateSimilarity($inputTitle, $existingTitle);
+            $words2 = $this->importantWords($existingTitle);
+
+            if (empty($words1) || empty($words2)) {
+                continue;
+            }
+
+            $sharedWords = array_values(array_intersect($words1, $words2));
+            if (empty($sharedWords)) {
+                continue;
+            }
+
+            $allWords = array_unique(array_merge($words1, $words2));
+            $similarity = round((count($sharedWords) / count($allWords)) * 100, 2);
 
             if ($similarity > 0) {
                 $similarities[] = [
                     'thesis' => $thesis,
-                    'percentage' => $similarity
+                    'percentage' => $similarity,
+                    'sharedWords' => $sharedWords,
                 ];
             }
         }
