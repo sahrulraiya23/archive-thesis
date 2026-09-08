@@ -17,20 +17,17 @@ class ThesisSeeder extends Seeder
         }
 
         while (($row = fgetcsv($handle)) !== false) {
-            // Format CSV: NIM, nama, program studi, status ujian, judul.
-            // Status ujian sengaja tidak diimpor.
             if (count($row) < 5 || blank($row[4])) {
                 continue;
             }
 
+            $title = preg_replace('/\s+/', ' ', trim($row[4]));
+            $keywordsStr = Thesis::extractKeywordsFromTitle($title, 5);
+
             Thesis::create([
-                'title' => preg_replace('/\s+/', ' ', trim($row[4])),
+                'title' => $title,
+                'keywords' => $keywordsStr,
                 'abstract' => 'Abstrak belum tersedia.',
-                'type' => match (true) {
-                    str_contains(strtolower($row[2]), 'jaringan') => 'kbj',
-                    str_contains(strtolower($row[2]), 'rpl') => 'rpl',
-                    default => 'kcv',
-                },
                 'author' => trim($row[1]),
                 'program_study' => trim($row[2]),
                 'year' => 2026,

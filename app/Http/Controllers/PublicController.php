@@ -22,12 +22,9 @@ class PublicController extends Controller
             $search = trim($request->search);
             $query->where(function ($q) use ($search) {
                 $q->where('title', 'like', '%' . $search . '%')
-                    ->orWhere('author', 'like', '%' . $search . '%');
+                    ->orWhere('author', 'like', '%' . $search . '%')
+                    ->orWhere('keywords', 'like', '%' . $search . '%');
             });
-        }
-
-        if ($request->filled('type')) {
-            $query->where('type', strtolower(trim($request->type)));
         }
 
         if ($request->filled('year')) {
@@ -35,10 +32,9 @@ class PublicController extends Controller
         }
 
         $theses = $query->orderBy('created_at', 'desc')->paginate(12);
-        $types = Thesis::getTypes();
         $years = Thesis::selectRaw('DISTINCT year')->orderBy('year', 'desc')->pluck('year');
 
-        return view('public.index', compact('theses', 'types', 'years'));
+        return view('public.index', compact('theses', 'years'));
     }
 
     public function thesisShow(Thesis $thesis)
@@ -124,16 +120,54 @@ class PublicController extends Controller
         $normalizedTitle = preg_replace('/[^\\p{L}\\p{N}]+/u', ' ', $normalizedTitle);
 
         $stopWords = [
-            'dan', 'atau', 'yang', 'di', 'ke', 'dari', 'untuk', 'dengan', 'pada', 'dalam',
-            'oleh', 'terhadap', 'antara', 'sebagai', 'studi', 'kasus', 'berbasis', 'menggunakan',
-            'penerapan', 'implementasi', 'pengembangan', 'perancangan', 'rancang', 'bangun',
-            'analisis', 'sistem', 'aplikasi', 'metode', 'algoritma', 'model', 'data', 'the', 'of',
-            'and', 'for', 'with', 'in', 'to', 'a', 'an', 'based', 'using', 'on',
+            'dan',
+            'atau',
+            'yang',
+            'di',
+            'ke',
+            'dari',
+            'untuk',
+            'dengan',
+            'pada',
+            'dalam',
+            'oleh',
+            'terhadap',
+            'antara',
+            'sebagai',
+            'studi',
+            'kasus',
+            'berbasis',
+            'menggunakan',
+            'penerapan',
+            'implementasi',
+            'pengembangan',
+            'perancangan',
+            'rancang',
+            'bangun',
+            'analisis',
+            'sistem',
+            'aplikasi',
+            'metode',
+            'algoritma',
+            'model',
+            'data',
+            'the',
+            'of',
+            'and',
+            'for',
+            'with',
+            'in',
+            'to',
+            'a',
+            'an',
+            'based',
+            'using',
+            'on',
         ];
 
         return array_values(array_unique(array_filter(
             explode(' ', trim($normalizedTitle)),
-            fn (string $word): bool => mb_strlen($word) > 2 && !in_array($word, $stopWords, true)
+            fn(string $word): bool => mb_strlen($word) > 2 && !in_array($word, $stopWords, true)
         )));
     }
 }

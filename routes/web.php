@@ -8,6 +8,7 @@ use App\Http\Controllers\Admin\ThesisController as AdminThesisController;
 
 // Halaman utama publik
 Route::get('/', [PublicController::class, 'home'])->name('public.home');
+Route::get('/home', [PublicController::class, 'home'])->name('home');
 
 // Public routes
 Route::get('/thesis', [PublicController::class, 'thesisIndex'])->name('public.thesis.index');
@@ -32,7 +33,7 @@ Route::middleware(['auth', 'admin'])
     ->name('admin.')
     ->group(function () {
         Route::get('thesis-export', [AdminThesisController::class, 'export'])->name('thesis.export');
-        Route::resource('thesis', AdminThesisController::class);
+        Route::resource('thesis', AdminThesisController::class)->parameters(['thesis' => 'thesis']);
     });
 
 require __DIR__ . '/auth.php';

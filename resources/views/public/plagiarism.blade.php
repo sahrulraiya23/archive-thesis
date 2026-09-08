@@ -8,7 +8,8 @@
         <div class="container-xl px-4">
             <div class="text-center">
                 <h1 class="text-white fw-bold">Cek Plagiarisme Judul</h1>
-                <p class="lead mb-0 text-white-50">Periksa kemiripan judul dengan database tugas akhir S1 Teknik Informatika UHO</p>
+                <p class="lead mb-0 text-white-50">Periksa kemiripan judul dengan database tugas akhir S1 Teknik Informatika
+                    UHO</p>
             </div>
         </div>
     </header>
@@ -56,7 +57,8 @@
                         <div class="card-body">
                             <div class="alert alert-{{ $colorClass }} d-flex justify-content-between align-items-center">
                                 <div>
-                                    <h4 class="alert-heading">{{ number_format($maxSimilarity, 1) }}% Kecocokan Kata Penting Tertinggi
+                                    <h4 class="alert-heading">{{ number_format($maxSimilarity, 1) }}% Kecocokan Kata Penting
+                                        Tertinggi
                                     </h4>
                                     <p class="mb-0">{{ $statusText }}</p>
                                 </div>
@@ -92,7 +94,11 @@
                                                     foreach ($similarity['sharedWords'] as $sw) {
                                                         if (mb_strlen($sw) > 2) {
                                                             $pattern = '/\b(' . preg_quote($sw, '/') . ')\b/i';
-                                                            $highlightedTitle = preg_replace($pattern, '<mark class="bg-warning text-dark px-1 rounded fw-semibold">$1</mark>', $highlightedTitle);
+                                                            $highlightedTitle = preg_replace(
+                                                                $pattern,
+                                                                '<mark class="bg-warning text-dark px-1 rounded fw-semibold">$1</mark>',
+                                                                $highlightedTitle,
+                                                            );
                                                         }
                                                     }
                                                 }
@@ -104,7 +110,9 @@
                                                         class="badge bg-{{ $itemColorClass }} rounded-pill ms-2 fs-6 px-3 py-2">{{ number_format($similarity['percentage'], 1) }}%</span>
                                                 </div>
                                                 <p class="mb-1 small text-muted">
-                                                    Penulis: <strong>{{ $similarity['thesis']->author }}</strong> • Tahun: {{ $similarity['thesis']->year }} • Peminatan: <strong>{{ $similarity['thesis']->type_code_upper }}</strong>
+                                                    Penulis: <strong>{{ $similarity['thesis']->author }}</strong> • Tahun:
+                                                    {{ $similarity['thesis']->year }} • Kata kunci:
+                                                    <strong>{{ $similarity['thesis']->keywords ?: '-' }}</strong>
                                                 </p>
                                                 @if (!empty($similarity['sharedWords']))
                                                     <div class="mt-2 mb-2">
@@ -116,7 +124,8 @@
                                                 @endif
                                                 <div class="mt-2">
                                                     <a href="{{ route('public.thesis.show', $similarity['thesis']) }}"
-                                                        class="small text-decoration-none fw-semibold">Lihat Detail Tugas Akhir →</a>
+                                                        class="small text-decoration-none fw-semibold">Lihat Detail Tugas
+                                                        Akhir →</a>
                                                 </div>
                                             </div>
                                         @endif

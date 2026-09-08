@@ -7,12 +7,10 @@ use Tests\TestCase;
 
 class ThesisTypeTest extends TestCase
 {
-    public function test_thesis_types_use_peminatan(): void
+    public function test_thesis_accepts_keywords(): void
     {
-        $this->assertSame([
-            'kcv' => 'Komputasi Cerdas dan Visual',
-            'kbj' => 'Komputasi Berbasis Jaringan',
-            'rpl' => 'Rekayasa Perangkat Lunak',
-        ], Thesis::getTypes());
+        $thesis = new Thesis(['title' => 'Judul', 'keywords' => 'kata kunci']);
+
+        $this->assertSame('kata kunci', $thesis->keywords);
     }
 }

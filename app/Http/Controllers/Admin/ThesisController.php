@@ -16,12 +16,9 @@ class ThesisController extends Controller
             $search = trim($request->search);
             $query->where(function ($q) use ($search) {
                 $q->where('title', 'like', '%' . $search . '%')
-                    ->orWhere('author', 'like', '%' . $search . '%');
+                    ->orWhere('author', 'like', '%' . $search . '%')
+                    ->orWhere('keywords', 'like', '%' . $search . '%');
             });
-        }
-
-        if ($request->filled('type')) {
-            $query->where('type', strtolower(trim($request->type)));
         }
 
         if ($request->filled('year')) {
@@ -29,27 +26,37 @@ class ThesisController extends Controller
         }
 
         $theses = $query->orderBy('created_at', 'desc')->paginate(10);
-        $types = Thesis::getTypes();
         $years = Thesis::selectRaw('DISTINCT year')->orderBy('year', 'desc')->pluck('year');
 
-        return view('admin.thesis.index', compact('theses', 'types', 'years'));
+        return view('admin.thesis.index', compact('theses', 'years'));
     }
 
     public function create()
     {
-        $types = Thesis::getTypes();
-        return view('admin.thesis.create', compact('types'));
+        return view('admin.thesis.create');
     }
 
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'title' => 'required|string|max:255',
+            'title' => 'required|string|max:1000',
+            'keywords' => 'nullable|string|max:1000',
             'abstract' => 'required|string',
-            'type' => 'required|in:kcv,kbj,rpl',
             'author' => 'required|string|max:255',
             'year' => 'required|integer|min:1900|max:' . (date('Y') + 1),
         ]);
+
+        $kwInput = trim($validated['keywords'] ?? '');
+        if ($kwInput !== '') {
+            $items = array_values(array_filter(array_map('trim', preg_split('/[,;]+/', $kwInput)), fn($w) => $w !== ''));
+            if (!empty($items)) {
+                $validated['keywords'] = implode(', ', array_slice($items, 0, 5));
+            } else {
+                $validated['keywords'] = Thesis::extractKeywordsFromTitle($validated['title'], 5);
+            }
+        } else {
+            $validated['keywords'] = Thesis::extractKeywordsFromTitle($validated['title'], 5);
+        }
 
         $validated['program_study'] = 'S1 Teknik Informatika';
 
@@ -66,19 +73,30 @@ class ThesisController extends Controller
 
     public function edit(Thesis $thesis)
     {
-        $types = Thesis::getTypes();
-        return view('admin.thesis.edit', compact('thesis', 'types'));
+        return view('admin.thesis.create', compact('thesis'));
     }
 
     public function update(Request $request, Thesis $thesis)
     {
         $validated = $request->validate([
-            'title' => 'required|string|max:255',
+            'title' => 'required|string|max:1000',
+            'keywords' => 'nullable|string|max:1000',
             'abstract' => 'required|string',
-            'type' => 'required|in:kcv,kbj,rpl',
             'author' => 'required|string|max:255',
             'year' => 'required|integer|min:1900|max:' . (date('Y') + 1),
         ]);
+
+        $kwInput = trim($validated['keywords'] ?? '');
+        if ($kwInput !== '') {
+            $items = array_values(array_filter(array_map('trim', preg_split('/[,;]+/', $kwInput)), fn($w) => $w !== ''));
+            if (!empty($items)) {
+                $validated['keywords'] = implode(', ', array_slice($items, 0, 5));
+            } else {
+                $validated['keywords'] = Thesis::extractKeywordsFromTitle($validated['title'], 5);
+            }
+        } else {
+            $validated['keywords'] = Thesis::extractKeywordsFromTitle($validated['title'], 5);
+        }
 
         $validated['program_study'] = 'S1 Teknik Informatika';
 
@@ -104,12 +122,9 @@ class ThesisController extends Controller
             $search = trim($request->search);
             $query->where(function ($q) use ($search) {
                 $q->where('title', 'like', '%' . $search . '%')
-                    ->orWhere('author', 'like', '%' . $search . '%');
+                    ->orWhere('author', 'like', '%' . $search . '%')
+                    ->orWhere('keywords', 'like', '%' . $search . '%');
             });
-        }
-
-        if ($request->filled('type')) {
-            $query->where('type', strtolower(trim($request->type)));
         }
 
         if ($request->filled('year')) {
@@ -132,15 +147,14 @@ class ThesisController extends Controller
             $file = fopen('php://output', 'w');
             fprintf($file, chr(0xEF) . chr(0xBB) . chr(0xBF));
 
-            fputcsv($file, ['No', 'Judul', 'Penulis', 'Peminatan Kode', 'Peminatan', 'Tahun', 'Abstrak', 'Tanggal Input']);
+            fputcsv($file, ['No', 'Judul', 'Kata Kunci', 'Penulis', 'Tahun', 'Abstrak', 'Tanggal Input']);
 
             foreach ($theses as $index => $thesis) {
                 fputcsv($file, [
                     $index + 1,
                     $thesis->title,
+                    $thesis->keywords,
                     $thesis->author,
-                    $thesis->type_code_upper,
-                    $thesis->type_label,
                     $thesis->year,
                     $thesis->abstract,
                     $thesis->created_at ? $thesis->created_at->format('Y-m-d H:i:s') : '-',

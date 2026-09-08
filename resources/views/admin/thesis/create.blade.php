@@ -58,19 +58,11 @@
 
                             <div class="row gx-3">
                                 <div class="col-md-6 mb-3">
-                                    <label for="type" class="form-label">Peminatan <span
-                                            class="text-danger">*</span></label>
-                                    <select name="type" id="type"
-                                        class="form-select @error('type') is-invalid @enderror" required>
-                                        <option value="">Pilih Peminatan</option>
-                                        @foreach ($types as $key => $value)
-                                            <option value="{{ $key }}"
-                                                {{ old('type', $thesis->type ?? '') == $key ? 'selected' : '' }}>
-                                                {{ $value }}
-                                            </option>
-                                        @endforeach
-                                    </select>
-                                    @error('type')
+                                    <label for="keywords" class="form-label">Kata Kunci (5 Kata dari Judul)</label>
+                                    <textarea name="keywords" id="keywords" rows="3" class="form-control @error('keywords') is-invalid @enderror"
+                                        placeholder="Kosongkan untuk otomatis menghasilkan 5 kata kunci dari Judul berdasarkan algoritma, atau isi 5 kata kunci manual.">{{ old('keywords', $thesis->keywords ?? '') }}</textarea>
+                                    <small class="form-text text-muted">Jika dikosongkan, sistem otomatis mengekstrak 5 kata kunci signifikan dari Judul.</small>
+                                    @error('keywords')
                                         <div class="invalid-feedback">{{ $message }}</div>
                                     @enderror
                                 </div>

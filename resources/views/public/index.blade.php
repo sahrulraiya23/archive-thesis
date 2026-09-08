@@ -30,19 +30,6 @@
                                 placeholder="Judul atau Penulis" class="form-control">
                         </div>
 
-                        {{-- Kolom Peminatan --}}
-                        <div class="col-md-3 mb-3">
-                            <label for="type" class="form-label">Peminatan</label>
-                            <select name="type" id="type" class="form-select">
-                                <option value="">Semua Peminatan</option>
-                                @foreach ($types as $key => $value)
-                                    <option value="{{ $key }}" {{ request('type') == $key ? 'selected' : '' }}>
-                                        {{ $value }}
-                                    </option>
-                                @endforeach
-                            </select>
-                        </div>
-
                         {{-- Kolom Tahun --}}
                         <div class="col-md-3 mb-3">
                             <label for="year" class="form-label">Tahun</label>
@@ -62,35 +49,13 @@
                                 <button type="submit" class="btn btn-primary flex-grow-1">
                                     <i class="me-2" data-feather="filter"></i> Filter
                                 </button>
-                                @if (request()->hasAny(['search', 'type', 'year']))
-                                    <a href="{{ route('public.thesis.index') }}" class="btn btn-outline-secondary" title="Reset Filter">
+                                @if (request()->hasAny(['search', 'year']))
+                                    <a href="{{ route('public.thesis.index') }}" class="btn btn-outline-secondary"
+                                        title="Reset Filter">
                                         <i data-feather="refresh-cw"></i>
                                     </a>
                                 @endif
                             </div>
-                        </div>
-                    </div>
-
-                    {{-- Tag Algoritma & Topik Populer --}}
-                    <div class="mt-3 pt-3 border-top">
-                        <div class="d-flex align-items-center flex-wrap gap-2">
-                            <span class="small fw-bold text-muted me-1">
-                                <i class="fas fa-tags text-primary me-1"></i> Tag Algoritma Populer:
-                            </span>
-                            @php
-                                $popularTags = ['YOLO', 'CNN', 'LSTM', 'XGBoost', 'Random Forest', 'IoT', 'SVM', 'Fuzzy', 'Microservices', 'Blockchain', 'GIS', 'MobileNet'];
-                            @endphp
-                            @foreach ($popularTags as $tag)
-                                <a href="{{ route('public.thesis.index', array_merge(request()->except('page'), ['search' => $tag])) }}"
-                                    class="badge {{ strtolower(request('search')) === strtolower($tag) ? 'bg-primary text-white shadow-sm' : 'bg-light text-dark border' }} text-decoration-none px-2 py-1 small">
-                                    #{{ $tag }}
-                                </a>
-                            @endforeach
-                            @if (request('search'))
-                                <a href="{{ route('public.thesis.index', request()->except(['search', 'page'])) }}" class="badge bg-danger bg-opacity-10 text-danger border border-danger text-decoration-none px-2 py-1 small">
-                                    <i class="fas fa-times me-1"></i> Hapus Filter Tag
-                                </a>
-                            @endif
                         </div>
                     </div>
                 </form>
@@ -107,20 +72,30 @@
                 <div class="col-md-6 col-xl-4 mb-4">
                     <div class="card h-100">
                         <div class="card-body p-4">
-                            <div class="d-flex justify-content-between mb-3">
-                                <span
-                                    class="badge bg-primary bg-opacity-25 text-primary">{{ $thesis->type_code_upper }}</span>
+                            <div class="d-flex justify-content-end mb-3">
                                 <span class="small text-muted d-flex align-items-center">
                                     <i class="me-1" data-feather="calendar"></i> {{ $thesis->year }}
                                 </span>
                             </div>
                             <h5 class="card-title mb-2">{{ $thesis->title }}</h5>
-                            <div class="small text-muted mb-3">
+                            <div class="small text-muted mb-2">
                                 <i class="me-1" data-feather="user"></i>
                                 <strong>{{ $thesis->author }}</strong>
                             </div>
-                            <p class="card-text small">
-                                {{ Str::limit($thesis->abstract, 150) }}
+                            @if(!empty($thesis->keyword_array))
+                                <div class="mb-3">
+                                    <small class="text-muted d-block mb-1"><i class="fas fa-tags me-1 text-primary"></i><strong>Kata kunci:</strong></small>
+                                    <div class="d-flex flex-wrap gap-1">
+                                        @foreach ($thesis->keyword_array as $kw)
+                                            @if ($kw !== '')
+                                                <a href="{{ route('public.thesis.index', ['search' => $kw]) }}" class="badge bg-light text-dark border px-2 py-1 small text-decoration-none">#{{ $kw }}</a>
+                                            @endif
+                                        @endforeach
+                                    </div>
+                                </div>
+                            @endif
+                            <p class="card-text small text-muted">
+                                {{ Str::limit($thesis->abstract, 140) }}
                             </p>
                         </div>
                         <div class="card-footer bg-transparent border-top-0 p-4 pt-0">

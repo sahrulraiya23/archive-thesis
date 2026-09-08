@@ -12,7 +12,8 @@
                     <p class="lead mb-0 text-white-50">Panel administrasi untuk mengelola data tugas akhir</p>
                 </div>
                 <div class="d-flex gap-2">
-                    <a href="{{ route('admin.thesis.export', request()->query()) }}" class="btn btn-lg btn-success text-white">
+                    <a href="{{ route('admin.thesis.export', request()->query()) }}"
+                        class="btn btn-lg btn-success text-white">
                         <i class="me-2" data-feather="download"></i>
                         Ekspor CSV
                     </a>
@@ -27,15 +28,10 @@
 
     {{-- Konten Utama --}}
     <div class="container-xl px-4">
-        @php
-            $totalThesis = App\Models\Thesis::count();
-            $kcvCount = App\Models\Thesis::where('type', 'kcv')->count();
-            $kbjCount = App\Models\Thesis::where('type', 'kbj')->count();
-            $rplCount = App\Models\Thesis::where('type', 'rpl')->count();
-        @endphp
+        @php $totalThesis = App\Models\Thesis::count(); @endphp
 
         <div class="row">
-            <div class="col-lg-6 col-xl-3 mb-4">
+            <div class="col-lg-6 mb-4">
                 <a href="{{ route('admin.thesis.index') }}" class="text-decoration-none">
                     <div class="card bg-primary text-white h-100">
                         <div class="card-body">
@@ -45,51 +41,6 @@
                                     <div class="text-lg fw-bold">{{ $totalThesis }}</div>
                                 </div>
                                 <i class="feather-xl" data-feather="database"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-6 col-xl-3 mb-4">
-                <a href="{{ route('admin.thesis.index', ['type' => 'kcv']) }}" class="text-decoration-none">
-                    <div class="card bg-success text-white h-100">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="me-3">
-                                    <div class="text-white-75 small">KCV</div>
-                                    <div class="text-lg fw-bold">{{ $kcvCount }}</div>
-                                </div>
-                                <i class="feather-xl" data-feather="book"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-6 col-xl-3 mb-4">
-                <a href="{{ route('admin.thesis.index', ['type' => 'kbj']) }}" class="text-decoration-none">
-                    <div class="card bg-warning text-white h-100">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="me-3">
-                                    <div class="text-white-75 small">KBJ</div>
-                                    <div class="text-lg fw-bold">{{ $kbjCount }}</div>
-                                </div>
-                                <i class="feather-xl" data-feather="wifi"></i>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-6 col-xl-3 mb-4">
-                <a href="{{ route('admin.thesis.index', ['type' => 'rpl']) }}" class="text-decoration-none">
-                    <div class="card bg-secondary text-white h-100">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="me-3">
-                                    <div class="text-white-75 small">RPL</div>
-                                    <div class="text-lg fw-bold">{{ $rplCount }}</div>
-                                </div>
-                                <i class="feather-xl" data-feather="film"></i>
                             </div>
                         </div>
                     </div>
@@ -107,16 +58,6 @@
                                 placeholder="Cari judul atau penulis..." class="form-control">
                         </div>
                         <div class="col-md-3 mb-3">
-                            <select name="type" id="type" class="form-select">
-                                <option value="">Semua Peminatan</option>
-                                @foreach ($types as $key => $value)
-                                    <option value="{{ $key }}" {{ request('type') == $key ? 'selected' : '' }}>
-                                        {{ $value }}
-                                    </option>
-                                @endforeach
-                            </select>
-                        </div>
-                        <div class="col-md-3 mb-3">
                             <select name="year" id="year" class="form-select">
                                 <option value="">Semua Tahun</option>
                                 @foreach ($years as $year)
@@ -129,8 +70,9 @@
                             <div class="d-grid gap-2 d-md-flex">
                                 <button type="submit" class="btn btn-primary flex-grow-1"><i class="me-2"
                                         data-feather="filter"></i>Filter</button>
-                                <a href="{{ route('admin.thesis.export', request()->query()) }}" class="btn btn-success text-white"
-                                    title="Ekspor Data Terfilter"><i data-feather="download"></i></a>
+                                <a href="{{ route('admin.thesis.export', request()->query()) }}"
+                                    class="btn btn-success text-white" title="Ekspor Data Terfilter"><i
+                                        data-feather="download"></i></a>
                                 <a href="{{ route('admin.thesis.index') }}" class="btn btn-secondary"
                                     title="Reset Filter"><i data-feather="refresh-cw"></i></a>
                             </div>
@@ -143,7 +85,7 @@
                         <thead>
                             <tr>
                                 <th>Judul & Penulis</th>
-                                <th>Peminatan</th>
+                                <th>Kata Kunci</th>
                                 <th>Tahun</th>
                                 <th class="text-end">Aksi</th>
                             </tr>
@@ -155,10 +97,7 @@
                                         <div class="fw-bold">{{ $thesis->title }}</div>
                                         <div class="small text-muted">{{ $thesis->author }}</div>
                                     </td>
-                                    <td>
-                                        <span
-                                            class="badge bg-primary bg-opacity-25 text-primary">{{ $thesis->type_code_upper }}</span>
-                                    </td>
+                                    <td>{{ $thesis->keywords ?: '-' }}</td>
                                     <td>{{ $thesis->year }}</td>
                                     <td class="text-end">
                                         <a href="{{ route('admin.thesis.show', $thesis) }}"
@@ -171,14 +110,14 @@
                                             class="d-inline" onsubmit="return confirmDelete('{{ $thesis->title }}')">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="submit" class="btn btn-sm btn-outline-danger"
-                                                title="Hapus"><i data-feather="trash-2"></i></button>
+                                            <button type="submit" class="btn btn-sm btn-outline-danger" title="Hapus"><i
+                                                    data-feather="trash-2"></i></button>
                                         </form>
                                     </td>
                                 </tr>
                             @empty
                                 <tr>
-                                    <td colspan="5" class="text-center py-5">
+                                    <td colspan="4" class="text-center py-5">
                                         <i class="mx-auto mb-3" data-feather="database"
                                             style="width: 48px; height: 48px;"></i>
                                         <h5>Tidak ada data ditemukan</h5>
