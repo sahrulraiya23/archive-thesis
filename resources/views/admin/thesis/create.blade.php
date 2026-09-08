@@ -46,14 +46,26 @@
                                 @enderror
                             </div>
 
-                            <div class="mb-3">
-                                <label for="author" class="form-label">Penulis <span class="text-danger">*</span></label>
-                                <input type="text" name="author" id="author"
-                                    value="{{ old('author', $thesis->author ?? '') }}"
-                                    class="form-control @error('author') is-invalid @enderror" required>
-                                @error('author')
-                                    <div class="invalid-feedback">{{ $message }}</div>
-                                @enderror
+                            <div class="row gx-3">
+                                <div class="col-md-6 mb-3">
+                                    <label for="author" class="form-label">Penulis <span class="text-danger">*</span></label>
+                                    <input type="text" name="author" id="author"
+                                        value="{{ old('author', $thesis->author ?? '') }}"
+                                        class="form-control @error('author') is-invalid @enderror" required>
+                                    @error('author')
+                                        <div class="invalid-feedback">{{ $message }}</div>
+                                    @enderror
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="nim" class="form-label">NIM (Nomor Induk Mahasiswa)</label>
+                                    <input type="text" name="nim" id="nim"
+                                        value="{{ old('nim', $thesis->nim ?? '') }}"
+                                        placeholder="Contoh: E1E122123"
+                                        class="form-control @error('nim') is-invalid @enderror">
+                                    @error('nim')
+                                        <div class="invalid-feedback">{{ $message }}</div>
+                                    @enderror
+                                </div>
                             </div>
 
                             <div class="row gx-3">

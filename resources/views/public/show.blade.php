@@ -69,10 +69,16 @@
                         <h1 class="card-title">{{ $thesis->title }}</h1>
 
                         <div class="row gx-4 mt-4">
-                            <div class="col-md-12">
+                            <div class="col-md-6 mb-2 mb-md-0">
                                 <p class="small text-muted mb-0">Penulis</p>
                                 <p class="fw-bold mb-0 text-primary">{{ $thesis->author }}</p>
                             </div>
+                            @if ($thesis->nim)
+                                <div class="col-md-6">
+                                    <p class="small text-muted mb-0">NIM (Nomor Induk Mahasiswa)</p>
+                                    <p class="fw-bold mb-0 text-primary">{{ $thesis->nim }}</p>
+                                </div>
+                            @endif
                         </div>
                     </div>
 

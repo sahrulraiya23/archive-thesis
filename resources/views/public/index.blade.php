@@ -81,6 +81,9 @@
                             <div class="small text-muted mb-2">
                                 <i class="me-1" data-feather="user"></i>
                                 <strong>{{ $thesis->author }}</strong>
+                                @if ($thesis->nim)
+                                    <span class="badge bg-light text-dark border ms-1">NIM: {{ $thesis->nim }}</span>
+                                @endif
                             </div>
                             @if(!empty($thesis->keyword_array))
                                 <div class="mb-3">

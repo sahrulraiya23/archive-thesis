@@ -20,6 +20,7 @@ class ThesisFilterTest extends TestCase
             'keywords' => 'sistem, rekomendasi, umkm, web, aplikasi',
             'abstract' => 'Abstrak RPL',
             'author' => 'Budi Santoso',
+            'nim' => 'E1E122001',
             'program_study' => 'S1 Teknik Informatika',
             'year' => 2026,
         ]);
@@ -29,6 +30,7 @@ class ThesisFilterTest extends TestCase
             'keywords' => 'klasifikasi, citra, medis, cnn, python',
             'abstract' => 'Abstrak KCV',
             'author' => 'Siti Aminah',
+            'nim' => 'E1E122002',
             'program_study' => 'S1 Teknik Informatika',
             'year' => 2026,
         ]);
@@ -38,6 +40,7 @@ class ThesisFilterTest extends TestCase
             'keywords' => 'monitoring, iot, keamanan, server, network',
             'abstract' => 'Abstrak KBJ',
             'author' => 'Andi Wijaya',
+            'nim' => 'E1E122003',
             'program_study' => 'S1 Teknik Informatika',
             'year' => 2025,
         ]);
@@ -47,9 +50,20 @@ class ThesisFilterTest extends TestCase
             'keywords' => 'klasifikasi, sistem, rekomendasi, rpl, database',
             'abstract' => 'Abstrak RPL 2',
             'author' => 'Dewi Lestari',
+            'nim' => 'E1E122004',
             'program_study' => 'S1 Teknik Informatika',
             'year' => 2025,
         ]);
+    }
+
+    public function test_public_thesis_index_searches_by_nim(): void
+    {
+        $response = $this->get(route('public.thesis.index', ['search' => 'E1E122002']));
+
+        $response->assertStatus(200);
+        $response->assertSee('Siti Aminah');
+        $response->assertSee('E1E122002');
+        $response->assertDontSee('Budi Santoso');
     }
 
     public function test_public_thesis_index_searches_keywords(): void

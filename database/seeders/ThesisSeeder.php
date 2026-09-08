@@ -29,6 +29,7 @@ class ThesisSeeder extends Seeder
                 'keywords' => $keywordsStr,
                 'abstract' => 'Abstrak belum tersedia.',
                 'author' => trim($row[1]),
+                'nim' => trim($row[0]),
                 'program_study' => trim($row[2]),
                 'year' => 2026,
             ]);

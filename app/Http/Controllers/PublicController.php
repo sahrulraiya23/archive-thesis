@@ -23,6 +23,7 @@ class PublicController extends Controller
             $query->where(function ($q) use ($search) {
                 $q->where('title', 'like', '%' . $search . '%')
                     ->orWhere('author', 'like', '%' . $search . '%')
+                    ->orWhere('nim', 'like', '%' . $search . '%')
                     ->orWhere('keywords', 'like', '%' . $search . '%');
             });
         }

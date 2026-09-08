@@ -93,10 +93,15 @@
                         <tbody>
                             @forelse($theses as $thesis)
                                 <tr>
-                                    <td>
+                                     <td>
                                         <div class="fw-bold">{{ $thesis->title }}</div>
-                                        <div class="small text-muted">{{ $thesis->author }}</div>
-                                    </td>
+                                        <div class="small text-muted">
+                                            <strong>{{ $thesis->author }}</strong>
+                                            @if ($thesis->nim)
+                                                <span class="badge bg-light text-dark border ms-1">NIM: {{ $thesis->nim }}</span>
+                                            @endif
+                                        </div>
+                                     </td>
                                     <td>{{ $thesis->keywords ?: '-' }}</td>
                                     <td>{{ $thesis->year }}</td>
                                     <td class="text-end">

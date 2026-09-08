@@ -16,6 +16,7 @@ class Thesis extends Model
         'keywords',
         'abstract',
         'author',
+        'nim',
         'program_study',
         'year',
     ];

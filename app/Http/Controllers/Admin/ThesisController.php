@@ -17,6 +17,7 @@ class ThesisController extends Controller
             $query->where(function ($q) use ($search) {
                 $q->where('title', 'like', '%' . $search . '%')
                     ->orWhere('author', 'like', '%' . $search . '%')
+                    ->orWhere('nim', 'like', '%' . $search . '%')
                     ->orWhere('keywords', 'like', '%' . $search . '%');
             });
         }
@@ -43,6 +44,7 @@ class ThesisController extends Controller
             'keywords' => 'nullable|string|max:1000',
             'abstract' => 'required|string',
             'author' => 'required|string|max:255',
+            'nim' => 'nullable|string|max:50',
             'year' => 'required|integer|min:1900|max:' . (date('Y') + 1),
         ]);
 
@@ -83,6 +85,7 @@ class ThesisController extends Controller
             'keywords' => 'nullable|string|max:1000',
             'abstract' => 'required|string',
             'author' => 'required|string|max:255',
+            'nim' => 'nullable|string|max:50',
             'year' => 'required|integer|min:1900|max:' . (date('Y') + 1),
         ]);
 
@@ -123,6 +126,7 @@ class ThesisController extends Controller
             $query->where(function ($q) use ($search) {
                 $q->where('title', 'like', '%' . $search . '%')
                     ->orWhere('author', 'like', '%' . $search . '%')
+                    ->orWhere('nim', 'like', '%' . $search . '%')
                     ->orWhere('keywords', 'like', '%' . $search . '%');
             });
         }
@@ -147,7 +151,7 @@ class ThesisController extends Controller
             $file = fopen('php://output', 'w');
             fprintf($file, chr(0xEF) . chr(0xBB) . chr(0xBF));
 
-            fputcsv($file, ['No', 'Judul', 'Kata Kunci', 'Penulis', 'Tahun', 'Abstrak', 'Tanggal Input']);
+            fputcsv($file, ['No', 'Judul', 'Kata Kunci', 'Penulis', 'NIM', 'Tahun', 'Abstrak', 'Tanggal Input']);
 
             foreach ($theses as $index => $thesis) {
                 fputcsv($file, [
@@ -155,6 +159,7 @@ class ThesisController extends Controller
                     $thesis->title,
                     $thesis->keywords,
                     $thesis->author,
+                    $thesis->nim ?: '-',
                     $thesis->year,
                     $thesis->abstract,
                     $thesis->created_at ? $thesis->created_at->format('Y-m-d H:i:s') : '-',
