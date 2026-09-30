@@ -63,11 +63,14 @@
                                 @foreach ($recentThesis as $thesis)
                                     <a href="{{ route('public.thesis.show', $thesis) }}"
                                         class="list-group-item list-group-item-action">
-                                        <div class="d-flex w-100 justify-content-between">
-                                            <h6 class="mb-1">{{ Str::limit($thesis->title, 80) }}</h6>
-                                            <small class="text-muted">{{ $thesis->created_at->diffForHumans() }}</small>
+                                        <div class="d-flex w-100 justify-content-between align-items-center mb-1">
+                                            <h6 class="mb-0 text-dark fw-bold">{{ Str::limit($thesis->title, 75) }}</h6>
+                                            <span class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25 ms-2">Angkatan {{ $thesis->angkatan }}</span>
                                         </div>
-                                        <p class="mb-1 small">{{ $thesis->author }}</p>
+                                        <p class="mb-1 small text-dark"><i class="fas fa-user-graduate me-1 text-primary"></i>{{ $thesis->author }} @if($thesis->nim) ({{ $thesis->nim }}) @endif</p>
+                                        @if($thesis->pembimbing_1)
+                                            <div class="small text-muted mb-1"><i class="fas fa-chalkboard-teacher me-1 text-secondary"></i>Pembimbing: {{ $thesis->pembimbing_1 }}</div>
+                                        @endif
                                         <small class="text-muted"><strong>Kata kunci:</strong>
                                             {{ $thesis->keywords ?: '-' }}</small>
                                     </a>

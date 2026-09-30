@@ -9,32 +9,33 @@ class ThesisSeeder extends Seeder
 {
     public function run(): void
     {
-        $file = database_path('data/theses-2026.csv');
-        $handle = fopen($file, 'r');
-
-        if ($handle === false) {
+        $file = database_path('data/theses_consolidated.json');
+        if (!file_exists($file)) {
             throw new \RuntimeException("Data tugas akhir tidak ditemukan: {$file}");
         }
 
-        while (($row = fgetcsv($handle)) !== false) {
-            if (count($row) < 5 || blank($row[4])) {
-                continue;
-            }
+        $items = json_decode(file_get_contents($file), true);
 
-            $title = preg_replace('/\s+/', ' ', trim($row[4]));
-            $keywordsStr = Thesis::extractKeywordsFromTitle($title, 5);
+        Thesis::query()->delete();
+
+        foreach ($items as $item) {
+            $title = preg_replace('/\s+/', ' ', trim($item['title']));
+            $keywords = trim($item['keywords'] ?? '');
+            if (empty($keywords)) {
+                $keywords = Thesis::extractKeywordsFromTitle($title, 5);
+            }
 
             Thesis::create([
                 'title' => $title,
-                'keywords' => $keywordsStr,
-                'abstract' => 'Abstrak belum tersedia.',
-                'author' => trim($row[1]),
-                'nim' => trim($row[0]),
-                'program_study' => trim($row[2]),
-                'year' => 2026,
+                'keywords' => $keywords,
+                'abstract' => $item['abstract'] ?? 'Abstrak belum tersedia.',
+                'author' => trim($item['author']),
+                'nim' => !empty($item['nim']) ? trim($item['nim']) : null,
+                'program_study' => $item['program_study'] ?? 'S1 Teknik Informatika',
+                'angkatan' => (int) ($item['angkatan'] ?? 2022),
+                'pembimbing_1' => !empty($item['pembimbing_1']) ? trim($item['pembimbing_1']) : null,
+                'pembimbing_2' => !empty($item['pembimbing_2']) ? trim($item['pembimbing_2']) : null,
             ]);
         }
-
-        fclose($handle);
     }
 }

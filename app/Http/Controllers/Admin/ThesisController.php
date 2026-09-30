@@ -18,18 +18,22 @@ class ThesisController extends Controller
                 $q->where('title', 'like', '%' . $search . '%')
                     ->orWhere('author', 'like', '%' . $search . '%')
                     ->orWhere('nim', 'like', '%' . $search . '%')
-                    ->orWhere('keywords', 'like', '%' . $search . '%');
+                    ->orWhere('keywords', 'like', '%' . $search . '%')
+                    ->orWhere('pembimbing_1', 'like', '%' . $search . '%')
+                    ->orWhere('pembimbing_2', 'like', '%' . $search . '%');
             });
         }
 
-        if ($request->filled('year')) {
-            $query->where('year', $request->year);
+        $angkatan = $request->input('angkatan', $request->input('year'));
+        if (!empty($angkatan)) {
+            $query->where('angkatan', $angkatan);
         }
 
-        $theses = $query->orderBy('created_at', 'desc')->paginate(10);
-        $years = Thesis::selectRaw('DISTINCT year')->orderBy('year', 'desc')->pluck('year');
+        $theses = $query->orderBy('created_at', 'desc')->paginate(15);
+        $angkatans = Thesis::whereNotNull('angkatan')->selectRaw('DISTINCT angkatan')->orderBy('angkatan', 'desc')->pluck('angkatan');
+        $years = $angkatans;
 
-        return view('admin.thesis.index', compact('theses', 'years'));
+        return view('admin.thesis.index', compact('theses', 'angkatans', 'years'));
     }
 
     public function create()
@@ -45,8 +49,14 @@ class ThesisController extends Controller
             'abstract' => 'required|string',
             'author' => 'required|string|max:255',
             'nim' => 'nullable|string|max:50',
-            'year' => 'required|integer|min:1900|max:' . (date('Y') + 1),
+            'angkatan' => 'nullable|integer|min:1990|max:2099',
+            'year' => 'nullable|integer|min:1990|max:2099',
+            'pembimbing_1' => 'nullable|string|max:255',
+            'pembimbing_2' => 'nullable|string|max:255',
         ]);
+
+        $validated['angkatan'] = $validated['angkatan'] ?? $validated['year'] ?? date('Y');
+        unset($validated['year']);
 
         $kwInput = trim($validated['keywords'] ?? '');
         if ($kwInput !== '') {
@@ -86,8 +96,14 @@ class ThesisController extends Controller
             'abstract' => 'required|string',
             'author' => 'required|string|max:255',
             'nim' => 'nullable|string|max:50',
-            'year' => 'required|integer|min:1900|max:' . (date('Y') + 1),
+            'angkatan' => 'nullable|integer|min:1990|max:2099',
+            'year' => 'nullable|integer|min:1990|max:2099',
+            'pembimbing_1' => 'nullable|string|max:255',
+            'pembimbing_2' => 'nullable|string|max:255',
         ]);
+
+        $validated['angkatan'] = $validated['angkatan'] ?? $validated['year'] ?? ($thesis->angkatan ?? date('Y'));
+        unset($validated['year']);
 
         $kwInput = trim($validated['keywords'] ?? '');
         if ($kwInput !== '') {
@@ -127,17 +143,20 @@ class ThesisController extends Controller
                 $q->where('title', 'like', '%' . $search . '%')
                     ->orWhere('author', 'like', '%' . $search . '%')
                     ->orWhere('nim', 'like', '%' . $search . '%')
-                    ->orWhere('keywords', 'like', '%' . $search . '%');
+                    ->orWhere('keywords', 'like', '%' . $search . '%')
+                    ->orWhere('pembimbing_1', 'like', '%' . $search . '%')
+                    ->orWhere('pembimbing_2', 'like', '%' . $search . '%');
             });
         }
 
-        if ($request->filled('year')) {
-            $query->where('year', $request->year);
+        $angkatan = $request->input('angkatan', $request->input('year'));
+        if (!empty($angkatan)) {
+            $query->where('angkatan', $angkatan);
         }
 
         $theses = $query->orderBy('created_at', 'desc')->get();
 
-        $filename = 'arsip-tugas-akhir-' . date('Y-m-d_His') . '.csv';
+        $filename = 'arsip-tugas-akhir-angkatan-' . date('Y-m-d_His') . '.csv';
 
         $headers = [
             'Content-Type' => 'text/csv; charset=UTF-8',
@@ -151,16 +170,19 @@ class ThesisController extends Controller
             $file = fopen('php://output', 'w');
             fprintf($file, chr(0xEF) . chr(0xBB) . chr(0xBF));
 
-            fputcsv($file, ['No', 'Judul', 'Kata Kunci', 'Penulis', 'NIM', 'Tahun', 'Abstrak', 'Tanggal Input']);
+            fputcsv($file, ['No', 'NIM', 'Angkatan', 'Penulis', 'Judul', 'Kata Kunci', 'Pembimbing 1', 'Pembimbing 2', 'Program Studi', 'Abstrak', 'Tanggal Input']);
 
             foreach ($theses as $index => $thesis) {
                 fputcsv($file, [
                     $index + 1,
+                    $thesis->nim ?: '-',
+                    $thesis->angkatan,
+                    $thesis->author,
                     $thesis->title,
                     $thesis->keywords,
-                    $thesis->author,
-                    $thesis->nim ?: '-',
-                    $thesis->year,
+                    $thesis->pembimbing_1 ?: '-',
+                    $thesis->pembimbing_2 ?: '-',
+                    $thesis->program_study ?: 'S1 Teknik Informatika',
                     $thesis->abstract,
                     $thesis->created_at ? $thesis->created_at->format('Y-m-d H:i:s') : '-',
                 ]);

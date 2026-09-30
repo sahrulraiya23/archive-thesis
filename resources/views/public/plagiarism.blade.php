@@ -110,8 +110,8 @@
                                                         class="badge bg-{{ $itemColorClass }} rounded-pill ms-2 fs-6 px-3 py-2">{{ number_format($similarity['percentage'], 1) }}%</span>
                                                 </div>
                                                 <p class="mb-1 small text-muted">
-                                                    Penulis: <strong>{{ $similarity['thesis']->author }}</strong> • Tahun:
-                                                    {{ $similarity['thesis']->year }} • Kata kunci:
+                                                    Penulis: <strong>{{ $similarity['thesis']->author }}</strong> • Angkatan:
+                                                    <strong>{{ $similarity['thesis']->angkatan }}</strong> • Kata kunci:
                                                     <strong>{{ $similarity['thesis']->keywords ?: '-' }}</strong>
                                                 </p>
                                                 @if (!empty($similarity['sharedWords']))

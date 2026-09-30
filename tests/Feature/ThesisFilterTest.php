@@ -187,4 +187,69 @@ class ThesisFilterTest extends TestCase
         $response->assertSee('citra');
         $response->assertSee('<mark class="bg-warning text-dark px-1 rounded fw-semibold">Klasifikasi</mark>', false);
     }
+
+    public function test_public_thesis_index_filters_by_angkatan(): void
+    {
+        $response = $this->get(route('public.thesis.index', ['angkatan' => 2025]));
+
+        $response->assertStatus(200);
+        $response->assertSee('Monitoring IoT Sistem Keamanan Server Network');
+        $response->assertDontSee('Klasifikasi Citra Medis Menggunakan CNN');
+    }
+
+    public function test_public_thesis_index_searches_by_pembimbing(): void
+    {
+        $thesis = Thesis::first();
+        $thesis->update([
+            'pembimbing_1' => 'Prof. Bambang Pramono, M.T.',
+            'pembimbing_2' => 'Dr. Statiswaty, S.T.',
+        ]);
+
+        $response = $this->get(route('public.thesis.index', ['search' => 'Bambang Pramono']));
+        $response->assertStatus(200);
+        $response->assertSee($thesis->title);
+    }
+
+    public function test_public_thesis_show_displays_pembimbing_and_angkatan(): void
+    {
+        $thesis = Thesis::first();
+        $thesis->update([
+            'angkatan' => 2022,
+            'pembimbing_1' => 'Prof. Bambang Pramono, M.T.',
+            'pembimbing_2' => 'Dr. Statiswaty, S.T.',
+        ]);
+
+        $response = $this->get(route('public.thesis.show', $thesis));
+
+        $response->assertStatus(200);
+        $response->assertSee('Angkatan 2022');
+        $response->assertSee('Prof. Bambang Pramono, M.T.');
+        $response->assertSee('Dr. Statiswaty, S.T.');
+    }
+
+    public function test_admin_can_create_thesis_with_pembimbing_and_angkatan(): void
+    {
+        $admin = User::factory()->create([
+            'role' => 'admin',
+        ]);
+
+        $response = $this->actingAs($admin)->post('/admin/thesis', [
+            'title' => 'Implementasi Deep Learning untuk Deteksi Objek Real Time',
+            'keywords' => 'deep learning, cnn, yolo, vision, python',
+            'abstract' => 'Abstrak tugas akhir pengujian pembimbing.',
+            'author' => 'Mahasiswa Test Pembimbing',
+            'nim' => 'E1E122999',
+            'angkatan' => 2022,
+            'pembimbing_1' => 'Dosen Satu, M.Kom.',
+            'pembimbing_2' => 'Dosen Dua, M.T.',
+        ]);
+
+        $response->assertRedirect('/admin/thesis');
+        $this->assertDatabaseHas('thesis', [
+            'title' => 'Implementasi Deep Learning untuk Deteksi Objek Real Time',
+            'angkatan' => 2022,
+            'pembimbing_1' => 'Dosen Satu, M.Kom.',
+            'pembimbing_2' => 'Dosen Dua, M.T.',
+        ]);
+    }
 }

@@ -24,18 +24,22 @@ class PublicController extends Controller
                 $q->where('title', 'like', '%' . $search . '%')
                     ->orWhere('author', 'like', '%' . $search . '%')
                     ->orWhere('nim', 'like', '%' . $search . '%')
-                    ->orWhere('keywords', 'like', '%' . $search . '%');
+                    ->orWhere('keywords', 'like', '%' . $search . '%')
+                    ->orWhere('pembimbing_1', 'like', '%' . $search . '%')
+                    ->orWhere('pembimbing_2', 'like', '%' . $search . '%');
             });
         }
 
-        if ($request->filled('year')) {
-            $query->where('year', $request->year);
+        $angkatan = $request->input('angkatan', $request->input('year'));
+        if (!empty($angkatan)) {
+            $query->where('angkatan', $angkatan);
         }
 
         $theses = $query->orderBy('created_at', 'desc')->paginate(12);
-        $years = Thesis::selectRaw('DISTINCT year')->orderBy('year', 'desc')->pluck('year');
+        $angkatans = Thesis::whereNotNull('angkatan')->selectRaw('DISTINCT angkatan')->orderBy('angkatan', 'desc')->pluck('angkatan');
+        $years = $angkatans;
 
-        return view('public.index', compact('theses', 'years'));
+        return view('public.index', compact('theses', 'angkatans', 'years'));
     }
 
     public function thesisShow(Thesis $thesis)

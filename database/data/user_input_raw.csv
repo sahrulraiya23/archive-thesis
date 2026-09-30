@@ -1,0 +1,532 @@
+NIM,Angkatan,NAMA,JUDUL,Kata Kunci,PEMBIMBING
+E1E122001,2022,ADE SULASTRI,IMPLEMENTASI AlGORITMA SHA-256 DAN QR CODE UNTUK AUTENTIKASI DOKUMEN PDF PADA SISTEM EWMP FAKULTAS TEKNIK UNIVERSITAS HALU OLEO,"SHA-256, Document Authentication, QR Code, PDF, EWMP","Statiswaty, ST., MM.Si.
+Asa Hari Wibowo"
+E1E122003,2022,ANNISA AULIYA RAMADHANI,KLASIFIKASI STATUS GIZI IBU HAMIL TERKAIT RISIKO STUNTING PADA JANIN MENGGUNAKAN ALGORITMA BOOSTING DENGAN METODE SIMPLY MINORITY OVER-SAMPLING (SMOTE),"CatBoost, Classification, Nutritional Status of Pregnant Women, SMOTE, XGBoost.","Rizal Adi Saputra, S.T., M.Kom.
+La Ode Muhammad Bahtiar Aksara, S.T., M.T."
+E1E122004,2022,ANNISA NURFADILAH,"Sistem Klasifikasi Perubahan Lahan Pada Ekosistem Pesisir Berbasis Deep Learning Menggunakan Citra Sentinel-2 (Studi Kasus: Tanjung Tiram, Sulawesi Tenggara)","Deep Learning. UNet-ResNet34, Coastal Ecosystem, Land Cover Classification, Sentinel-2.","Rizal Adi Saputra, S.T., M.Kom.
+Dr. Ir. Muhammad Ihsan Sarita, M.Kom."
+E1E122005,2022,ARTIENTIN,Penerapan Algoritma XGBoost Untuk Klasifikasi Kelayakan dan Rekomendasi Pemilihan Metode Kontrasepsi Berdasarkan Data Klinis Pasangan Usia Subur (Studi Kasus: Kecamatan Tirawuta),"Klasifikasi, Metode Kontrasepsi, Rekomendasi, Pasangan Usia Subur, XGBoost","Prof. Dr. Ir. La Ode Muhammad Golok Jaya, ST., MT.
+Dr. Andi Tenriawaru, S.Si., M.Si"
+E1E122006,2022,AYUSTINA SAMUDIN,Rancang Bangun GIS Area Rawan Dampak Pertambangan di Kabupaten Konawe Selatan Menggunakan Algoritma Random Forest,"Web GIS, Random Forest, Mining Impact, Rainfall, Slope","Statiswaty, ST., MM.Si.
+Bambang Pramono, S.Si., MT."
+E1E122007,2022,DELA PUSPITA HELMI,[#51271] SISTEM INFORMASI ANALISIS KEBUTUHAN FASILITAS PUBLIK BERDASARKAN LAPORAN MASYARAKAT MENGGUNAKAN METODE TEXT MINING DAN SUPPORT VECTOR MACHINE.,"Text Mining, Support Vector Machine, TF-IDF, Information Systems, Public Facilties","Jumadil Nangi, S.Kom., M.Kom.
+Asa Hari Wibowo"
+E1E122010,2022,DWI PRATIWI APRILYA WAHID,IMPLEMENTASI CHATBOT SAKU (SENTRA AKUAKULTUR) MENGGUNAKAN BIDIRECTIONAL ENCODER REPRESENTATIONS FROM TRANSFORMERS (BERT) UNTUK ASISTEN VIRTUAL BUDI- DAYA UDANG VANAME DI SULAWESI TENGGARA,"Chatbot, BERT, Hybrid Retrieval, Vannamei Shrimp Farming, Virtual Assistant.","Adha Mashur Sajiah, M.Eng.
+Isnawaty, S.Si., MT."
+E1E122012,2022,EVIRIAWAN,PERANCANGAN LEARNING MANAGEMENT SYSTEM (LMS) PADA PEMBELAJARAN BAHASA INDONESIA DENGAN FITUR PENILAIAN JAWABAN PILIHAN GANDA DAN ESAI OTOMATIS MENGGUNAKAN METODE COSINE SIMILARITY DAN ALGORITMA LEVENSHTEIN DISTANCE,"Cosine Similarity, Essay Grading System, Levenshtein Distance, Real-
+Time, Website","Sutardi, S.Kom., M.T
+Dr. Ir. Muhammad Ihsan Sarita, M.Kom."
+E1E122014,2022,HIKMA,Implementasi Algoritma Support Vector Machine (SVM) Dengan Pembobotan Term Frequency-Inverse Document Frequency (TF-IDF) Untuk Klasifikasi Buku Berdasarkan Dewey Decimal Classification (DDC) Berbasis Web,"Dewey Decimal Classification, book classification, Support Vector Machine, TF-IDF. Cosine Similarity.","Sutardi, S.Kom., M.T
+Dr. Ir. Muhammad Ihsan Sarita, M.Kom."
+E1E122016,2022,KIKI NOVIANA SAPUTRI,DIAGNOSIS KERUSAKAN DAN EVALUASI KELAYAKAN OPERASIONAL ALAT BERAT DAN MOBIL BERBASIS WEB MENGGUNAKAN ALGORITMA FUZZY TSUKAMOTO,"Fuzzy tsukamoto. Damage Diagnosis, Operational Feasibility, Heavy Equipment, Web-Based System","Bambang Pramono, S.Si., MT.
+Muh. Yamin, ST., M.Eng."
+E1E122017,2022,LA ODE IKHWANUL UZLAH,"APLIKASI KASIR BERBASIS WEB TERINTEGRASI DENGAN LAPORAN PENJUALAN MENGGUNAKAN ALGORITMA FLUXSORT (STUDI KASUS: TOKO JOEL, KELURAHAN PUNGGOLAKA, KOTA KENDARI)","Cashier Application, Fluxsort, Information System, Sales Report, Web","Statiswaty, ST., MM.Si.
+Jumadil Nangi, S.Kom., M.Kom."
+E1E122020,2022,MUH. FALAH MUBARAQ,SISTEM KLASIFIKASI KOMENTAR PUBLIK UNTUK MENDETEKSI JENIS PELANGGARAN UNDANG-UNDANG ITE MENGGUNAKAN ALGORITMA SUPPORT VECTOR MACHINE (SVM) DAN LOGISTIC REGRESSION (Studi Kasus : Isu Kenaikan Tunjangan DPR RI Tahun 2025 pada Media Sosial X),,"Bambang Pramono, S.Si., MT.
+Isnawaty, S.Si., MT."
+E1E122024,2022,NI WAYAN ERDIANI,Sistem Kontrol Pertumbuhan Tanaman Cabai Pada Greenhouse Berbasis Internet Of Things (IoT) Dengan Decesion Tree C5 Dan Protokol Hypertext Transfer Protocol secure (HTTPS),"Decision Tree CS. Greenhouse, Hypertext Transfer Protocol Secure (HTTPS). Internet of Things (IoT), Control System, Chili Plant.","Isnawaty, S.Si., MT.
+Achmad Nur Aliansyah, S.T., M. T"
+E1E122025,2022,NUR FADILLAH,IMPLEMENTASI ALGORITMA AGGLOMERATIVE HIERARCHICAL CLUSTERING (AHC) PADA SISTEM INFORMASI MANAJEMEN PERTANDINGAN TAEKWONDO UNTUK OTOMATISASI BAGAN PERTANDINGAN,"Agglomerative Hierarchical Clustering, Bagan Sistem Gugur, Sistem Informasi Pertandingan, Taekondo.","Jumadil Nangi, S.Kom., M.Kom.
+Asa Hari Wibowo"
+E1E122027,2022,RAHMI,IMPLEMENTASI TRANSFER LEARNING MOBILENETV2 UNTUK KLASIFIKASI PENYAKIT DAUN PADI BERBASIS CITRA DENGAN REKOMENDASI PENGENDALIAN MENGGUNAKAN FUZZY MAMDANI (Studi Kasus: Kabupaten Konawe),"Deep Learning, Fruzzy Mamdani, MobileNetV2, Rice Leaf Disease, Transfer Learning.","Jumadil Nangi, S.Kom., M.Kom.
+Dr. Ir. Muhammad Ihsan Sarita, M.Kom."
+E1E122028,2022,RATNASARI,Sistem Kontrol Dan Monitoring Fermentasi Tempe Berbasis Internet Of Things (IoT) Dengan Protocol Message Queuing Telemetry Transport (MQTT) Dan Fuzzy Logic,"Tempeh, Internet Of Things (IoT), Message Queuing Telemetry Transport (MQTT), Fuzzy Logic, temperature and humidity sensors.","Isnawaty, S.Si., MT.
+Rizal Adi Saputra, S.T., M.Kom."
+E1E122034,2022,WA ODE ASRIYANI,OPTIMASI HYPERPARAMETER MOBILENETV2 UNTUK KLASIFIKASI KESEGARAN IKAN TONGKOL BERBASIS CITRA MATA IKAN MENGGUNAKAN OPTUNA TREE-STRUCTURED PARZEN ESTIMATOR (TPE),"Euthynnus Affinis (Mackerel Tuna). Fish Freshness, MobileNetV2, Optuna, Transfer Learning, Tree-Structured Parzen Estimator (TPE).","Dr. Ir. Muhammad Ihsan Sarita, M.Kom.
+Sutardi, S.Kom., M.T"
+E1E122039,2022,ALVIAN ARDIANSYAH,Identifikasi dan Verifikasi Citra Tanda Tangan Menggunakan Hybrid Local Binary Pattern (LBP) dan Histogram of Oriented Gradient (HOG) dengan Klasifikasi Support Vector Machine (SVM) dan Deep Belief Network (DBN),"Signature, Local Binary Pattern, Histogram of Oriented Gradient.
+Support Vector Machine. Deep Belief Network","Rizal Adi Saputra, S.T., M.Kom.
+La Surimi, S.Si., M.CS"
+E1E122044,2022,ARGITHA TRIHAPSARI,Klasifikasi Kerusakan Jalan Pada Citra Dashcam Mobil Menggunakan Arsitektur EfficientNet,"Dashcam image. EfficientNet-BO, Image Classification, Road Damage.
+YOLOv8","Adha Mashur Sajiah, M.Eng.
+Rizal Adi Saputra, S.T., M.Kom."
+E1E122046,2022,AULIYA AFIFAH ADNAN HAKIM,Analisis Perbandingan Kinerja Algoritma Extreme Gradient Boosting (XGBoost) dan Long Short-Term Memory (LSTM) dalam Prediksi Runtun Waktu Harga Penutupan Saham BBRI,"LSTM. Market Conditions. Stress Testing. Stock Price Prediction, XGBoost","Adha Mashur Sajiah, M.Eng.
+Ilham Julian Efendi, S.T., M.T."
+E1E122047,2022,CHALIFAHDIEN HAMUD,SISTEM PENGADAAN BARANG TERDESENTRALISASI BERBASIS BLOCKCHAIN PADA PT PUTRI UTAMA AGRO SEJAHTERA DENGAN PEMANFAATAN SECURE HASH ALGORITHM 256-BIT UNTUK INTEGRITAS TRANSAKSI DAN AUDIT SUPPLY CHAIN,"Blockhain, Hyperledger Besu, Proof of Authority, SHA-256, Smart Conract","Bambang Pramono, S.Si., MT.
+Rizal Adi Saputra, S.T., M.Kom."
+E1E122055,2022,GHEFIRA ZAHRA NUR FADHILAH,Sistem Pakar Deteksi Risiko Anemia Berdasarkan Analisis Citra Konjungtiva Mata Menggunakan Convolutional Neural Network (CNN) dan Gejala Klinis Pasien,"Anemia Risk Detection, Clinical Symptoms, Conjunctival Image, Convolutional Neural Network (CNN), Expert System","Muh. Yamin, ST., M.Eng.
+Asa Hari Wibowo"
+E1E122056,2022,HARNELIA,Penerapan Convolutional Neural Network (CNN) dengan Attention Mechanism dan Grad-CAM untuk Klasifikasi Leukemia berdasarkan Citra Sel Darah Putih,"Acute Lymphoblastic Leukemia (ALL), Attention Mechanism, Convolutional Neural Network (CNN), Deep Learning, Grad-CAM","Rizal Adi Saputra, S.T., M.Kom.
+Asa Hari Wibowo"
+E1E122057,2022,I NYOMAN ADITIA,Implementasi Multi-Attribute Utility Theory (MAUT) dan Content-Based Filtering untuk Pemilihan Dosen Pembimbing dan Dosen Penguji Tugas Akhir,"Content-Based Filtering, Dosen Pembimbing, Dosen Penguji, Multi-attribute Utility Theory, Sistem Pendukung Keputusan.","Statiswaty, ST., MM.Si.
+Asa Hari Wibowo"
+E1E122058,2022,IRFAN,DETEKSI ANOMALI DAN KLASIFIKASI SERANGAN APLIKASI WEB MENGGUNAKAN ONE-CLASS CLASSIFICATION DAN RANDOM FOREST BERDASARKAN TRAFIK HTTP,"Keamanan Aplikasi Web, Deteksi Anomali, One-class Classification, Random Forest, Trafik HTTP.","L.M. Fid Aksara, S.Kom., M.Kom.
+Dr. Natalis Ransi, S.Si., M.Cs."
+E1E122059,2022,JABIR MUKTABIR,Implementasi Algoritma Tiered Thresholding untuk Mendeteksi Degradasi Performa WiredTiger MongoDB Akibat Fenomena Pemindaian Penanda Penghapusan Data,,"Bambang Pramono, S.Si., MT.
+Isnawaty, S.Si., MT."
+E1E122063,2022,LA ODE ALVIN RAHMAT SAPUTRA,Forecasting Tourist Arrival in Wakatobi using Long Short-Term Memory (LSTM) models to Support Regional Tourism Development Strategies,"LTSM, Time-Series Forecasting, Tourism Demand, External factors, Predictive Analytics","Prof. Dr. Ir. La Ode Muhammad Golok Jaya, ST., MT.
+Ilham Julian Efendi, S.T., M.T."
+E1E122064,2022,LA ODE MUHAMMAD YUDHY PRAYITNO,Otomatisasi Entri Data Struk Pembelian Menggunakan Vision-Language Model (VLM) dengan Fine-Tuning LoRA serta Orkestrasi Multi-Agent Hierarkis Berbasis Model Context Protocol (MCP),"Vision-Language Model, Key Information Extraction, Multi-Agent Systems, Purchase Receipt","Prof. Dr. Ir. La Ode Muhammad Golok Jaya, ST., MT.
+Asa Hari Wibowo"
+E1E122066,2022,MUH. IKBAL,RANCANG BANGUN SISTEM ANALISIS TEKS TERPADU UNTUK PENGECEKAN EJAAN BAHASA INDONESIA DAN DETEKSI PLAGIARISME BERBASIS WEB,"Cosine similarity, Spell Checking, Plagiarism. Symspell, Term Frequency-Inverse Document, web","Sutardi, S.Kom., M.T
+Jumadil Nangi, S.Kom., M.Kom."
+E1E122071,2022,MUHAMMAD VANNES AL QADRI,Implementasi Metode Long Sort-Term Memory untuk Prediksi Harga Komoditas Sektor Pertanian di Provinsi Sulawesi Tenggara,,"Rizal Adi Saputra, S.T., M.Kom.
+Asa Hari Wibowo"
+E1E122072,2022,NUR HAFIIZAH,[#49963] Sistem Smart Farming berbasis Internet of Things (IoT) dengan Fuzzy Sogeno Menggunakan Protokol Hypertext Transfer Protocol Secure (HTTPS) dalam Pemantauan Kualitas Tanah dan Lingkungan Media Tanam Untuk Optimasi Pertumbuhan Tanaman Seledri,,"L.M. Fid Aksara, S.Kom., M.Kom.
+Ir. Subardin. S.T, M.T"
+E1E122078,2022,SHERLY DWI PUSPITA,Implementasi Deep Learning Menggunakan Convolutional Neural Network (CNN) untuk Klasifikasi Gaya Belajar Berdasarkan Ekspresi Wajah Siswa Selama Proses Pembelajaran (Studi Kasus: SMA Negeri 1 Kendari),,"Sutardi, S.Kom., M.T
+Prof. Dr. Ir. La Ode Muhammad Golok Jaya, ST., MT."
+E1E122079,2022,SRIRAYA KURU,Penerapan Metode Deep Embedded Clustering pada Klasterisasi Citra Benda Arkeologi di Sulawesi Tenggara untuk Mendukung Digitalisasi Koleksi Arkeologi,"Deep Embedded Clustering, Semi-supervised Learning, Fine-tuning. Efficient NetV2B2, Klasterisasi, Citra Digital","Adha Mashur Sajiah, M.Eng.
+Rizal Adi Saputra, S.T., M.Kom."
+E1E122082,2022,ABDUL FATH RAMADHAN P,Pengembangan Aplikasi Arsip Digital Surat Berbasis Web Dengan Penerapan Algoritma Sequential Search Dan Merge Sort Serta Integrasi Chatbot Untuk Meningkatkan Efisiensi Pengelolaan Dokumen,"Arsip Digital, Sequential Search, Merge Sort, Chatbot, Aplikasi Web","Bambang Pramono, S.Si., MT.
+L.M. Fid Aksara, S.Kom., M.Kom."
+E1E122088,2022,AHMAD AL AMBIYAH,SISTEM INFORMASI GEOGRAFIS BERBASIS WEB UNTUK PENGELOMPOKAN DAERAH RAWAN KEKERASAN TERHADAP PEREMPUAN DAN ANAK MENGGUNAKAN ALGORITMA K-MEDOIDS (STUDI KASUS: DINAS PEMBERDAYAAN PEREMPUAN DAN ANAK KOTA KENDARI),"Sistem Informasi Geografis, K-Medoids, Kekerasan Perempuan dan Anak, Microservice, REST API","Bambang Pramono, S.Si., MT.
+Isnawaty, S.Si., MT."
+E1E122090,2022,ARYA DWINATA MUSTAPA,Pengembangan Aplikasi Penerjemahan Bahasa Isyarat Sehari-hari Berbasis Video Real-time Menggunakan Pose Estimation dan Long Short-Term Memory untuk Mendukung SDGs 10 (Reduced Inequalities).,,"Adha Mashur Sajiah, M.Eng.
+Prof. Dr. Ir. La Ode Muhammad Golok Jaya, ST., MT."
+E1E122091,2022,ASHABUL,SMART TRASH BIN BERBASIS INTERNET OF THINGS (IoT) UNTUK PEMANTAUAN KAPASITAS SAMPAH MENGGUNAKAN ALGORITMA LOW-ENERGY ADAPTIVE CLUSTERING HIERARCHY (LEACH) PADA WIRELESS SENSOR NETWORK (WSN),,"Prof. Dr. Ir. La Ode Muhammad Golok Jaya, ST., MT.
+Achmad Nur Aliansyah, S.T., M. T"
+E1E122092,2022,DIKHSAN DWIRANGGA TIBONG,DETEKSI DAN ANALISIS FORENSIK SERANGAN DDOS DAN PORT SCANNING PADA SERVER WEB MENGGUNAKAN MULTI-METRIC FUSION ANTARA PACKET TIMING DAN ENTROPI PADA METADATA TRAFIK TERENKRIPSI,,"L.M. Fid Aksara, S.Kom., M.Kom.
+Isnawaty, S.Si., MT."
+E1E122096,2022,FABELINA AGSARIA,Klasifikasi Hama dan Penyakit Buah Kakao Menggunakan Convolutional Neural Network (ResNet-50) dengan Metode Certainty Factor dan Rule Based System,"image classification, Convolutional Neural Network, Certainty Factor.Rule-Based System, cocoa fruit.","Muh. Yamin, ST., M.Eng.
+Prof. Dr. Ir. La Ode Muhammad Golok Jaya, ST., MT."
+E1E122097,2022,FEBRI HAERANI,Penerapan You Only Look Once (YOLO)v8 Dalam Deteksi Jenis Makanan Untuk Menampilkan Informasi Nutrisi Berbasis Web,"Computer Vision, Deep Learining, Food Recognition, Nutrition, Nutritional","La Ode Muhammad Bahtiar Aksara, S.T., M.T.
+Prof. Dr. Ir. La Ode Muhammad Golok Jaya, ST., MT."
+E1E122102,2022,IZAN FAHRANI,Penerapan Algoritma Priority Scheduling Pada Sistem Helpdesk Berbasis Web Untuk Optimalisasi Manajemen Laporan Gangguan Teknologi Informasi,"Helpdesk, Priority Scheduling, Role-based, Information Tecnologi Incident Management, SMART-HELP","Sutardi, S.Kom., M.T
+RYAN RINALDI HADISTIO, S.Kom., M.Kom."
+E1E122106,2022,LA ODE PALI AQSAN,Rancang Bangun Sistem Reservasi Lapangan Olahraga di Kota Kendari Berbasis Web dengan Penjadwalan Otomatis Menggunakan Algoritma Greedy Scheduling (Studi Kasus: Tawang Alun Futsal Arena),"Greedy Scheduling, Earliest Finish Time First, Reservation System, Laravel, Basis Path Testing","Adha Mashur Sajiah, M.Eng.
+Muhammad Irwan Syahib, S.T., M.Kom."
+E1E122113,2022,MUHAMMAD AKBAR PERDANA RAMADHAN,Implementasi Algoritma XGBoost dengan Bayesian Optimization pada Sistem Rekomendasi Pemilihan Atlet Bola Voli Pantai Sulawesi Tenggara untuk Meningkatkan Efektivitas Keputusan,"XGBoost, Bayesian Optimization, Sistem Rekomendasi, Bola Voli Pantai","Prof. Dr. Ir. La Ode Muhammad Golok Jaya, ST., MT.
+Adha Mashur Sajiah, M.Eng."
+E1E122116,2022,MUHAMMAD FAHREZA ARYANTA UMARELLA,Penerapan algoritma Greedy pada sistem E-Ticketing wisata pantai nambo kendari,,"Bambang Pramono, S.Si., MT.
+Isnawaty, S.Si., MT."
+E1E122117,2022,MUHAMMAD FAIZ ALIMUDDIN,ANALISIS KEAMANAN SERVER DENGAN METODE NEXT- GENERATION FIREWALL (NGFW) FILTERING DAN SINGLE PACKET AUTHORIZATION (SPA) MENGGUNAKAN PFSENSE DAN FWKNOP,"Next-Generation Firewall Filtering. Single Packet Authorization, Server, Penetration Testing, Cyber Attacks","L.M. Fid Aksara, S.Kom., M.Kom.
+Rizal Adi Saputra, S.T., M.Kom."
+E1E122121,2022,MUHAMMAD RAFIQ AL MA'RUF,"SISTEM MONITORING PADA ALAT PENGASAPAN IKAN MENGGUNAKAN DAYA PANEL SURYA BERBASIS INTERNET OF THINGS (IoT) DENGAN DECISION TREE TERHADAP SUHU, ASAP DAN KADAR AIR IKAN SECARA REAL-TIME","Internet of Things (IoT), Real-Time Monitoring. Fish Smoking Device. Solar Power, Decision Tree, Temperature Sensor, Smoke Sensor. Moisture Content.","L.M. Fid Aksara, S.Kom., M.Kom.
+Ir. Subardin. S.T, M.T"
+E1E122123,2022,MUHAMMAD SAHARULLAH RAIYA,SISTEM REKOMENDASI PRODUK UMKM KOTA KENDARI BERBASIS WEBSITE DENGAN PENERAPAN ALGORITMA NEURAL COLLABORATIVE FILTERING DAN K-NEAREST NEIGHBOR,"Recommendation System. MSMEs. Neural Collaborative Filtering. K-Nearest Neighbor, Web-Based System","Jumadil Nangi, S.Kom., M.Kom.
+La Ode Muhammad Bahtiar Aksara, S.T., M.T."
+E1E122125,2022,MUTHMAINNAH PUTRI KAYLA KEMALA RADEN,APLIKASI LAYANAN ADMINISTRASI MASYARAKAT BERBASIS WEB MENGGUNAKAN ALGORITMA K-NEAREST NEIGHBOR (KNN) (STUDI KASUS: KANTOR KELURAHAN RANOMEETO),"Community Administration Services, K-Naerest Neighbor, Classification, Web-Based Applications, Confusion Martix","Jumadil Nangi, S.Kom., M.Kom.
+Isnawaty, S.Si., MT."
+E1E122133,2022,NURENDRO HARDJO JUDANTO.R,Sistem Informasi Manajemen terpadu (SIMT) Agenda dan Peminjaman Buku Berbasis Web dengan Algoritma Trie untuk Autosuggestion dan Jaro Winkler Distance untuk Fuzzy Search di Kejaksaan Tinggi Sulawesi Tenggara,"Smart Searching Trie Algorithm, Jaro-Winkler distance, Autosuggestion, Fuzzy Search, Agenda","Prof. Dr. Asrul Sani, M.Sc.
+Bambang Pramono, S.Si., MT."
+E1E122135,2022,RAFLY AHMAD ZAINUR,Sistem Audit Cerdas Menggunakan You Only Look Once (YOLO) Dan Fuzzy Mamdani Untuk Evaluasi Kualitas Ruang Publik Di Kota Kendari,"Smart Audit, Object Detection, You Only Look Once (YOLO), Mamdani Fuzzy Logic, Kendari City","Rizal Adi Saputra, S.T., M.Kom.
+Ir. Hasmina Tari Mokui, ST., ME,. Ph.D"
+E1E122138,2022,ROSALINA,Aplikasi Manajemen Logistik dan Inventori Gudang menggunakan Algoritma Priority Queue Berbasis Web (Studi Kasus: PT. Arga Morini Indotama),"Priority Queue Algorithm, Web-Based Application, Rank Order Centroid (ROC), Warehouse Inventory, Logistics..","Statiswaty, ST., MM.Si.
+RYAN RINALDI HADISTIO, S.Kom., M.Kom."
+E1E122140,2022,SEPTIYANI BAYU SAUDI,KLASIFIKASI JENIS TANAH UNTUK PEMILIHAN KOMODITAS PERKEBUNAN UNGGUL MENGGUNAKAN CONVOLUTIONAL NEURAL NETWORK DAN FUZZY INFERENCE SYSTEM (STUDI KASUS: KABUPATEN KONAWE SELATAN),,"Adha Mashur Sajiah, M.Eng.
+Dr. Syamsu Alam, SP., M.Sc."
+E1E122142,2022,SUCI WULANDARI,Sistem Pakar Diagnosa Penyakit Ternak Sapi Berbasis Web Menggunakan Forward Chaining Dengan Integrasi Fuzzy Logic Pada Dinas Peternakan Kabupaten muna,"Sistem Pakar, Forward Chaining, Fuzzy logic, Diagnosis, Penyakit Sapi","Bambang Pramono, S.Si., MT.
+Adha Mashur Sajiah, M.Eng."
+E1E122143,2022,SYAHRIL RAMADHAN SALMAN NOOR,Sistem Prediksi Penyakit Tanaman Padi di Sulawesi Tenggara Menggunakan Deep Learning (EfficientNet),"Penyakit Tanaman Padi, Citra Digital, Deep learning, EfficientNet, Prediksi Penyakit","Jumadil Nangi, S.Kom., M.Kom.
+Bambang Pramono, S.Si., MT."
+E1E122145,2022,WA ODE FAHMI RAMADHANI,"Penerapan Algoritma K-Means Clustering untuk Segmentasi Pelanggan Berdasarkan Model Recency,Frequency,dan Monetary (RFM) (Studi kasus:Mondae Coffee)","Customer Segmentation, RFM, K-Means ++, Elbow Method, Silhoutte Score","Bambang Pramono, S.Si., MT.
+Statiswaty, ST., MM.Si."
+E1E122149,2022,YUN MUNTARTI,Deteksi Penyakit Kulit pada Wajah Menggunakan Pendekatan Semi-Supervised Deep Learning Berbasis MobileNetV2 dengan Visualisasi Grad-CAM (Studi Kasus: Klinik Astrit Harianto Dermatologi),"Grad-CAM, Semi-supervised Learning, MobileNetV2, Penyakit kulit Wajah","La Ode Muhammad Bahtiar Aksara, S.T., M.T.
+Adha Mashur Sajiah, M.Eng."
+E1E121001,2021,ELVI SAKTIAWATI SALEMAKU,Penerapan Algoritma FP-Growth untuk Analisis Perilaku Konsumen dan Optimasi Strategi Pemasaran pada NH Shop,,"Dr. Ir. Muhammad Ihsan Sarita, M.Kom.
+Dr. Natalis Ransi, S.Si., M.Cs."
+E1E121002,2021,FADIT AL FAUZAN,RANCANG BANGUN APLIKASI PENELUSURAN ARSIP SURAT BERBASIS ANDROID MENGGUNAKAN ALGORITMA TURBO BOYER MOORE DAN DAMERAU LEVENSTHEIN DISTANCE (STUDI KASUS: KEJAKSAAN TINGGI SULAWESI TENGGARA).,,"Bambang Pramono, S.Si., MT.
+La Surimi, S.Si., M.CS"
+E1E121004,2021,LA ODE LUKMANA,INTEGRASI MODEL DETEKSI OBJEK YOLOv11 DAN GPS TAGGING PADA APLIKASI ADUAN JALAN RUSAK DENGAN SISTEM PRIORITAS PENANGANAN MENGGUNAKAN METODE WEIGHTED SUM MODEL (WSM) BERBASIS MOBILE ANDROID,"Computer Vision, YOLOv8, Automated GPS Tagging. Weighted Sum Model (WSM), Damaged Road Reporting, Handling Priority","Jumadil Nangi, S.Kom., M.Kom.
+L.M. Fid Aksara, S.Kom., M.Kom."
+E1E121005,2021,MUHAMMAD NABIL AFKAR,Implementation of User-Based Collaborative Filtering Method and Haversine Formula on Tourism Recommendation System in Southeast Sulawesi Based on Mobile Application,"Recommendation System, Tourism, User-Based Collaborative Filtering, Haversine Formula, Mobile Application","Isnawaty, S.Si., MT.
+Bambang Pramono, S.Si., MT."
+E1E121009,2021,NURFATZMA AYU,Penerapan Algoritma Dynamic Priority Scheduling Pada Sistem Pengaduan Tumpukan Sampah Berbasis Web,"Dynamic Priority Scheduling Garbage Complaints, Web, Dynamic Priority.","Statiswaty, ST., MM.Si.
+Sutardi, S.Kom., M.T"
+E1E121010,2021,NURUL AZIZAH,PENGEMBANGAN SISTEM EVALUASI TINGKAT KEMATANGAN SISTEM PEMERINTAHAN BERBASIS ELEKTRONIK (SPBE) MENGGUNAKAN E-GOVERNMENT MATURITY MODEL (STUDI KASUS: DINAS KOMUNIKASI DAN INFORMATIKA KOTA KENDARI),,"Isnawaty, S.Si., MT.
+Bambang Pramono, S.Si., MT."
+E1E121013,2021,SAMSUDIN,SISTEM INFORMASI GEOGRAFIS UNTUK PEMETAAN DAN RUTE OPTIMAL MENUJU DESTINASI PARIWISATA MENGGUNAKAN ALGORITMA A STAR (A*) DAN HAVERSINE FORMULA (STUDI KASUS: KOTA KENDARI),"Geographic Information System, A Star (A), Haversine Formula
+Tourism, Leaflet, OpenStreetMap","Prof. Dr. Ir. La Ode Muhammad Golok Jaya, ST., MT.
+La Surimi, S.Si., M.CS"
+E1E121014,2021,WA ODE AZZAHRA ASTIANI HASIBA,PENERAPAN ALGORITMA K-MEANS DALAM MENGUKUR TINGKAT KESADARAN PEGAWAI DALAM BIDANG KEAMANAN INFORMASI KANTOR KEJAKSAAN TINGGI PROVINSI SULAWESI TENGGARA,"K-Means, HAIS-Q, Keamanan Informasi, Kesadaran Pegawai, KAB (Knowledge","Sutardi, S.Kom., M.T
+Isnawaty, S.Si., MT."
+E1E121016,2021,WAHYU NAHDA PUTRA,"Optimalisasi Rute Pengangkutan Sampah Dengan Konsep Reduce-Reuse-Recycle (3R) Berbasis WEBGIS Menggunakan Algoritma Hill Climbing (Studi Kasus: TPS 3R Kambu, Perumahan Dosen UHO",,"Jumadil Nangi, S.Kom., M.Kom.
+Dr. Natalis Ransi, S.Si., M.Cs."
+E1E121018,2021,ZAHRA VEBRYAN MAHARANI,Penentuan Rute Optimal Lokasi Pasar Menggunakan Algoritma Genetika (Studi Kasus:Kota Kendari),,"Ir. Hasmina Tari Mokui, ST., ME,. Ph.D
+Asa Hari Wibowo"
+E1E121020,2021,Andi Nurhidaya,Implementasi Algoritma Weighted Moving Average dan Exponential Smoothing Untuk Prediksi Ketersediaan Stok Darah di UTD PMI Sulawesi Tenggara,Exponential Smoothing Algorithm. Weighied Moving Average Indonesian Red Cross (PMI) of Southeast Sulawesi Province.,"L.M. Fid Aksara, S.Kom., M.Kom.
+Ilham Julian Efendi, S.T., M.T."
+E1E121023,2021,Asmin,PENGEMBANGAN APLIKASI MOBILE OPTIMASI RUTE PENGANTARAN MENGGUNAKAN ALGORITMA GENETIKA DAN XGBOOST (STUDI KASUS : RAJA IKAN KENDARI),"Route Optimization, Genetic Algorithm, XGBoost, Traveling Salesman Problem (TSP). WhatsApp Gateway, Mobile Application.","Statiswaty, ST., MM.Si.
+Rizal Adi Saputra, S.T., M.Kom."
+E1E121025,2021,DEWI TITANIA RANDA,Implementation of You Only Look Once version 11 (YOLOv11) and Deep Simple Online Realtime Tracking (Deep SORT) for Realtime Vehicle Detection using CCTV,,"Prof. Dr. Asrul Sani, M.Sc.
+Adha Mashur Sajiah, M.Eng."
+E1E121026,2021,FILDZAH KHALISHAH GHASSANI,Implementasi Deep Learning Berbasis YOLO dan Convolutional Neural Network (CNN) Untuk Deteksi dan Klasifikasi Kecacatan Biji Kopi,,"Rizal Adi Saputra, S.T., M.Kom.
+L.M. Fid Aksara, S.Kom., M.Kom."
+E1E121027,2021,FIQRAM FAATHIR,Penerapan Algoritma K-Means dan Multi-Class Support Vector Machine Dalam Identifikasi Tingkat Kesadaran Keamanan Informasi Pegawai Pemerintah Kota Kendari,,"Rizal Adi Saputra, S.T., M.Kom.
+Isnawaty, S.Si., MT."
+E1E121030,2021,LA ODE MUHAMMAD FIRZA FAHREZI,Penerapan Algoritma Artificial Bee Colony untuk Penentuan Lokasi Stasiun Pengisian Bahan Bakar Umum (SPBU) di Kota Kendari dengan Tagging Fasilitas,,"Adha Mashur Sajiah, M.Eng.
+Bambang Pramono, S.Si., MT."
+E1E121033,2021,MUHAMMAD RICKY ARYANSAH. B,Sistem Penjadwalan Mata Pelajaran Menggunakan Algoritma Genetika dan Pattern Search dengan Integrasi Constraint-Based Learning di MTsN 1 Kendari,,"Adha Mashur Sajiah, M.Eng.
+L.M. Fid Aksara, S.Kom., M.Kom."
+E1E121036,2021,Nirwana,Penerapan Convolutional Neural Network (CNN) dan Recurrent Neural Network (RNN) untuk Pengenalan Karakter Aksara Bugis,"Bugis Script. Character Recognition, CNN, RNN, Deep Learning. Lontara Characters","Rizal Adi Saputra, S.T., M.Kom.
+Dr. Ir. Muhammad Ihsan Sarita, M.Kom."
+E1E121038,2021,Rafi Iyad Madani Chaidir,Klasifikasi Kerusakan Daun Kelapa Sawit Menggunakan Deep Learning Convolutional Neural Network (CNN) Di Sulawesi Tenggara,,"Muh. Yamin, ST., M.Eng.
+Dr. Ir. Muhammad Ihsan Sarita, M.Kom."
+E1E121039,2021,Resti Ajeng Sutiani,Penerapan Metode Decision Tree untuk Klasifikasi Distres Psikologis pada Remaja Berdasarkan Pola Penggunaan Smartphone dan Skala DASS-21 (Depression Anxiety Stress Scale-21),,"Adha Mashur Sajiah, M.Eng.
+Dr. Nani Restati Siregar, S.Psi., M.Si."
+E1E121040,2021,sumiartin,Penerapan Algoritma Fuzzy Tsukamoto pada Analisis Kesesuaian Tanaman Jagung di Sulawesi Tenggara Berbasis Web GIS,"Ficzy Tsukamoto, Web GIS, Jagung, Mean Absolute Error, Black Box Testing","Statiswaty, ST., MM.Si.
+Ilham Julian Efendi, S.T., M.T."
+E1E121041,2021,TEUKU RAZQY SULAIMAN,Optimasi Rute Terdekat Lokasi Bengkel di Kota Kendari Menggunakan Algoritma Ant Colony Optimization Berbasis Mobile,"Ant Colony Optimization (ACO), Max-min Ant System (MMAS), Route Optimization, Nearby Routes, Workshop Search","Sutardi, S.Kom., M.T
+Ir. Subardin. S.T, M.T"
+E1E121042,2021,TOGA ABDI HAYAT,DESIGN AND BUILD AN OFFICIAL TRAVEL FINANCIAL MANAGEMENT SYSTEM USING STATISTICAL ANALYSIS AND RULEBASED SYSTEM (CASE STUDY: BALAI PENJAMINAN MUTU PENDIDIKAN ),"Financial management, Statistical Analysis, Information Systems, Official Travel, Haversine Algorithm.","Dr. Natalis Ransi, S.Si., M.Cs.
+Statiswaty, ST., MM.Si."
+E1E121043,2021,ADITTIYA PUTRA,Implementasi DBSCAN dan TOPSIS Pada Sistem Pengelompokkan Kriminalitas Berbasis Wilayah Berdasarkan Kepadatan Penduduk Di Kota Kendari,"Crine, Algorithm DBSCAN, TOPSIS Method, Area, Priority","Statiswaty, ST., MM.Si.
+Bambang Pramono, S.Si., MT."
+E1E121044,2021,ADZA AULIA SALSABITA,Implementasi Collaborative Filtering Berbasis Matrix Factorization Untuk Sistem Rekomendasi Kuliner Di Kota Kendari Berbasis Web,"Sistem Rekomendasi, Collaborative Filtering, Matrix factorization, Singular Value Decomposition (SVD), Kuliner","Sutardi, S.Kom., M.T
+L.M. Fid Aksara, S.Kom., M.Kom."
+E1E121045,2021,AGRIAN WAHAB,SISTEM DETEKSI FORENSIK KEASLIAN GAMBAR DAN VIDEO MENGGUNAKAN METODE K-MEANS DAN LOCALIZATION TAMPERING,,"Isnawaty, S.Si., MT.
+L.M. Fid Aksara, S.Kom., M.Kom."
+E1E121048,2021,ANGGUN LESTARI ARMAN SYAH,Integrasi Data Geospasial Pemetaan Sebaran Fasilitas Kesehatan Pendukung BPJS Kesehatan di Kota Kendari Menggunakan Algoritma Bellman-Ford,,"Jumadil Nangi, S.Kom., M.Kom.
+La Ode Muhammad Bahtiar Aksara, S.T., M.T."
+E1E121050,2021,ANNISA AZ'ZAHRA TARIMANA,Sistem Pemetaan Lokasi Rawan Kriminalitas dan Rute Patroli Berbasis Web GIS di Wilayah Hukum Polres Kendari Menggunakan Algoritma K-Means dan Dijkstra,,"Bambang Pramono, S.Si., MT.
+Sutardi, S.Kom., M.T"
+E1E121051,2021,AULIA ADEL MULIA,Sistem Rekomendasi Destinasi Wisata Sulawesi Tenggara Menggunakan Algoritma Item Based Collaborative Filtering Dengan Algoritma Cosine Similarity Berbasis Website,,"Bambang Pramono, S.Si., MT.
+Isnawaty, S.Si., MT."
+E1E121053,2021,BAYU ADI WIBOWO,Deteksi dan prediksi deforestasi akibat ekspansi perkebunan kelapa sawit menggunakan convolutional neural network (CNN) berbasis kombinasi ResNet Dan U-Net pada citra satelit.,"Deforestation, Oil Palm, CNN, ResNet, U-Net","Prof. Dr. Ir. La Ode Muhammad Golok Jaya, ST., MT.
+Muh. Yamin, ST., M.Eng."
+E1E121059,2021,HASHIMATUL ZARIA,Penerapan Algoritma You Only Look Once V5 Large (YOLOv5L) dan Tesseract Optical Character Recognition (Tesseract OCR) Dalam Deteksi Plat Nomor Kendaraan Untuk Cek Status Uji Emisi Kendaraan,,"Dr. Ir. Muhammad Ihsan Sarita, M.Kom.
+Adha Mashur Sajiah, M.Eng."
+E1E121062,2021,LA ODE MUHAMMAD HUD ALFATANAH,EVALUASI TINGKAT KESADARAN KEAMANAN INFORMASI MENGGUNAKAN HUMAN ASPECTS OF INFORMATION SECURITY QUESTIONNAIRE (HAIS-Q) DAN PHISHING TEST STUDI KASUS : DINAS KOMUNIKASI DAN INFORMATIKA KOTA KENDARI,"Information Security, Human Aspects of Information Security Keywords Questionnaire (HAIS-Q), Phishing Test. Department of Communication and Informatics (Diskominfo) Kendari City","Isnawaty, S.Si., MT.
+La Ode Muhammad Bahtiar Aksara, S.T., M.T."
+E1E121063,2021,LAODE MUHAMMAD NOER SYAHWAL YAHYA,Implementasi Sistem Penyaluran Bantuan Pangan Non-Tunai (BPNT) Menggunakan Metode Decision Tree Dan Rule-Based Classifer (Studi Kasus: Kelurahan Anggilowu Kecamatan Mandonga Kota Kendari),,"Prof. Dr. Ir. La Ode Muhammad Golok Jaya, ST., MT.
+Isnawaty, S.Si., MT."
+E1E121064,2021,LAODE YUNUS ABDILLAH SANDI,Analisis Komparatif Deteksi Plat Kendaraan Dengan Metode YOLOv8 dan RetinaNet,"YOLOv8, RetinaNet, Vehicle Plate Detection, Deep Learning.","Adha Mashur Sajiah, M.Eng.
+Prof. Dr. Ir. La Ode Muhammad Golok Jaya, ST., MT."
+E1E121065,2021,MAWAR,"Penerapan data mining untuk memprediksi penjualan pakaian menggunakan metode k nearest neighbor, Studi Kasus: Thrifting second 3","Data Mining, K-Nearest Neighbor, Sales Prediction, Thrift","Jumadil Nangi, S.Kom., M.Kom.
+Ir. Subardin. S.T, M.T"
+E1E121067,2021,MUH INDRAWAN PRATAMA,IMPLEMENTASI ALGORITMA BLOWFISH UNTUK KEAMANAN DATABASE PADA BUKU DIGITAL TATA TERTIB SEKOLAH BERBASIS WEB DENGAN FITUR PENCATATAN PELANGGARAN (STUDI KASUS: SMAN 5 KENDARI),,"Sutardi, S.Kom., M.T
+Bambang Pramono, S.Si., MT."
+E1E121068,2021,MUH RYAN SEPTIAN FAJAR. S,SISTEM PENGASAPAN IKAN BERBASIS INTERNET OF THINGS (IOT) UNTUK MENGONTROL DAN MONITORING SECARA REAL-TIME MENGGUNAKAN METODE FUZZY MAMDANI,,"Isnawaty, S.Si., MT.
+Kobajashi Togo Isamu, S.Pi.,M.P"
+E1E121069,2021,MUH SALEH BADAWI,SISTEM PENCARIAN DATA OBAT MENGGUNAKAN ALGORITMA AHO-CORASICK BERBASIS WEBSITE (STUDI KASUS: APOTEK AUSHAF FARMA),,"Prof. Dr. Ir. La Ode Muhammad Golok Jaya, ST., MT.
+La Ode Muhammad Bahtiar Aksara, S.T., M.T."
+E1E121070,2021,MUH. THARIQ FAYIZ SYAPUTRA A.,"SMART SWIFTNEST FARMING BERBASIS INTERNET OF THINGS (IoT) DAN PANEL SURYA MENGGUNAKAN ALGORITMA PROPORSIONAL, INTEGRAL, DAN DERIVATIF (PID)",,"Isnawaty, S.Si., MT.
+Dr. Dwi Rinnarsuri Noraduola, ST., M.Sc."
+E1E121071,2021,MUH.ICHWAN NUR ANSHORI BAHTIAR,sistem pengajuan cuti karyawan berbasis web menggunakan metode rule based system pada cuti serta algoritma blowfish pada absensi (studi kasus:PT surya andalan timur).,"Sistem Pengajuan Cuti, rule-based system, blowfish, Karyawan","L.M. Fid Aksara, S.Kom., M.Kom.
+La Ode Muhammad Bahtiar Aksara, S.T., M.T."
+E1E121072,2021,MUHAMAD FADLI,SISTEM INFORMASI GEOSPASIAL INTERAKTIF UNTUK PREDIKSI KETAHANAN PANGAN BERBASIS ALGORITMA XGBOOST PADA KOMODITAS PERTANIAN DI SULAWESI TENGGARA,"Geospatial Information System, Food Security Prediction, XGBoost. Weather, Population Density, Agricultural Commodities.","Bambang Pramono, S.Si., MT.
+Rizal Adi Saputra, S.T., M.Kom."
+E1E121073,2021,MUHAMMAD ALDI SAPUTRA,"SISTEM PEMANTAUAN SUHU, KELEMBAPAN, ASAP, DAN KADAR AIR IKAN, PADA ALAT PENGASAPAN IKAN BERBASIS INTERNET OF THINGS DENGAN THRESHOLD-BASED CONTROL SECARA REAL-TIME",,"Isnawaty, S.Si., MT.
+Kobajashi Togo Isamu, S.Pi.,M.P"
+E1E121074,2021,MUHAMMAD AZRIEL SAKTIAWAN,Klasifikasi Lahan Pertambangan di Sulawesi Tenggara Menggunakan Metode Convolutional Neural Network (CNN) Berbasis Citra Satelit,,"Dr. Ir. Muhammad Ihsan Sarita, M.Kom.
+Adha Mashur Sajiah, M.Eng."
+E1E121076,2021,MUHAMMAD GIBRAN FITRAH HIDAYAHTULLAH,PERBANDINGAN ALGORITMA APRIORI DAN FP-GROWTH DALAM REKOMENDASI BARANG PADA SISTEM INVENTARIS TOKO OLAHRAGA DJ SPORT KENDARI,,"Rizal Adi Saputra, S.T., M.Kom.
+Ilham Julian Efendi, S.T., M.T."
+E1E121077,2021,MUHAMMAD IRFAN DWIYANSYAH CHALIK,SISTEM PENGADUAN PELANGGAN PDAM UNIT ANDUONOHU MENGGUNAKAN ALGORITMA NAIVE BAYES,,"L.M. Fid Aksara, S.Kom., M.Kom.
+Dr. Natalis Ransi, S.Si., M.Cs."
+E1E121079,2021,MUHAMMAD SALEH PRASETYA,Implementasi Quality Of Service (QoS) Pada Tongkat Pintar Berbasis Internet Of Things (IoT) dengan Fitur GPS Tracker dan Deteksi Halangan,,"Prof. Mustarum Musaruddin, ST., MIT.,Ph.D.
+Isnawaty, S.Si., MT."
+E1E121080,2021,MUHAMMAD YUSRAN ADHIPUTRA RAEBA,TINGKAT KESADARAN KEAMANAN INFORMASI MENGGUNAKAN METODE ANALYTIC HIERARCHY PROCESS (AHP) DAN INDEKS KAMI 5.0 PADA PEGAWAI DINAS KOMUNIKASI DAN INFORMATIKA KOTA KENDARI,"Kemanan Informasi, Indeks KAMI 5.0, Analytic Hierachy Process, Kesadaran Keamanan Informasi, Dinas Komunikasi dan Informatika","Bambang Pramono, S.Si., MT.
+Isnawaty, S.Si., MT."
+E1E121081,2021,MUHAMMAD ALDI RAMADHAN SUMAR,Sistem Kontrol Rumah Pintar Dan Monitoring Berbasis Internet Of Things Dengan Metode Message Queing Telemetry Transport (MQTT) Dan Integrasi Google Asisstant,"Smart Home, Internet of Things (IoT), MQTT, google assistant, Dashboard Monitoring","Muh. Yamin, ST., M.Eng.
+La Ode Muhammad Bahtiar Aksara, S.T., M.T."
+E1E121083,2021,PUSPITA MAHARANI HASAN,Rancang Bangun Sistem Tracking Petikemas Pada PT Pelindo Terminal Petikemas Kendari Menggunakan Metode First Come First Served (FCFS) dan Algoritma Priority Scheduling Berbasis Web,,"Bambang Pramono, S.Si., MT.
+Sutardi, S.Kom., M.T"
+E1E121084,2021,PUTRI ELISYA,"Perbandingan Algoritma C5.0 Dan Random Forest Dalam Klasifikasi Program Keluarga Harapan (PKH) (Stidu Kasus: Desa Bakelau, Kecamatan Wakorumba Selatan, Kabupaten Muna","Program Keluarga Harapan, Klasifikasi, C5.0, Random forest. sistem informasi bantuan sosial.","Prof. Dr. Asrul Sani, M.Sc.
+Asa Hari Wibowo"
+E1E121085,2021,PUTRI SALZAHRA,"IMPLEMENTASI STRATEGI SELEKSI KARYAWAN PT. PELINDO TERMINAL PETIKEMAS TPK KENDARI UNTUK PROGRAM PENGEMBANGAN STAF KARYAWAN MENGGUNAKAN METODE MULTIFACTOR EVALUATION PROCESS, FUZZY LOGIC MAMDANI DAN SIMPLE ADDITIVE WEIGHTING",,"Sutardi, S.Kom., M.T
+Ir. Subardin. S.T, M.T"
+E1E121088,2021,REZA WARDANI,SMART SWIFTNEST FARMING BERBASIS INTERNET OF THINGS (IoT) DAN PANEL SURYA MENGGUNAKAN METODE MULTI-AGENT SYSTEMS (MAS),,"Isnawaty, S.Si., MT.
+Dr. Dwi Rinnarsuri Noraduola, ST., M.Sc."
+E1E121089,2021,RINA,Implementasi Algoritma Dijkstra untuk Rekomendasi Apotek Terdekat Berdasarkan Pencarian Kata Kunci Obat Berbasis Term Frequency-Inverse Document Frequency (TF-IDF) pada Aplikasi Mobile,,"Jumadil Nangi, S.Kom., M.Kom.
+Adha Mashur Sajiah, M.Eng."
+E1E121091,2021,SALSABILA QODRIYAH,Implementasi Algoritma Djikstra dan Vehicle Routing Problem Dalam Sistem Rekomendasi Rute dan Optimasi Pengangkutan Sampah Berbasis Web GIS di Kecamatan Kambu,,"Bambang Pramono, S.Si., MT.
+Jumadil Nangi, S.Kom., M.Kom."
+E1E121092,2021,SRI AYU NINGSIH,Deteksi Kandungan Kalori Pada Citra Makanan Menggunakan Algoritma Convolutional Neural Network (CNN) dan Multiple Regression Model,"Convolutional Neural Network (CNN), Multiple Linear Regression Derection, Classification, Calorie","Dr. Ir. Muhammad Ihsan Sarita, M.Kom.
+Rizal Adi Saputra, S.T., M.Kom."
+E1E121093,2021,SULAIMAN,PENERAPAN SUPPORT VECTOR MACHINE (SVM) PADA SISTEM PENGOLAHAN AIR SUMUR DALAM BERBASIS INTERNET OF THINGS IOT UNTUK KLASIFIKASI AIR LAYAK KONSUMSI Studi Kasus Kelurahan Padaleu Kota Kendari.,,"Prof. Dr. Ir. La Ode Muhammad Golok Jaya, ST., MT.
+Isnawaty, S.Si., MT."
+E1E121095,2021,THARIQ ASY SYAMIL,PENERAPAN ALGORITMA COSINE SIMILARITY PADA KLASIFIKASI PENGADUAN DALAM SISTEM INFORMASI LAYANAN ASPIRASI DAN PENGADUAN MASYARAKAT DI DEWAN PERWAKILAN RAKYAT DAERAH (DPRD) KABUPATEN KONAWE,,"Prof. Mustarum Musaruddin, ST., MIT.,Ph.D.
+Dr. Ir. Muhammad Ihsan Sarita, M.Kom."
+E1E121096,2021,WILDA ARYANI,Siabsen Siswa Berbasis Mobile Dengan Face Detection Dan GPS Untuk Analisis Cluster Kehadiran Menggunakan Metode K-Means,"Student Attendance, Face Detection, K-Means, Presence, Mobile.","Jumadil Nangi, S.Kom., M.Kom.
+Muh. Yamin, ST., M.Eng."
+E1E121097,2021,WINDY ASTUTI,SISTEM INFORMASI GEOGRAFIS PENCARIAN TOKO PENJUALAN OLEH-OLEH MENGGUNAKAN ALGORITMA FLOYD-WARSHALL DI KOTA KENDARI,"Sistem Informasi Geografis, Toko Souvenir, Pencarian Lokasi, Floyd-Warkshall","Sutardi, S.Kom., M.T
+La Ode Muhammad Bahtiar Aksara, S.T., M.T."
+E1E121098,2021,ZAHRA MAHARANI AULIA,Rancang Bangun Sistem Monitoring Kualitas Air Limbah Rumah Tangga Berbasis Internet Of Things Menggunakan Metode Fuzzy Mamdani,,"Statiswaty, ST., MM.Si.
+Asa Hari Wibowo"
+E1E120001,2020,A'TIKA NURFADILAH,IMPLEMENTASI ALGORITMA FISHER YATES SHUFFLE PADA APLIKASI GAME EDUKASI HITUNG RUPIAH UNTUK ANAK BERBASIS ANDROID,,"Jumadil Nangi, S.Kom., M.Kom.
+La Ode Muhammad Bahtiar Aksara, S.T., M.T."
+E1E120002,2020,ABBY INDIKA RISDIANI BATUBARA,Segmentasi Pelanggan Hotel Menggunakan K-Medoids Clustering Berbasis Web.Studi Kasus : Hotel Sutan Raja Kolaka,,"Statiswaty, ST., MM.Si.
+Jumadil Nangi, S.Kom., M.Kom."
+E1E120005,2020,DHEA ANGELLENA ENGEL,RANCANG BANGUN SISTEM MONITORING DAYA LISTRIK PADA KAMAR KOS BERBASIS INTERNET OF THINGS MENGGUNAKAN METODE NAIVE BAYES,,"Jumadil Nangi, S.Kom., M.Kom.
+Ir. Subardin. S.T, M.T"
+E1E120006,2020,DWI HIKMAH RAMADHANI,Implementasi Algoritma Holt-Winters Exponential Smoothing Pada Sistem Prediksi Persediaan Stok Obat (Studi Kasus : Puskesmas Pondidaha),,"Statiswaty, ST., MM.Si.
+Bambang Pramono, S.Si., MT."
+E1E120007,2020,ESY ANUGERAH RAHAYU KASIM,Implementasi Algoritma User-Based Collaborative Filtering Pada Sistem Rekomendasi Produk UMKM Berbasis Website,,"Statiswaty, ST., MM.Si.
+Dr. Natalis Ransi, S.Si., M.Cs."
+E1E120008,2020,HADIJAH NISA IFAYATIN,Aplikasi Deteksi Penyakit Pneumonia Menggunakan Algoritma Faster Region Convolutional Neural Network (R-CNN) Berbasis Citra Digital Rontgen Dada.,"Chest X-ray Image. Deep learning. Pneumonia Detection, Faster R-CNN, ResNet-50","Dr. Ir. Muhammad Ihsan Sarita, M.Kom.
+Rizal Adi Saputra, S.T., M.Kom."
+E1E120009,2020,HADIKUL JABIL,IMPLEMENTASI ALGORITMA NEURAL MACHINE TRANSLATION PENERJEMAH BAHASA DAERAH MUNA KE BAHASA INDONESIA BERBASIS ANDROID,,"Dr. Ir. Muhammad Ihsan Sarita, M.Kom.
+Adha Mashur Sajiah, M.Eng."
+E1E120010,2020,IAN HERLAMBANG,Optimisasi Sistem Monitoring Kebocoran Gas LPG Berbasis Internet OF Things Dengan Fuzzy Inference System,,"L.M. Fid Aksara, S.Kom., M.Kom.
+Ir. Subardin. S.T, M.T"
+E1E120011,2020,ILMI FAIZAN,Deteksi Kesalahan Ejaan dan Rekomendasi Koreksi Kata Pada Dokumen Jurnal Ilmiah Menggunakan Kombinasi Algoritma Boyer Moore dan Damerau Levenshtein Distance.,,"Prof. Dr. Asrul Sani, M.Sc.
+Bambang Pramono, S.Si., MT."
+E1E120012,2020,LILY APRILYANI. S,Implementasi Metode Hybrid Based Filtering Pada Sistem Rekomendasi dan Peminjaman Buku Perpustakaan Berbasis Web Mobile (Studi Kasus : SMAN 1 Ladongi),,"Dr. Natalis Ransi, S.Si., M.Cs.
+Rizal Adi Saputra, S.T., M.Kom."
+E1E120013,2020,M.TAJRI RAZAK,Implementasi Metode Knuth-Morris-Pratt Pada Perancangan Aplikasi Kamus Bahasa Daerah Wolio Berbasis Android,,"Sutardi, S.Kom., M.T
+Jumadil Nangi, S.Kom., M.Kom."
+E1E120014,2020,MARSITA HARIM,"Pengenalan Pola Kain Tenun di Sulawesi Tenggara dengan Menggunakan Histogram of Oriented Gradient (HOG), K-Nearest Neighbor (K-NN) dan Synthetic Minority Over-Sampling Technique (SMOTE)","Pattern Recognition, Woven fabric, Histogram of Oriented Gradient, K-Nearest Neighbor, Synthetic Minority Over-Sampling Technique.","Adha Mashur Sajiah, M.Eng.
+Rizal Adi Saputra, S.T., M.Kom."
+E1E120017,2020,MUTRAFIN,Implementasi Algoritma Convolution Neural Network (CNN) dan Long Short Term Memory (LSTM) untuk Klasifikasi Kesalahan Pembacaan Tajwid dalam Membaca Al Qur’an Surah Al-Fatihah,"Convolutional Neural Network (CNN). Long Short-Term Memory (LSTM), tajwid error classification, Mel-Frequency Cepstral Coefficients (MFCC). Surah Al-Fatihah.","Adha Mashur Sajiah, M.Eng.
+Rizal Adi Saputra, S.T., M.Kom."
+E1E120018,2020,NURUL FATIMAH,Implementasi Algoritma Simple Moving Average Dalam Prediksi Pemakaian Obat Berbasis Website (Studi Kasus : Puskesmas Kandai),"Simple Moving Average (SMA), Drug Prediction, Website, Community Health Center","Sutardi, S.Kom., M.T
+La Surimi, S.Si., M.CS"
+E1E120020,2020,SRI ADININGSI,Identifikasi Kualitas Ikan Cakalang Segar Berbasis Citra Mata Menggunakan Metode Support Vector Machine (SVM) dengan Fungsi Kernel Gaussian,,"Bambang Pramono, S.Si., MT.
+Adha Mashur Sajiah, M.Eng."
+E1E120022,2020,WA ODE IKA FEBRYANTI,Penerapan Model YOLO (You Only Look Once) V8 dalam Deteksi Penyakit Oftalmik pada Citra Fundus,,"Dr. Ir. Muhammad Ihsan Sarita, M.Kom.
+Isnawaty, S.Si., MT."
+E1E120024,2020,AFDHALUL RAHMAT SEPTYO,PENERAPAN MEKANISME ATTENTION BAHDANAU PADA ARSITEKTUR LONG SHORT-TERM MEMORY UNTUK APLIKASI PENERJEMAH BAHASA INDONESIA KE BAHASA TOLAKI BERBASIS MOBILE,,"Prof. Dr. Asrul Sani, M.Sc.
+Isnawaty, S.Si., MT."
+E1E120025,2020,AULIYA RAHMAN ASDAR,Penerapan Algoritma Multi Objective Optimization On The Basic of Ratio Analysis (MOORA) untuk Menentukan Komoditas Pertanian Unggulan Berdasarkan Kesesuaian Lahan berbasis WebGIS (Studi Kasus: Kabupaten Bombana),,"Prof. Dr. Ir. La Ode Muhammad Golok Jaya, ST., MT.
+Bambang Pramono, S.Si., MT."
+E1E120026,2020,DENI HIDAYAT,Sistem Rekomendasi Pencarian Kerja Menggunakan Metode Hybrid-Based Recommendation,,"Prof. Dr. Ir. La Ode Muhammad Golok Jaya, ST., MT.
+Ilham Julian Efendi, S.T., M.T."
+E1E120028,2020,FARID RAHMAN LAODE,Pengembangan Aplikasi Pengukur Tingkat Kematangan Sistem Pemerintahan Berbasis Elektronik SPBE Menggunakan Capability Maturity Model Integration (CMMI) Studi Kasus : Sistem Pemerintahan Berbasis Elektronik Kota Kendari,,"Isnawaty, S.Si., MT.
+Bambang Pramono, S.Si., MT."
+E1E120029,2020,GABRIL ISNANSYAH,"Analisis Perbandingan Algoritma Klasifikasi Spam Email Menggunakan Long Short-Term Memory, Naïve Bayes Dan Support Vector Machine","Email, Long Short-Term Memory. Naïve Bayes, Spam, Support Vector Machine","Sutardi, S.Kom., M.T
+Rizal Adi Saputra, S.T., M.Kom."
+E1E120030,2020,LA ODE MUHAMAD ILHAM,Rancang Bangun Sistem Peringatan Dini Bencana Banjir Menggunakan Fuzzy Sugeno Berbasis Internet of Things (IoT) dan Wireless Sensor Network (WSN).,,"Isnawaty, S.Si., MT.
+Achmad Nur Aliansyah, S.T., M. T"
+E1E120033,2020,MIFTAHUL JANNAH SALAM,Evaluasi Tingkat Kematangan Sistem Pemerintahan Berbasis Elektronik (SPBE) Domain Layanan Dan Manajemen Menggunakan E _Government Maturity Model Studi Kasus : Dinas Komuniaksi Dan Informasi Kota Kendari,,"Bambang Pramono, S.Si., MT.
+Isnawaty, S.Si., MT."
+E1E120035,2020,MUH. AKBAR AS'AD ISHAQ,ANALISIS PERBANDINGAN METODE FISHER YATES SHUFFLE DAN LINEAR CONGRUENT METHOD PADA APLIKASI PEMBELAJARAN RAMBU RAMBU LALU LINTAS BERBASIS ANDROID,,"La Surimi, S.Si., M.CS
+L.M. Fid Aksara, S.Kom., M.Kom."
+E1E120036,2020,MUH. NUR IKSAN,Optimasi Vehicle Routing Problem dengan Metode Hibrida Algoritma Genetika dan Simulated Annealing pada Rute Pengangkutan Sampah Kota Kendari,,"Adha Mashur Sajiah, M.Eng.
+Ir. Subardin. S.T, M.T"
+E1E120037,2020,MUHAMAD AMHAR RAYADIN,Implementasi Ensemble Learning Metode Extreme Gradiant Boosting dan Random Forest untuk Prediksi Waktu Penggantian Baterai Aki Studi Kasus : Layanan Purna Jual Kalla Toyota,"Accu Battery, Ensemble Learning. XGBoost, Random Forest, website.","Prof. Mustarum Musaruddin, ST., MIT.,Ph.D.
+Rizal Adi Saputra, S.T., M.Kom."
+E1E120039,2020,MUHAMMAD AGUS SAPUTRA,Analisis Keamanan Server Dengan Metode Firewall Filtering Dan Port Knocking Menggunakan Knockd Dan Iptables,,"L.M. Fid Aksara, S.Kom., M.Kom.
+La Ode Muhammad Bahtiar Aksara, S.T., M.T."
+E1E120041,2020,MUHAMMAD IKSAN SALWI,IMPLEMENTASI ALGORITMA RANDOM FOREST PADA NGINX LOAD BALANCER DALAM MEMITIGASI SERANGAN DDOS DI WEB SERVER,"Random Forest Algorithm, Machine Learning, Nginx Load Balancer, Distributeed Denial of Service","Adha Mashur Sajiah, M.Eng.
+La Ode Muhammad Bahtiar Aksara, S.T., M.T."
+E1E120042,2020,MUHAMMAD ISHAK JAELANI,Perbandingan Arsitektur CNN ( ResNet-18 dan MobileNet-V1 ) Dalam Klasifikasi Barang Rumah Untuk Anak Usia Dini Berbasis Android,,"Bambang Pramono, S.Si., MT.
+Dr. Ir. Muhammad Ihsan Sarita, M.Kom."
+E1E120044,2020,NABILLA SALSA BILLA,Perbandingan Algoritma Machine Learning Logistic Regression dan Metode Lexicon Based dalam Analisis Sentimen Pengguna Platform X terhadap Penerapan Quick Response Code Indonesian Standard (QRIS) di Indonesia,,"Prof. Dr. Ir. La Ode Muhammad Golok Jaya, ST., MT.
+Prof. Mustarum Musaruddin, ST., MIT.,Ph.D."
+E1E120047,2020,RIZKA AMELIA ALWI,"Sistem Monitoring Deteksi Derajat Keasaman (pH), suhu, dan kadar logam pada air layak pakai menggunakan algoritma fuzzy mamdani",,"L.M. Fid Aksara, S.Kom., M.Kom.
+Rizal Adi Saputra, S.T., M.Kom."
+E1E120048,2020,SAFAL,Pengembangan Model Deteksi Perubahan Garis Pantai Menggunakan Metode Support Vector Machine (SVM) Berbasis Citra Satelit,"Coastline Changes, Machine Learning. Support Vector Machine, Satellite Image Processing. Spectral Index Transformation.","Dr. Ir. Muhammad Ihsan Sarita, M.Kom.
+Rizal Adi Saputra, S.T., M.Kom."
+E1E120050,2020,SARMAN CHISARA,Penerapan Algoritma Mesin Rekomendasi Collaborative Filtering Dan QR-Code Pada Aplikasi E-Library Berbasis Android,,"Bambang Pramono, S.Si., MT.
+Isnawaty, S.Si., MT."
+E1E120051,2020,SITTI NUR HALIZA,Sistem Evaluasi Tingkat Kematangan Sistem Pemerintahan Berbasis Elektronik SPBE pada Dinas Komunikasi dan Informatika Kota Kendari Menggunakan Capability Maturity Model Integration CMMI,,"Prof. Mustarum Musaruddin, ST., MIT.,Ph.D.
+Isnawaty, S.Si., MT."
+E1E120052,2020,UMRIATI,Evaluasi kapabilitas sistem pemerintahan berbasis elektronik (SPBE) domain manajemen menggunakan kerangka kerja COBIT 5 (Studi kasus : dinas komunikasi dan informatika kota kendari),,"Isnawaty, S.Si., MT.
+Adha Mashur Sajiah, M.Eng."
+E1E120053,2020,YUNDA PUJI LESTARI,Sistem Deteksi Dan Pengenalan Nomor Kontainer Dengan Algoritma You Only Look Once YOLO Dan Optical Character Recognition OCR Pada Terminal Peti Kemas PT Pelindo Region IV Kendari,,"Dr. Natalis Ransi, S.Si., M.Cs.
+Rizal Adi Saputra, S.T., M.Kom."
+E1E120054,2020,YUSRIL USMAN,Aplikasi Faraidh Berbasis Mobile Sebagai Sistem Pendukung Keputusan Pembagian Hak Waris dengan Rule Based Expert System Menggunakan Forward Chaining,"Faraidh Aplication. Decision Support System, Rule Based. Expert System, Forward Chaining","Bambang Pramono, S.Si., MT.
+Sutardi, S.Kom., M.T"
+E1E120055,2020,ABDULL AINNUR,Implementasi Algoritma Evaluation Based On Distance From ALGORITMA Avarage Solution (EDAS) Dalam Sistem Rekomendasi Tempat Wisata Di Konawe Utara Berbasis Android,,"Prof. Dr. Ir. La Ode Muhammad Golok Jaya, ST., MT.
+Statiswaty, ST., MM.Si."
+E1E120056,2020,AGENG ARYA KHRYSNA DWIPANGGA,Analisis Penerapan Load Balancing Chaching Dan Honeypot Dengan Konsep CDN Untuk Optimlisasi Kinerja Server,,"Isnawaty, S.Si., MT.
+La Ode Muhammad Bahtiar Aksara, S.T., M.T."
+E1E120058,2020,ALFRIYANTI AHMAD SIPA,Klasifikasi Status Gizi Balita Tergolong Stunting Menggunakan Algoritma K-Nearest Neighbors (KNN) dan Geographic Information System (GIS) di Wilayah Pesisir (Studi Kasus: Puskesmas Abeli),,"Statiswaty, ST., MM.Si.
+La Surimi, S.Si., M.CS"
+E1E120059,2020,ANDINI SEPTIANI,Implementasi Fuzzy Tahani Pada Sistem Pengoptimalan Fermentasi Tapai Berdasarkan Suhu Dan Kadar Alkohol Berbasis Internet of Things,,"Isnawaty, S.Si., MT.
+Achmad Nur Aliansyah, S.T., M. T"
+E1E120060,2020,ARNITA,Implementasi Linear Conruential metod (LCM) pada aplikasi pengenalan huruf hijaiyah berbasis android pada anak pra-sekolah,,"Sutardi, S.Kom., M.T
+La Ode Muhammad Bahtiar Aksara, S.T., M.T."
+E1E120062,2020,ASRI SAMSUDIN,Sistem Kontrol Penyiraman Air dan Nutrisi Tanaman Cabai Berbasis Internet Of Things (IoT) Menggunakan Decision Tree C5,"Monitoring, Automatic Water Sprinkling, Nutrition, Temperature, Humidity. Decision Tree C5. Internet of Things","L.M. Fid Aksara, S.Kom., M.Kom.
+Jumadil Nangi, S.Kom., M.Kom."
+E1E120065,2020,ENDAH SEKAR LEMBAYUNG,Penerapan Metode Simple Multi Attribute Rating Technique Exploiting Ranks Untuk Pemilihan Daerah Prioritas Penanganan Stunting Berbasis WebGIS,,"Dr. Natalis Ransi, S.Si., M.Cs.
+Sutardi, S.Kom., M.T"
+E1E120066,2020,FADILA HAIRUL NISA,Penerapan Text Mining untuk Klasifikasi Jenis Laporan Masyarakat Terhadap Pemerintah Daerah Menggunakan Algoritma BM 25 dan Improved K-Nearest Neighbor,,"Statiswaty, ST., MM.Si.
+Jumadil Nangi, S.Kom., M.Kom."
+E1E120067,2020,FAUZAN AL ASHAR,STUDI PEMILIHAN LOKASI RUANG TERBUKA HIJAU (RTH) MENGGUNAKAN ALGORITMA MULTI OBJECTIVE OPTIMIZATION ON THE BASIC OF RATIO ANALYSIS (MOORA) BERBASIS WEBGIS,,"Prof. Dr. Ir. La Ode Muhammad Golok Jaya, ST., MT.
+Asa Hari Wibowo"
+E1E120068,2020,FEBRIANSYAH,Smart early warning system bencana banjir berbasis fuzzy dan internet of things,,"Isnawaty, S.Si., MT.
+Nita Zelfia Dinianti Luzi Mulyawati, S.T., M.T."
+E1E120069,2020,FINDRIYANI,DETEKSI DINI GEJALA GANGGUAN KECEMASAN MENGGUNAKAN HAMILTON ANXIETY RATING SCALE DENGAN METODE MULTI-CLASS SUPPORT VECTOR MACHINE SVM Studi Kasus: Mahasiswa Universitas Halu Oleo,"Anxiety disorder, Early detection, Hamilton Anxiety Rating Scale.
+Multi-Class Support Vector Machine (SVM), Students.","Isnawaty, S.Si., MT.
+Rizal Adi Saputra, S.T., M.Kom."
+E1E120070,2020,HARDIANTO,"IMPLEMENTASI MESSAGE QUEING TELEMENTRY TRANSPORT (MQTT) DIBIDANG Internet of Things IoT, UNTUK MONITORING PENYIRAMAN OTOMATIS, STUDI KASUS TANAMAN SELADA",,"L.M. Fid Aksara, S.Kom., M.Kom.
+Achmad Nur Aliansyah, S.T., M. T"
+E1E120071,2020,HASNA ANGGIN TRI MUSLIMIN,IMPLEMENTASI METODE FUZZY KNN UNTUK KLASIFIKASI TANAMAN OBAT BERDASARKAN EKSTRAKSI FITUR HISTOGRAM OF ORIENTED GRADIENTS (HOG) DAN LOCAL BINARY PATTERNS (LBP) PADA DAUN,,"Dr. Ir. Muhammad Ihsan Sarita, M.Kom.
+Adha Mashur Sajiah, M.Eng."
+E1E120072,2020,ITA PUSPITA,SISTEM MONITORING TEMPERATUR DAN KELEMBABAN UDARA PADA TANAMAN MICROGREEN MENGGUNAKAN FUZZY SUGENO BERBASIS INTERNET OF THINGS (Studi Kasus : Bayam Merah),,"Isnawaty, S.Si., MT.
+Dr. Dwi Rinnarsuri Noraduola, ST., M.Sc."
+E1E120074,2020,JAKA MESA'I SAPUTRA,Sistem Monitoring Pengangkat Sampah Otomatis Di Sungai Berbasis Internet of Things (IoT) Dengan Protokol Message Queue Telemetry Transport,,"La Surimi, S.Si., M.CS
+Achmad Nur Aliansyah, S.T., M. T"
+E1E120077,2020,LA ODE YAMIN ARSY FADILLAH MBOTA,Sistem Smart Parking Menggunakan Jaringan Mesh Pada Transmisi Data Berbasis Internet of Things (IoT),,"Ir. Hasmina Tari Mokui, ST., ME,. Ph.D
+La Ode Muhammad Bahtiar Aksara, S.T., M.T."
+E1E120078,2020,MUH. BAYU AIDIL ADHALIK THAMRIN,Sistem Penentuan Lahan Tanaman Kelapa Sawit Di Kabupaten Konawe Dengan Menggunakan Metode Complex Proportional Assessment,,"Bambang Pramono, S.Si., MT.
+Isnawaty, S.Si., MT."
+E1E120080,2020,MUH.ABDILLAH,IMPLEMENTASI SISTEM SMART POND BERBASIS INTERNET OF THINGS (IoT) UNTUK MONITORING DAN CONTROLLING KUALITAS AIR PADA KOLAM BUDIDAYA LOBSTER AIR TAWAR MENGGUNAKAN ALGORITMA FUZZY SUGENO,,"Isnawaty, S.Si., MT.
+Achmad Nur Aliansyah, S.T., M. T"
+E1E120083,2020,MUHAMMAD ILHAM PRAYOGI,Sistem Kontrol dan Monitoring Nutrisi Tumbuhan dan Fotosintesis Tanaman Hidroponik Berbasis Internet Of Things Dengan Metode Fuzzy Sugeno,,"L.M. Fid Aksara, S.Kom., M.Kom.
+Rizal Adi Saputra, S.T., M.Kom."
+E1E120084,2020,MUHAMMAD RAHMAT DHYAN FAHRUDDIN,RANCANG BANGUN SISTEM REKOMENDASI WISATA DI KABUPATEN WAKATOBI MENGGUNAKAN ALGORITMA A-STAR DALAM GIS BERBASIS WEBSITE,,"Bambang Pramono, S.Si., MT.
+Dr. Ir. Agustan, ST., M.Si"
+E1E120085,2020,NI LUH EKA PURNIAWATI,Sistem Kontrol Kondisi Tanaman Berbasis Internet of Tings (IoT) Menggunakan Fuzzy Logic (Studi Kasus Tanaman Microgreen: Sayur Bayam),,"La Ode Muhammad Bahtiar Aksara, S.T., M.T.
+Asa Hari Wibowo"
+E1E120086,2020,NUR RAHMAT HIDAYA KARISMADI,SISTEM MONITORING DAN KONTROL SOLAR TRACKER DUAL AXIS BERBASIS INTERNET OF THINGS (IoT) UNTUK OPTIMASI EFISIENSI ENERGI SURYA,,"Prof. Mustarum Musaruddin, ST., MIT.,Ph.D.
+Isnawaty, S.Si., MT."
+E1E120087,2020,NURFAUZIAH MAKMUR,Penerapan Algoritma Artificial Bee Colony dalam Aplikasi Berbasis Mobile untuk Optimasi Pencarian Jalur Terdekat ke Tempat Automatic Teller Machine (ATM) di Kota Kendari,"Automatic Teller Machine (ATM), Artificial Bee Colony (ABC) algorithm, optimization, mobile-based application, accessibility.","Bambang Pramono, S.Si., MT.
+Rizal Adi Saputra, S.T., M.Kom."
+E1E120089,2020,RAHMAT LATIF,PREDIKSI LUAS HUTAN MANGROVE DI PESISIR KECAMATAN LASALEPA KABUPATEN MUNA MENGGUNAKAN METODE RANDOM FOREST DAN ANALISIS CITRA SATELIT,,"Dr. Ir. Muhammad Ihsan Sarita, M.Kom.
+Adha Mashur Sajiah, M.Eng."
+E1E120090,2020,RAIHAN DE LAINDI,Implementasi Internet of Things ( IoT) pada Sistem Kontrol Dan Monitoring Pengangkut Sampah Otomatis Dengan Algoritma Fuzzy Sugeno,,"Isnawaty, S.Si., MT.
+Nita Zelfia Dinianti Luzi Mulyawati, S.T., M.T."
+E1E120091,2020,RIZKY PRASETYA ARDANA,Sistem Monitoring Alat Pengering Ikan Menggunakan Algoritma Naive Bayes berbasis Internet of Things (IoT),,"Isnawaty, S.Si., MT.
+Kobajashi Togo Isamu, S.Pi.,M.P"
+E1E120092,2020,SITTI NUR HADIJAH,Analisis dan Evaluasi Tingkat Kematangan Sistem Pemerintahan Berbasis Elektronik ( SPBE ) Layanan Menggunakan COBIT 5 (Studi Kasus : KOMINFO Kota Kendari),"Maturity Level of Electronic-Based Government System (SPBE). Service Domain, COBIT S. Website","Isnawaty, S.Si., MT.
+Adha Mashur Sajiah, M.Eng."
+E1E120093,2020,SYADAD RIFA'AH SYAIFULLAH,Penerapan Algoritma Fuzzy Pada Sistem Pemantauan Realtime Gejala Hipoksemia Dengan Indikator Saturasi Oksigen Dan Detak Jantung Berbasis Internet of Things IoT.,,"L.M. Fid Aksara, S.Kom., M.Kom.
+Achmad Nur Aliansyah, S.T., M. T"
+E1E120094,2020,SYARIFAH NURHAFNI AHMAD,Sistem Monitoring Kualitas Udara Perpustakaan Sekolah Menggunakan Algoritma Fuzzy Logic Berbasis Internet Of Things,,"L.M. Fid Aksara, S.Kom., M.Kom.
+Asa Hari Wibowo"
+E1E120095,2020,TASYA BERLIANISWAH BUNDUWULA,Clustering Daerah Penghasil Tanaman Hortikultura Di Sulawesi Tenggara Menggunakan Fuzzy C-Means Dan Min-Max Normalization Berbasis Website,,"Bambang Pramono, S.Si., MT.
+Adha Mashur Sajiah, M.Eng."
+E1E120097,2020,WA ODE NURIIL RIZQY ANNISA,Sistem Prediksi Produksi Tanaman Padi Menggunakan Long Short-Term Memory (LSTM) Berdasarkan Data Time Series Berbasis Website (Studi Kasus: Provinsi Sulawesi Tenggara),"Prediksi Produksi Padi, Long Short-Term Memory, Time Series, Website, Sulawesi Tenggara","Adha Mashur Sajiah, M.Eng.
+L.M. Fid Aksara, S.Kom., M.Kom."
+E1E120100,2020,WAODE SITI NURHALISA,Identifikasi Citra Daging Ayam Berformalin Mengunakan Fitur Warna Hue Saturatoin Value (HSV) Dan Algoritma K-Nearest Neighbor (K-NN).,"Chicken Meat Images, turation Valur (07) -Neighbor (K-NN)","Adha Mashur Sajiah, M.Eng.
+Rizal Adi Saputra, S.T., M.Kom."
+E1E120102,2020,WARHAM ALIANSA,TEROBOSAN CERDAS: PENGELOLAAN LAMPU LALU LINTAS MENGGUNAKAN YOU ONLY LOOK ONCE (YOLO) DAN LOGIKA FUZZI UNTUK EFISIENSI OPTIMAL DAN KEAMANAN BERKENDARA,,"Prof. Dr. Ir. La Ode Muhammad Golok Jaya, ST., MT.
+Adha Mashur Sajiah, M.Eng."
+E1E120103,2020,ZAHWA DIAH A.P,Implementasi Fuzzy Tahani dalam Sistem Rekomendasi Kebutuhan Nutrisi Makanan Pendamping Air Susu Ibu (MPASI) pada Bayi Berbasis Web Mobile untuk Mencegah Stunting,,"Prof. Mustarum Musaruddin, ST., MIT.,Ph.D.
+Rizal Adi Saputra, S.T., M.Kom."
+E1E120104,2020,ZALDA NINGRATI,Implementasi Data Mining Untuk Prediksi Penjualan Produk Skincare Menggunakan Metode K-Nearest Neighbor KNN Studi Kasus MN Beauty,,"Bambang Pramono, S.Si., MT.
+La Surimi, S.Si., M.CS"
+E1E120105,2020,ANDI ANNISYA,Data Logger dan Sistem Kontrol Cooling Effect Productive Facade Berbasis Internet of Things (IoT) dan Wireless Sensor Network (WSN) Studi Kasus Tanaman Labu Kuning),,"Isnawaty, S.Si., MT.
+Dr. Dwi Rinnarsuri Noraduola, ST., M.Sc."
+E1E120106,2020,Katharina Amelia ngii,Implementasi Metode Fuzzy Case-Based Reasoning Pada Sistem Pakar Penyakit Kucing Dan Anjing Berbasis Website (Studi Kasus : Jy Petshop),,"Dr. Ir. Muhammad Ihsan Sarita, M.Kom.
+Adha Mashur Sajiah, M.Eng."
+E1E120107,2020,Sufriani,Sistem pengusir Hama Serangga Otomatis Untuk Pertanian Cerdas Berbasis Fuzzy Logic Mamdani dan Internet of Things. Studi Kasus Tanaman Sayur Sawi,,"L.M. Fid Aksara, S.Kom., M.Kom.
+Asa Hari Wibowo"
+E1E119064,2019,MUHAMAD YASIR,"SISTEM PAKAN AYAM OTOMATIS BERBASIS INTERNET OF THINGS (IOT) STUDI KASUS :FAKULTAS TEKNIK, UNIVERSITAS HALU OLEO","Chicken, Feedtool, Microcontroller, IoT, Blynk.",
+E1E118062,2018,LA ODE RAHMAT ANDRE PRATAMA,"RANCANGAN BANGUN SISTEM WORLD HEALTY ORGANIZATION - THE ALCOHOL, SMOKING AND SUBSTANCE INVOLVEMENT SCREENING TEST V3,1 (WHO-ASSIST-V3.1) MENGGUNAKAN METODE FORWARD CHAINING BERBASIS WEBSITE","Expert System, ASSIST, Forward Chaining, Score, Drugs",
+E1E119031,2019,MUH FARHAN SAPUTRA,SISTEM TEMU KEMBALI CITRA PRODUK MENGGUNAKAN METODE CONVOLUTIONAL NEURAL NETWORK (CNN),"Content-Based Image Retrieval, Convolutional Neural Network, Deep Learning",
+E1E108025,2008,DIZI OKTAVIANA,APLIKASI STEGANOGRAFI PESAN TEKS PADA CITRA DIGITAL DENGAN METODE LEAST SIGNIFICANT BIT (LSB) SECARASEQUENCE,"STEGANOGRAFI, CITRA DIGITAL, LEAST SIGNIFICANT BIT (LSB), SEQUENCE, PSNR",
+E1E119044,2019,AL MUHAIMIN,EVALUASI EFEKTIVITAS PENGGUNAAN SP ADA PADA PROSES PEMBELAJARAN MATA KULIAH STUDI KASUS PRODI TEKNIK INFORMATIKA FAKULTAS TEKNIK UNIVERSITAS HALU OLEO MENGGUNAKAN METODE USABILITY TESTING,"Effectiveness Evaluation, SPADA, Networking Course, Website",
+E1E119048,2019,ANDRI ROZALDIN,IMPLEMENTASI LOGIKA FUZZY MAMDANI PADA SISTEM INKUBATOR PENETASAN TELUR AYAM BERBASIS INTERNET OF THINGS (IOT),"Incubator, Chicken Eggs, Mamdani Fuzzy, Internet of Things, Wireless Sensor Network.",
+E1E129016,2029,WAODE ST FADILA,IMPLEMENTASI ALGORITMA JAS DALAM MENGKLASIFIKASI PENJUALAN PRODUK (STUDI KASUS ARSA MART),"Sales Classification, J48 Algorithm, Stock of Goods, Rapid Miner",
+E1E119052,2019,EKA WAAHYU HIDAYATI,PENERAPAN METODE SISTEM COMPOSITE PERFORMANCE INDEX (CPI) PADA SISTEM PENDUKUNG KEPUTUSAN SELEKSI BEASISWA WAWONII CERDAS,"Decision Making System, Scholarship, CPI, Website, ROC",
+E1E119014,2019,SYAHIDATUL ISLAMIYAH,PENERAPAN TEXT MINING PADA SISTEM KLASIFIKASI DOKUMEN LAPORAN KEPOLISIAN MENGGUNAKAN METODE BM25 DAN K-NEAREST NEIGHBOR (STUDI KASUS: POLRES KOTA KENDARI),"Classification. Text Mining, Information Systems, BM25. KNN. Report Documents",
+E1E126035,2026,SITTI HABIBAH,IMPLEMENTASI METODE HILL CLIMBING SEARCH PADA SISTEM PENCARIAN RUTE TERPENDEK LOKASI WISATA DI KOTA KENDARI BERBASIS WEB GIS,"Tours. Shortest Routes, Hill Climbing Search, Rational Unified",
+E1E119067,2019,MUHAMMAD FARHAN,MONITORING KINERJA SENSOR PADA LAMPU PENERANGAN JALAN SOLAR CELL MENGGUNAKAN METODE MOVING AVERAGE FILTER (MAF) BERBASIS INTERNET OF THINGS (IOT),"Internet of Things, Moving Average Filter, Solar Cell, ESP32",
+E1E119003,2019,DINI FADILAH,RANCANGAN BANGUN APLIKASI KUIS BAHASA DAERAH WANCI MENGGUNAKAN METODE MERSENNE TWISTER,"Dictionary, Quiz, Local language, Number Randomization, Mersenne Twister",
+E1E126038,2026,TANTI JULIANINGSIH,PENERAPAN METODE PREFERENCE RANKING ORGANIZATION METHOD FOR ENRICHMENT EVALUATION (PROMETHEE) UNTUK MENENTUKAN JENIS TERAPI DAN MELIHAT PROGRES TERAPI BICARA PADA ANAK BERKEBUTUHAN KHUSUS DENGAN GANGGUAN AUTISM SPECTRUM DISORDERS,"Promethee method, Autism Spectrum disorders, decision support system, therapy.",
+E1E116043,2016,SAFIRAH NURUL FADLILAH PALLATJE,IMPLEMENTASI REPLIKASI MULTI-MASTER PADA DATABASE MYSQL UNTUK MENINGKATKAN KETERSEDIAAN DAN KEANDALAN DATA TERDISTRIBUSI,"Multi-Master Method, Replication, Cashier Information System",
+E1E119072,2019,NURUL NIZA,"IMPLEMENTASI METODE SUPPORT VECTOR MACHINE (SVM) DALAM ANALISIS SENTIMEN KUALITAS PADA APLIKASI INVESTASI ONLINE AJAIB,BIBIT, DAN BAREKSA BERDASARKAN ULASAN DI GOOGLE PLAY STORE","Sentiment Analysis, SVM. Application, Investment, Reviews, Quality.
+Online Investment",
+E1E11042,2010,DEWI ANGRAWATI,SISTEM PENDUKUNG KEPUTUSAN MENENTUKAN JUMLAH BERAS MISKIN (RASKIN) MENGGUNAKAN METODE SIMPLE ADDITIVE WEIGHT (SAW) DI DESA PUUPI KECAMATAN KOLONO KABUPATEN KONAWE SELATAN,"Decision Support System, SAW, Raskin",
+E1E118051,2018,MUHAMMAD TASLIN,"OPTIMASI JARINGAN DENGAN PENERAPAN ANTENA KARTREIN, LOAD BALANCING METODE EQUAL COST MULTI PATH (ECMP) DAN FAIL OVER METODE RECURSIVE GATEWAY PADA DUA INTERNET SERVICE PROVIDER (ISP) DI BTN DRAND BOULIVARD REGENCY","Kathrein Antenna Equal Cost Multi Path (ECMP), Recursive Gateway, Internet Service Provider (ISP)",
+E1E117022,2017,NADHIF HAWARI NASRUL,PENERAPAN METODE HISTOGRAM OF ORIENTED GRADIENTS DAN FACE LANDMARK ESTIMATION DALAM SISTEM PENDETEKSI WAJAH SECARA REAL-TIME MENGGUNAKAN CLOSED CIRCUIT TELEVISION,"Histogram of Criented Gradients, Face Landmark Estimation Real-time System",
+E1E119071,2019,NIKEN INDRIYANI,SISTEM MONITORING PENDETEKSI DINI TANAH LONGSOR MENGGUNAKAN WIRELESS SENSOR NETWORK (WSN) BERBASIS MOTT,"Monitoring System, Wireless Sensor Network (WSN). Message Queuing Telemetry Transport (MQTT)",
+E1E117004,2017,ANJAS ARIYANTO,RANCANG BANGUN SMART PLANT POT UNTUK MONITORING TANAMAN HIAS DALAM RUANGAN BERBASIS ANDROID,"Smart Plant Pot, Tongue-in-law, Plant Monitoring Plant, Android. Internet of Things.",
+E1E117064,2017,ANGGI JOLANDA LAMBONG,SISTEM ANALISIS KUALITAS CITRA BETON MELALUI SEGMENTASI CITRA MIKROSKOPIS MENGGUNAKAN METODE THRESHOLDING OTSU,"Concrete image, Segmentation, Otsu Taresholding",
+E1E118001,2018,MARIAM,PROTOTYPE SISTEM MONITORING SERTA PENGONTROL SUHU DAN KELEMBAPAN PADA BUDIDAYA JAMUR TIRAM PUTIH DENGAN MENGGUNAKAN SENSOR DHT22 BERBASIS MIKROKONTROL,"Mushroom, DHT22 Sensors, Blynk, Microcontroller, NodeMCU",
+E1E119079,2019,SHAFIRA KHAERUNNISA ARIFIN,KLASIFIKASI PERUBAHAN LUAS AREA HUTAN MANGROVE MENGGUNAKAN METODE RANDOM FOREST BERBASIS CITRA SATELIT ( STUDI KASUS: KOTA KENDARI DAN KABUPATEN KONAWE,"Classification, Mangrove, Land Change, Random Forest, Satelite Image",
+E1E117036,2017,MAUSAR NASIHI,RANCANG BANGUN SISTEM ANTRIAN DOKTER OTOMATIS BERBASIS SINGLE BOARD COMPUTER (SBC) MENGGUNAKAN METODE SINGLE CHANNEL SINGLE PHASE,"Sistem Antrian, Raspberry Pi, Single Board Computer, Website",
+E1E115046,2015,SALMAN AL HABIR,SISTEM KONTROL DAN MONITORING INFUS DENGAN MODUL WIFI ESP 8266 BERBASIS MIKROKONTROLER,"Microcontroller, WIFI module ESP 8266, Loadcell Sensor, Infusion",
+E1E119066,2019,MUHAMMAD ERHAN RAFLY SETIAWAN ADAM,SISTEM MONITORING KONSUMSI DAYA LISTRIK RUMAH TANGGA BERBASIS METODE FUZZY MAMDANI,"Internet of Things, Fuzzy Madani, Listrik, PZEM-004T, ESP32",
+E1E119055,2019,FARSHANEDA RAHIM,FASAD PRODUKTIF YANG DINAMIS BERBASIS INTERNET OF THINGS (IQT) DAN PROTOKOL MESSAGE QUEUNING TELEMETRY TRANSPORT (MQTT),"Monitoring, IoT",
+,,E1E121071,SISTEM PENGAJUAN CUTI KARYAWAN BERBASIS WEB MENGGUNAKAN METODE RULE BASED-SYSTEM PADA CUTI SERTA ALGORITMA BLOWFISH PADA ABSENSI (STUDI KASUS: PT SURYA ANDALAN TIMUR,,
+,,E1E122057,IMPLEMNTASI MULTI-ATTRIBUTE UTILITY THEORY (MAUT) DAN CONTENT-BASED FILTERING UNTUK PEMILIHAN DOSEN PEMBIMBING DAN TUGAS AKHIR,,
+,,RAFI IYAD MADANI CHAIDIR,KLASIFIKASI KERUSAKAN DAUN KELAPA SAWIT MENGGUNAKAN DEEP LEARING CONVOLUTIONAL NEURAL NETWORK (CNN),,
+,,Taufik Hidayat,Deteksi Kerusakan Jalan Menggunakan YOLOv8 dan pixel quantification untuk survei kerusakan jalan Dinas PU Sulawesi Tenggara,,
+,,Jabir Muktabir,Implementasi Algoritma Tiered Thresholding untuk Mendeteksi Degradasi Performa WiredTiger MongoDB Akibat Fenomena Pemindaian Penanda Penghapusan Data,,
+,,MEUTYA NATHANIA,RANCANG BANGUN APLIKASI MONITORING PRAKERIN SISWA SMK BERBASIS WEB MENGGUNAKAN ALGORITMA DECISION TREE,,
+,,Rafly Ahmad Zainur,Sistem Audit Cerdas Menggunakan You Only Look Once (YOLO) Dan Fuzzy Mamdani Untuk Evaluasi Kualitas Ruang Publik Di Kota Kendari,,
+,,Harnelia,Penerapan Convolutional Neural Network (CNN) dengan Attention Mechanism dan Grad-CAM untuk Klasifikasi Leukemia berdasarkan Citra Sel Darah Putih,,
+,,La Ode Alvin Rahmat Saputra,Forecasting Tourist Arrival in Wakatobi using LSTM,,
+,,Ahmad al ambiya,Sistem informasi geografis berbasis website untuk pemetaan wilayah daerag rawan kekerasan perempuan dan anak kota kendri,,
+,,Suci Wulandari,Sistem pakar diagnosa penyakit ternak sapi berbasis web menggunakan forward chaining dengan Integrasi Fuzzy Logic pada dinas peternakan kabupaten muna.,,
+,,Annisa Auliya Ramadhani,Klasifikasi Status Gizi Ibu Hamil Terkait Risiko Stunting pada Janin Menggunakan Algoritma Boosting dengan Metode Synthetic Minority Oversampling Technique (SMOTE),,
+,,Ghefira Zahra Nur Fadhilah,Sistem Pakar Deteksi Risiko Anemia Berdasarkan Analisis Citra Konjungtiva Mata Menggunakan Convolutional Neural Network (CNN) Dan Gejala Klinis Pasien,,
+,,Alfi Zahrah Muharramah,Analisis Monitoring Kebakaran Hutan untuk Deteksi dan Prediksi Pergerakan Asap-Api menggunakan Faster R-CNN dengan Integrasi Optical Flow dan Tracking (Studi Kasus: Taman Nasional Rawa Aopa Watumohai),,
+,,Muh. Falah Mubaraq,Sistem Klasifikasi Komentar Publik Jenis jenis pelanggaran Undang-Undang ITE menggunakan Support Vector Machine (SVM) dan Logistic Regression,,
+,,Izan Fahrani,Penerapan Algoritma Priority Scheduling Pada Sistem Helpdesk Berbasis Web Untuk Optimalisasi Manajemen Laporan Gangguan Teknologi Informasi,,
+,,Muhammad Vannes Al Qadri,Implementasi Metode Long Sort-Term Memory (LSTM) dalam Memprediksi Harga Komoditas Sektor Pertanian di Sulawesi Tenggara,,
+,,Nur Hafiizah,Smart Farming Internet of Things dengan Fuzzy Sugeno untuk Pemantauan Kualitas Tanah Pesisir (Studi Kasus: Media Tanaman Seledri),,
+,,Alvian Ardiansyah,Identifikasi dan Verifikasi Citra Tanda Tangan menggunakan Ekstraksi Fitur Local Binary Pattern dan Histogram of Oriented Gradient dengan Klasifikasi Support Vector Machine dan Deep Belief Network,,
+,,Arya Dwinata Mustapa,Pengembangan Aplikasi Penerjemah bahasa Isyarat Sehari-hari berbasis video real-time menggunakan pose estimation dan Long Short-Term Memory untuk mendukung SDGs 10 (Reduced inequality),,
+,,LAODE IKHWANUL UZLAH,"APLIKASI KASIR BERBASIS WEB TERINTEGRASI DENGAN LAPORAN PENJUALAN MENGGUNAKAN ALGORITMA FLUXSORT (STUDI KASUS: TOKO JOEL, KELURAHAN PUNGGOLAKA, KOTA KENDARI)",,
+,,Ninis Putri Arafa,Analisis Status Gizi Balita Berdasarkan Parameter Antropometri dan Kesehatan Menggunakan Extrame Gradient Boosting di Wilayah Kerja Puskesmas,,
+,,Ahmad Fadli Ramadhan,Sistem Deteksi Pelanggaran Penggunaan Helm pada Pengendara Sepeda Motor di Jalan Raya Menggunakan Algoritma YOLOv8 dan ByteTrack,,
+,,Ayustina Samudin,Rancangan Bangun GIS Area rawan dampak pertambangan di kabupaten konawe selatan menggunakan algoritma random forest,,
+,,Nur Fadillah,Implementasi Algoritma Agglomerative Hierarchical Clustering (AHC) Pada Sistem Informasi Manejemen Pertandingan Taekwondo Untuk Otomatisasi Bagan Pertandingan,,
+,,Nurdian Kasim,Penerapan Sistem Temu Kembali Citra Makanan Berdasarkan Ekstraksi Fitur Warna Color Moments (CIELab) dan Fitur Tesktur Local Binary Pattern (LBP),,
+,,Wa Ode Asriyani,OPTIMASI HYPERPARAMETER MOBILENETV2 UNTUK KLASIFIKASI KESEGARAN IKAN TONGKOL BERBASIS CITRA MATA IKAN MENGGUNAKAN OPTUNA TREE-STRUCTURED PARZEN ESTIMATOR (TPE),,
+,,Fellonnisa Suria,Sistem monitoring pertumbuhan tanaman lidah buaya berbasis Internet of Things (IoT) Menggunakan Sensor Kelembapan dan Cahaya,,
+,,La Ode Muhammad Yudhy Prayitno,Otomatisasi Entri Data Struk Pembelian Menggunakan Vision-Language Model (VLM) dengan Fine-Tuning LoRA Serta Orkestrasi Multi-Agent Hierarkis Berbasis Model Context Protocol (MCP),,
+,,Febri Haerani,Penerapan algoritma YOLO dalam deteksi jenis makanan untuk menampilkan informasi nutrisi,,
+,,Sherly Dwi Puspita,Implementasi Deep Learning Menggunakan Convolution Neural Network (CNN) untuk Klasifikasi Gaya Belajar Berdasarkan Ekspresi Wajah Siswa Selama Proses Pembelajaran,,
+,,Chalifahdien Hamud,SISTEM PENGADAN BARANG TERDESENTRALISASI BERBASIS BLOCKCHAIN PADA PT PUTRI UTAMA AGRO SEJAHTERA DENGAN PEMANFAATAN SECURE HASH ALGORITHM 256 UNTUK INTEGRASI TRANSAKSI DAN AUDIT SUPPLY CHAIN,,
+,,Muthmainnah Putri Kayla Kemala Raden,Aplikasi Layanan Administrasi Masyarakat Berbasis Web Menggunakan Algoritma K-Nearest Neighbor,,
+,,ROSALINA,Aplikasi manajemen logistik dan inventori gudang menggunakan algortima priority Queue berbasis web ( studi kasus: PT. Arga morini indah),,
+,,Putri Angraini Aziz,Analisis Perbandingan Large Language Model Meta AI (LLaMA) dan Mistral pada Pendekatan Retrieval-Augmented Generation (RAG) untuk Chatbot Layanan Masyarakat Desa (Studi Kasus: Desa Bou),,
+,,Nih Akbar P.R,Implementasi XGBoost dan Bayesian Optimazation pada Sistem Rekomedasi Pemilihan atlet Bola Voli Pantai Sultra,,
+,,Nurendro Hardjo Judanto,Sistem informasi manajemen terpadu (SIMT) agenda dan peminjaman buku berbasis web dengan algoritma trie dan jaro winkler distance di kejaksaan tinggi sulawesi tenggara,,
+,,Abdul Fath Ramadhan,PENGEMBANGAN APLIKASI ARSIP DIGITAL SURAT BERBASIS WEB DENGAN PENERAPAN ALGORITMA SEQUENTIAL SEARCH DAN MERGE SORT SERTA INTEGRASI CHATBOT UNTUK MENINGKATKAN EFISIENSI PENGELOLAAN DOKUMEN (STUDI KASUS: SATPOL PP PROVINSI SULAWESI TENGGARA),,
+,,Syahril Ramadhan Salman Noor,Sistem Prediksi Penyakit Tanaman Padi di Sulawesi Tenggara Menggunakan Deep Learning ( EfficientNet ),,
+,,Yun muntarti,Deteksi Penyakit Kulit pada Wajah Menggunakan Pendekatan Semi Supervised Deep Learning Berbasis MobileNetV2 dengan Visualisasi Grad-Cam (studi kasus: klinik astrid harianto dermatology).,,
+,,Muhammad Faiz Alimuddin,Analisis keamanan server dengan metode next-generation firewall filtering dan single packet authorization menggunakan pfsense dan fwknop,,
+,,Ashabul,Smart Trash Bin berbasis Internet of Things untuk Pemantauan Kapasitas Sampah menggunakan Algoritma Low Energy Adaptive Clustering Hierarchy pada Wireless Sensor Network,,
+,,Iksan,"Optimasi Pencarian Rute Lalu Lintas Antar Wilayah di Kota Kendari Menggunakan Algoritma Hybrid, Fuzzy dan Floyd-Warshall",,
+,,Sriraya Kuru,Penerapan Metode Deep Embedded Clustering pada Klasterisasi Citra Benda Arkeologi di Sulawesi Tenggara untuk Mendukung Digitalisasi Koleksi Arkeologi,,
+,,Yulinda Rizky Angelia Mursalim,Deteksi Kecenderungan Prokrastinasi Akademik Pada Mahasiswa Yang sedang Menyusun Skripsi Menggunakan Skala Prokrastinasi Akademik dan Algoritma Support Vector Machine (SVM),,
+,,Resti Ajeng Sutiani,Penerapan metode decision tree untuk klasifikasi distres psikologis pada remaja berdasarkan pola penggunaan smartphone dan skala DASS-21 (Depression Anxiety Stres Scale - 21),,
+,,Hikma,Implementasi Algoritma Support Vector Machine (SVM) dengan Pembobotan Term Frequency–Inverse Document Frequency (TF-IDF) untuk Klasifikasi Buku Berdasarkan Dewey Decimal Classification (DDC) Web,,
+,,Kiki Noviana Saputri,DIAGNOSIS KERUSAKAN DAN EVALUASI KELAYAKAN OPERASIONAL ALAT BERAT DAN MOBIL BERBASIS WEB MENGGUNAKAN ALGORITMA FUZZY TSUKAMOTO,,
+,,Anisa Nur Fadilla,Sistem Pengenalan Objek Bangun Ruang dan Datar Berbasis YOLO Untuk Pembelajaran Mandiri Bagi Siswa Tuna Netra,,
+,,Dela Puspita Helmi,Sistem informasi pelaporan fasilitas publik menggunakan metode svm dab text mining,,
+,,Wa Ode Fahmi Ramadhani,PENERAPAN ALGORITMA K-MEANS ++ UNTUK SEGMENTASI PELANGGAN BERDASARKAN MODEL RFM,,
+,,Bayu Adi Wibowo,DETEKSI DAN PREDIKSI DEFORESTASI AKIBAT EKSPANSI PERKEBUNAN KELAPA SAWIT MENGGUNAKAN CONVOLUTIONAL NEURAL NETWORK (CNN) KOMBINASI RESNET DAN U-NET PADA CITRA SATELIT,,
+,,Rahmi,IMPLEMENTASI TRANSFER LEARNING MOBILENETV2 UNTUK KLASIFIKASI PENYAKIT DAUN PADI BERBASIS CITRA DENGAN REKOMENDASI PENGENDALIAN MENGGUNAKAN FUZZY MAMDANI.,,
+,,MUH. FIKRY HAYKHAL,Implementasi Natural language processing dalam chatbot akademik berbasis Retrieval Augmented Generation untuk validasi dan rekomendasi dokumen semantik,,
+,,Muhammad Rafiq Al Ma'Ruf,"SISTEM MONITORING PADA ALAT PENGASAPAN IKAN MENGGUNAKAN DAYA PANEL SURYA BERBASIS INTERNET OF THINGS (IoT) DENGAN DECISION TREE TERHADAP SUHU, ASAP DAN KADAR AIR IKAN SECARA REAL-TIME",,
+,,Annisa Nurfadilah,"Sistem Klasifikasi Perubahan Lahan pada Ekosistem Pesisir Berbasis Deep Learning Menggunakan Citra Sentinel-2 (Studi Kasus: Tanjung Tiram, Sulawesi Tenggara)",,
+,,Argitha Trihapsari,Visualisasi Informasi Untuk Klasifikasi Kerusakan Jalan Pada Citra Dashcam Mobil Menggunakan YOLO Dan Arsitektur EfficientNet,,
+,,Dwi Pratiwi Aprilya Wahid,Implementasi Chatbot SAKU (Sentra Akuakultur) Menggunakan Bidirectional Encoder Represetantions From Transformers (BERT) Sebagai Asistem Virtual Budidaya Udang Vaname,,
+,,Eviriawan,Rancang Bangun Sistem Penilaian Real-Time Pada Mata Pelajaran Berbasis Website Menggunakan Metode Cosine Similarity dan Algoritma Levenshtein Distance,,
+,,Muh. Afdal Ziqri Ramadhan,SISTEM INTEGRATED REPORTING AND CASE MANAGEMENT KEKERASAN TERHADAP PEREMPUAN DAN ANAK BERBASIS WEB MENGGUNAKAN ARSITEKTUR MICROSERVICES (STUDI KASUS: DPPPA KOTA KENDARI),,
+,,Ni Luh Ica Ardini,Deteksi Kesehatan Gigi Berdasarkan Citra Ringga Mulut Menggunakan Segmentasi Warna K-Means dan K-Nearest Neighbor(KNN),,
+,,Mursawal,Sistem deteksi penggunaan helm keselamatan pada pekerja konstruksi menggunakan YOLOv8 dan Deep SORT berbasis voice alert,,
+,,Ngawal Muhamad,Penerapan Algoritma Random Forrest Berbasis Machine Learning sebagai Intrusion Prevention System (IPS) Untuk Deteksi Anomali Aktivitas Aplikasi Web,,
+,,Isra Nur Rahayu,SISTEM LAYANAN PENGADUAN JALAN RUSAK BERBASIS WEBSITE MENGGUNAKAN ALGORITMA PRIORITY QUEUE UNTUK MENENTUKAN PRIORITAS PENANGANAN LAPORAN (STUDI KASUS: KOTA KENDARI),,
+,,Nelti Juliana Sahera,Deteksi Perubahan Warna dan Tekstur pada Beras Merah Akibat Kontaminasi Jamur Menggunakan CNN,,
+,,DEVY NATALIA NURTIANI,"KLASIFIKASI TINGKAT KESADARAN KEAMANAN INFORMASI SISWA SMA NEGERI 1 KENDARI TERHADAP ANCAMAN PHISHING MENGGUNAKAN PENDEKATAN KNOWLEDGE, ATTITUDE, AND BEHAVIOR (KAB) DAN ALGORITMA RANDOM FORESTsadaran informasi sis",,
+,,Alvianto Ramadana,Penerapan Algoritma Sentence BERT dan Cosine Similairty pada Sistem Penilaian Esai Otomatis,,
+,,Reyvan Revolusioner Ar,Pengembangan Model ConvNext Berbasis Fusi Fitur Spektral untuk Deteksi Citra Sintetis yang Robust,,
+,,Umar Faruq Manek,Rancang Bangun Ekstensi Browser Berbasis Heuristic Analysis untuk Deteksi dan Pemblokiran Situs Phising dan Maliciuos Secara Real Time,,
+,,Muh irhan israwal,Evaluasi Model Computer Vision Berbasis YOLOv8 dan MobileNet pada Deteksi Pelanggaran Standar Sanitasi Program Makan Bergizi Gratis (MBG) dengan Integrasi Notifikasi Real-Time melalui LLM Chatbot OpenClaw pada Telegram,,
+,,Khaerunni Salsa Billah,KLASIFIKASI KESEGARAN IKAN CAKALANG BERDASARKAN CITRA MATA MENGGUNAKAN HUE-SATURATION-VALUE DAN GRAY-LEVEL CO-OCCURRENCE MATRIX DENGAN METODE K-NEAREST NEIGHBOR,,
+,,Siti Rahmah Basri,Sistem Prediksi Waktu Tanam Padi Berdasarkan Cuaca dan Aspek Ekonomi Menggunakan Algoritma Random Forest Regressor,,
+,,Elfiani,analisis risiko keamanan jaringan wifi publik tanpa enkripsi di lingkungan kampus menggunakan metode penilaian risiko dengan pendekatan CIA Triad,,
+,,Sumiarni Moka,Klasifikasi Tingkat Polusi Udara Berdasarkan Citra Langit Menggunakan EfficientNet (Studi Kasus: Morosi),,
+,,Wilda Rahma Riskika,KALSIFIKASI PENYAKIT DAUN NILAM MENGGUNAKAN CLAHE DAN CONVULATIONAL NEURAL NETWORK (CNN) PADA CITRA YANG INVARIANT TERHADAP ILUMINASI,,
+,,SITI NUR'AFIAH,Ensamble Learning Untuk Klasifikasi Tingkat Stress Pegawai Menggunakan Ordinal Logistic Regression dan XGboost (Studi kasus LPKA II Kendari),,
+,,Fajar Panaungi,Sistem Rekomendasi Lowongan Kerja Berbasis Kesesuaian Curriculum Vitae (CV) Menggunakan BERT Embeddings dan Weighted Similarity dengan Analisis Skill Gap,,
+,,Muh Gian Amanah Mustakim,Perancangan Sistem Pelacakan Peralatan Makan Dapur MBG,,
+,,febrinusabakti,SISTEM RESERVASI PASIEN KLINIK,,
+,,Ermila,Klasifikasi Tingkat Depresi Remaja di Lembaga Pemasyarakatan Menggunakan Multinomial Logistic Regression Berdasarkan Faktor Sosial dan PHQ-9,,
+,,Ade syifa badarudin,"IMPLEMENTATION OF A NUTRITION CONSULTATION CHATBOT USING LARGE LANGUANGE MODEL (LLM), S-BERT-BASED SEMAN- TIC TEXT ANALYSIS, AND FOOD IMAGE CLASSIFICATION WITH CNN EFFICIENTNET",,
+,,Muhammad Nauval Nesya Ramadhan,Pengembangan sistem informasi absensi pegawai berbasis web menggunakan deteksi lokasi GPS dan pembatasan area absensi dengan algoritma Haversine,,
+,,LA ODE PALI AQSAN,RANCANG BANGUN SISTEM RESERVASI LAPANGAN OLAHRAGA DI KOTA KENDARI BERBASIS WEB DENGAN PENJADWALAN OTOMATIS MENGGUNAKAN ALGORITMA GREEDY SCHEDULING (STUDI KASUS: TAWANG ALUN FUTSAL ARENA),,
+,,Salsabila Mashaf,Sistem Klasifikasi Gaya Belajar Siswa Menggunakan Algoritma Classification and Regression Tree (CART),,
+,,Nurul Aulia Apriliyanti,Sistem penanganan dan pelaporan kasus perlindungan anak di dinas pemberdayaan perempuan dan perlindungan anak kota kendari menggunakan algoritma K-Means,,
+,,Amar Adi Ismoyo,Perancangan dan Implementasi Aplikasi Pelatihan Pengucapan Bahasa Inggris Berbasis Android Menggunakan Mel-Frequency Cepstral Coefficients dan Dynamic Time Warping,,
+,,Nawir,Rancang bangun sistem keamanan kandang ayam petelur berbasis internet of thinks (IoT) menggunakan fuzzy logic dan protokol mqtt untuk deteksi intruksi real-time,,
+,,AGUSRIYATI,PENERAPAN ALGORITMA YOLOV8 DAN CONVOLUTIONAL NEURAL NETWORK (CNN) UNTUK DETEKSI DAN KLASIFIKASI HAMA SERTA PENYAKIT PADA BUAH KAKAO,,
+,,AL MUHAIMIN ZAIN,Pengelompokan Pola Pertumbuhan Balita ke dalam Empat Kllaster Menggunakan Gaussian Mixture Model Berbasis Data Antropometri,,
+,,Diki Ardika,implementasi sistem e voting pemilihan kepala desa berbasis blockchain dengan metode kriptografi sha-256,,
+,,Ariel Djifebrian Arief,SISTEM REKOMENDASI KENAIKAN GOLONGAN GURU SD BERBASIS DEEP LEARNING MENGGUNAKAN ARTIFICIAL NEURAL NETWORK (ANN) DAN METODE ANALYTICAL HIERARCHY PROCESS (AHP) (Studi Kasus: SD Negeri 98 Kendari),,
+,,USRIANTO,Rancang Bangun model translitarator otomatis aksara Bugis ke huruf latin menggunakan algoritma rule based berbasis web,,
+,,Nuzul Gusti Tiara Fitri,Prediksi Tingkat Kesegaran Ikan dan Umur Simpan Ikan Tuna Menggunakan Model Hybrid CNN-LSTM,,
+,,Icha anawai,Sistem deteksi plat nomor kendaraan untuk pengendara tanpa helm menggunakan metode Yolov8 dan Ocr pada rekaman CCTV,,
+,,Jelti Todingan,klasifikasi motif tenun daerah di kabupaten sulawesi tenggara menggunakan model Transfer learning MobileNetV2,,
+,,Muhammad Akram Abbas,Implementasi smart farming dengan sistem monitoring pertumbuhan dan kesiapan bibit pohon durian siap tanam menggunakan internet of think (IoT) dan algoritma You only look once(YOLO),,
+,,Yabrina Angelika Rantelili,Sistem Optimalisasi Penentuan Bantuan untuk Sarana Budidaya Menggunakan K-Means,,
+,,Jalaludin Muflih,Deteksi Tanda Jalan Secara Real-Time Menggunakan YOLOv8 dengan Preprocessing dan NMS Tuning sebagai Sistem Pendukung Advance Driver Assistance System (ADAS),,
+,,Farras Sida Toruntju,Pengembangan Sistem Manajemen Musrenbang dengan Dashboard Analitik Berbasis Web Menggunakan Algoritma ELECTRE,,
+,,Rahma Damayanti,RANCANG BANGUN SISTEM MONITORING KAMAR RAWAT INAP RUMAH SAKIT BERBASIS WEB MENGGUNAKAN ALGORITMA FIRST FIT DAN BEST FIT ALLOCATION (STUDI KASUS: RSUD KOTA KENDARI),,
+,,FIQRAH IDHUL DWI ANUGERAH,klasifikasi tingkat kematangan fermentasi biji kakao berbasis analisis citra bentuk dan warna menggunakan algoritma mobile-VIT,,
+,,INDRI,Sistem. Terintegrasi Berbasis Web. menggunakan Algoritma priority scheduling,,
+,,muhammad rezky ananda,rancang bangun api gateway dengan rate limitter dan token bucket algorithm,,
+,,Rama Qubra Putra,Pengembangan Aplikasi Web Penjualan Produk Kuliner dengan Rekomendasi Diskon Berbasis Prediksi Penjualan Menggunakan Algoritma XGBoost serta Rekomendasi Produk Alternatif Berbasis Content-Based Filtering (Studi Kasus: PT Bonton ATB Sejahtera),,
+,,Muhammad Saharullah Raiya,SISTEM REKOMENDASI PRODUK UMKM KOTA KENDARI BERBASIS WEBSITE DENGAN PENERAPAN ALGORITMA NEURAL COLLABORATIVE FILTERING DAN K-NEAREST NEIGHBOR,,
+,,I Nyoman Aditia,Implementasi Multi-Attribute Utility Theory (MAUT) dan Content-Based Filtering untuk Pemilihan Dosen Pembimbing dan Dosen Penguji Tugas Akhir,,
+,,IRFAN,DETEKSI ANOMALI DAN KLASIFIKASI SERANGAN APLIKASI WEB MENGGUNAKAN ONE-CLASS CLASSIFICATION DAN RANDOM FOREST BERDASARKAN TRAFIK HTTP,,
+,,Artientin,Penerapan Algoritma XGBoost untuk klasifikasi dan Rekomendasi Pemilihan Metode Kontrasepsi Berdasarkan Data Klinis Pasangan Usia Subur,,
+,,Reksa Leo Saputra,Implementasi Arsitektur Microservices untuk Platform Otomatisasi Layanan Pelanggan dan Manajemen Pesanan bagi UMKM kota Kendari,,
+,,Andi Anugrah Ma'Arif,Implementasi Algoritma Priority Scheduling Dengan Mekanisme Aging Pada Sistem Penjadwalan Mata Pelajaran di Sekolah Menengah Kejuruan Berbasis Web (Studi Kasus : SMK Negeri 1 Kendari),,
+,,Ratnasari,SISTEM KONTROL DAN MONITORING FERMENTASI TEMPE BERBASIS INTERNET OF THINGS (IoT) DENGAN PROTOCOL MESSAGE QUEUING TELEMETRY TRANSPORT (MQTT) DAN FUZZY LOGIC,,
+,,ADE SULASTRI,IMPLEMENTASI AlGORITMA SHA-256 DENGAN METODE ONE-TO-ONE MAPPING UNTUK PENYISIPAN VISIBLE WATERMARK PADA FILE DOKUMEN PDF DALAM SISTEM EKUIVALENSI WAKTU MENGAJAR PENUH (EWMP) DI FAKULTAS TEKNIK UNIVERSITAS HALU OLEO,,
+,,Septiyani Bayu Saudi,Kalsifikasi Jenis Tanah untuk Pemilihan Komoditas Unggulan menggunakan CNN dan Fuzzy Inference System berbasis Mamdani (Studi Kasus : Kabupaten Konawe Selatan),,
+,,MUH. IKBAL,"Pengembangan sistem pengecekan ejaan dan Pengecekan Plagiarisme menggunakan algoritma SYMSPELL, TF-IDF dan Cosine siimilarity",,
+,,Ni Wayan Erdiani,SISTEM KONTROL PERTUMBUHAN TANAMAN CABAI PADA GREENHOUSE BERBASIS INTERNET OF THINGS (IoT) DENGAN DECISION TREE DAN PROTOKOL HYPERTEXT TRANSFER PROTOCOL (HTTP),,
+,,Auliya Afifah Adnan Hakim,Analisis Perbandingan Kinerja Algoritma Extreme Gradient Boosting (XGBoost) dan Long Short-Term Memory (LSTM) dalam Prediksi Runtun Waktu Harga Penutupan Saham BBRI,,

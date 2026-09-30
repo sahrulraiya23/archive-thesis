@@ -18,12 +18,32 @@ class Thesis extends Model
         'author',
         'nim',
         'program_study',
+        'angkatan',
         'year',
+        'pembimbing_1',
+        'pembimbing_2',
     ];
 
     protected $casts = [
+        'angkatan' => 'integer',
         'year' => 'integer',
     ];
+
+    public function getYearAttribute(): ?int
+    {
+        return $this->attributes['angkatan'] ?? null;
+    }
+
+    public function setYearAttribute($value): void
+    {
+        $this->attributes['angkatan'] = $value;
+    }
+
+    public function getPembimbingTextAttribute(): string
+    {
+        $list = array_values(array_filter([$this->pembimbing_1, $this->pembimbing_2]));
+        return !empty($list) ? implode(' & ', $list) : '-';
+    }
 
     /**
      * Ekstraksi otomatis tepat 5 kata kunci dari Judul dengan memprioritaskan nama Algoritma / Metode / Teknologi.
