@@ -1,257 +1,215 @@
-# 📚 Thesis Archive
+# 📚 Thesis Archive & Sistem Pengajuan Judul Tugas Akhir
 
-Aplikasi web berbasis Laravel untuk mengelola dan mengarsipkan skripsi, tesis, dan disertasi secara digital. Sistem ini dilengkapi dengan fitur pencarian, manajemen konten, dan pengecekan plagiarisme.
+Aplikasi web modern berbasis **Laravel 12** untuk mengelola, mengarsipkan, serta memverifikasi judul tugas akhir / skripsi mahasiswa secara digital. Sistem ini dilengkapi dengan pencarian cerdas berbasis kata kunci, ekstraksi algoritma otomatis, filter dosen pembimbing, pengecekan plagiarisme / kemiripan judul, serta panel manajemen admin.
 
-![Laravel](https://img.shields.io/badge/Laravel-12.0-FF2D20?style=flat&logo=laravel&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-8.2-777BB4?style=flat&logo=php&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-12.x-FF2D20?style=flat&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-8.2%2B-777BB4?style=flat&logo=php&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-3.x-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
+![Database](https://img.shields.io/badge/Database-SQLite%20%7C%20MySQL-003B57?style=flat&logo=sqlite&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 ---
 
 ## ✨ Fitur Utama
 
-### 👥 Untuk Pengguna
-- 🔍 **Pencarian Karya Ilmiah** - Cari skripsi, tesis, atau disertasi dengan mudah
-- 📖 **Detail Lengkap** - Lihat informasi lengkap termasuk abstrak dan metadata
-- 🔒 **Pengecekan Plagiarisme** - Verifikasi keaslian karya ilmiah
-- 📱 **Responsif** - Akses dari berbagai perangkat
+### 👥 Untuk Pengguna / Mahasiswa
+- 🔍 **Pencarian Cerdas & Filter Lengkap**: Cari skripsi berdasarkan Judul, Kata Kunci (Keywords), Penulis, NIM, Angkatan, serta Dosen Pembimbing (Pembimbing 1 & 2).
+- 🏷️ **Ekstraksi Kata Kunci Otomatis**: Mendeteksi dan memprioritaskan metode, algoritma, dan teknologi modern (misal: *YOLO, CNN, LSTM, XGBoost, Random Forest, GIS, IoT, Microservices, Laravel, Next.js*, dll.).
+- 🔒 **Pengecekan Plagiarisme / Kemiripan**: Hitung skor kemiripan judul baru terhadap 280+ arsip tugas akhir yang telah ada untuk mencegah duplikasi topik.
+- 📖 **Halaman Detail Interaktif**: Tampilan modal dan halaman detail yang rapi menyajikan abstrak, metadata, dan informasi pembimbing.
+- 📱 **Desain Responsif & Modern**: Menggunakan Tailwind CSS dengan antarmuka yang bersih, cepat, dan nyaman diakses dari ponsel maupun desktop.
 
 ### 🛠️ Untuk Administrator
-- ➕ **Manajemen CRUD** - Kelola data karya ilmiah secara lengkap
-- 👨‍💼 **Manajemen Pengguna** - Kontrol akses dan peran pengguna
-- 📊 **Dashboard Admin** - Pantau statistik dan aktivitas sistem
-- 🔐 **Keamanan Tingkat Lanjut** - Sistem autentikasi dan otorisasi yang aman
+- ➕ **Manajemen CRUD Tugas Akhir**: Tambah, ubah, dan hapus data tugas akhir lengkap dengan validasi NIM, angkatan, dan pembimbing.
+- 📊 **Statistik & Dashboard Admin**: Ringkasan data tugas akhir dan navigasi cepat.
+- 🔐 **Autentikasi & Otorisasi**: Proteksi rute berbasis role (`admin` dan `user`) dengan middleware Laravel yang aman.
 
 ---
 
-## 🚀 Teknologi
+## 💾 Dataset & Seeder Otomatis
 
-- **Framework**: Laravel 12.x
-- **PHP**: 8.2 atau lebih tinggi
-- **Database**: MySQL/PostgreSQL
-- **Frontend**: Blade Templates + Vite
-- **Package Manager**: Composer & NPM
+Seluruh data tugas akhir (**280 data lengkap**) tersimpan di dalam repository dan siap diisi ke database kapan saja tanpa perlu konfigurasi manual:
 
----
-
-## 📋 Prasyarat
-
-Pastikan sistem Anda telah menginstal:
-
-- PHP >= 8.2
-- Composer
-- Node.js >= 18.x dan NPM
-- MySQL >= 5.7 atau PostgreSQL >= 12
-- Git
+| File | Lokasi | Keterangan |
+|------|--------|------------|
+| `theses_consolidated.json` | `database/data/` | Dataset utama 280 tugas akhir lengkap (ID, NIM, Angkatan, Penulis, Judul, Keywords, Pembimbing 1 & 2, Abstrak). Digunakan otomatis oleh `ThesisSeeder`. |
+| `theses_dump.sql` | `database/data/` | Script SQL siap pakai (CREATE TABLE & INSERT 280 data + users) untuk impor langsung via phpMyAdmin / MySQL CLI / DBeaver. |
+| `theses-2026.csv` & `user_input_raw.csv` | `database/data/` | Sumber data mentah arsip tugas akhir. |
 
 ---
 
-## 🔧 Instalasi
+## 📋 Prasyarat Sistem
+
+- **PHP** >= 8.2 (dengan ekstensi `pdo`, `pdo_sqlite` atau `pdo_mysql`, `mbstring`, `openssl`, `tokenizer`, `xml`)
+- **Composer** (Package Manager PHP)
+- **Node.js** >= 18.x & **NPM**
+- **Git**
+- *(Opsional)* MySQL / MariaDB (jika memilih menggunakan MySQL daripada SQLite)
+
+---
+
+## 🔧 Panduan Instalasi Cepat
+
+Ikuti langkah-langkah berikut untuk menjalankan proyek di komputer lokal:
 
 ### 1. Clone Repositori
-
 ```bash
-git clone https://github.com/sahrulraiya23/thesis-archive.git
-cd thesis-archive
+git clone https://github.com/sahrulraiya23/archive-thesis.git
+cd archive-thesis
 ```
 
-### 2. Install Dependencies
-
+### 2. Install Dependensi PHP & Frontend
 ```bash
-# Install PHP dependencies
+# Install library Laravel
 composer install
 
-# Install Node.js dependencies
+# Install asset frontend & build
 npm install
+npm run build
 ```
 
-### 3. Konfigurasi Environment
+### 3. Konfigurasi Environment (`.env`)
+Salin file konfigurasi contoh `.env.example` menjadi `.env`:
 
 ```bash
-# Salin file environment
-cp .env.example .env
+# Di Windows PowerShell / CMD:
+copy .env.example .env
 
-# Generate application key
+# Di Linux / macOS / Git Bash:
+cp .env.example .env
+```
+
+Generate application key:
+```bash
 php artisan key:generate
 ```
 
-Edit file `.env` dan sesuaikan konfigurasi database:
+---
 
-```env
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=thesis_archive
-DB_USERNAME=root
-DB_PASSWORD=
-```
+### 4. Setup Database & Isi Data (Seeder)
 
-### 4. Setup Database
+Anda dapat memilih salah satu dari dua metode di bawah ini:
 
+#### ⚡ Opsi A: Menggunakan SQLite (Rekomendasi - Paling Mudah & Cepat)
+Secara default di `.env`, sistem telah dikonfigurasi menggunakan **SQLite** sehingga Anda tidak perlu menginstal atau membuat database di MySQL/XAMPP.
+
+Jalankan perintah berikut:
 ```bash
-# Jalankan migrasi
-php artisan migrate
-
-# Jalankan seeder (opsional - untuk data awal)
-php artisan db:seed
+php artisan migrate --seed
 ```
+> **Catatan**: Jika muncul pertanyaan `Database file at ... does not exist. Would you like to create it?`, pilih **`yes`**.
+> Perintah ini akan membuat semua tabel dan langsung mengimpor seluruh **280 data tugas akhir** dan akun default dalam waktu kurang dari 1 detik.
 
-### 5. Jalankan Aplikasi
+---
 
+#### 🐬 Opsi B: Menggunakan MySQL / MariaDB (Alternatif)
+Jika Anda lebih memilih menggunakan MySQL (misalnya lewat XAMPP atau Laragon):
+
+1. Buat database baru di MySQL, contoh: `thesis_archive`
+2. Buka file `.env`, sesuaikan bagian database:
+   ```env
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=thesis_archive
+   DB_USERNAME=root
+   DB_PASSWORD=
+   ```
+3. Jalankan migrasi dan seeder:
+   ```bash
+   php artisan migrate --seed
+   ```
+   *(Atau alternatif: Anda juga dapat langsung mengimpor file `database/data/theses_dump.sql` ke database Anda melalui phpMyAdmin / MySQL CLI).*
+
+---
+
+### 5. Jalankan Server Aplikasi
+
+Jalankan server pengembangan Laravel:
 ```bash
-# Terminal 1: Laravel Development Server
 php artisan serve
+```
 
-# Terminal 2: Vite Development Server
+Jika Anda ingin mengaktifkan *hot-reload* untuk pengubahan aset frontend (opsional):
+```bash
 npm run dev
 ```
 
-Aplikasi akan berjalan di `http://localhost:8000`
+Buka browser Anda dan akses:
+👉 **`http://localhost:8000`**
 
 ---
 
-## 🗺️ Struktur Rute
+## 👤 Akun Default untuk Login
+
+Setelah menjalankan `php artisan db:seed`, akun berikut siap digunakan:
+
+| Peran (Role) | Email | Password | Akses |
+|--------------|-------|----------|-------|
+| **Admin** | `admin@gmail.com` | `admin123` | Akses penuh Panel Admin (`/admin/thesis`), tambah/edit/hapus data. |
+| **User** | `user@gmail.com` | `user123` | Akses pengguna umum & dashboard pengguna. |
+
+> 💡 *Halaman publik pencarian (`/`) dan cek plagiarisme (`/plagiarism-check`) dapat diakses langsung oleh siapa saja tanpa login.*
+
+---
+
+## 🗄️ Struktur Tabel Database
+
+### Tabel `thesis` (Data Tugas Akhir)
+| Kolom | Tipe | Keterangan |
+|-------|------|------------|
+| `id` | BIGINT (PK) | Auto-increment primary key |
+| `title` | TEXT | Judul lengkap tugas akhir |
+| `keywords` | TEXT | Kata kunci / algoritma yang diekstrak |
+| `abstract` | TEXT | Abstrak tugas akhir |
+| `author` | VARCHAR(255) | Nama lengkap mahasiswa |
+| `nim` | VARCHAR(50) | NIM mahasiswa (Nullable) |
+| `program_study` | VARCHAR(255) | Program Studi (default: 'S1 Teknik Informatika') |
+| `angkatan` | INT | Tahun angkatan mahasiswa (contoh: 2018, 2019, 2022) |
+| `pembimbing_1` | VARCHAR(255) | Dosen Pembimbing 1 (Nullable) |
+| `pembimbing_2` | VARCHAR(255) | Dosen Pembimbing 2 (Nullable) |
+| `created_at` | TIMESTAMP | Tanggal dibuat |
+| `updated_at` | TIMESTAMP | Tanggal terakhir diubah |
+
+### Tabel `users` (Pengguna & Hak Akses)
+| Kolom | Tipe | Keterangan |
+|-------|------|------------|
+| `id` | BIGINT (PK) | Auto-increment primary key |
+| `name` | VARCHAR(255) | Nama lengkap |
+| `email` | VARCHAR(255) | Email unik |
+| `password` | VARCHAR(255) | Password terenkripsi (Hash) |
+| `role` | VARCHAR(50) | Hak akses: `'admin'` atau `'user'` |
+| `created_at` | TIMESTAMP | Tanggal dibuat |
+| `updated_at` | TIMESTAMP | Tanggal terakhir diubah |
+
+---
+
+## 🗺️ Struktur Rute Utama
 
 ### Rute Publik
+- `GET /` — Halaman beranda & daftar pencarian tugas akhir dengan filter.
+- `GET /thesis` — Daftar lengkap arsip tugas akhir.
+- `GET /thesis/{id}` — Halaman detail tugas akhir.
+- `GET /plagiarism-check` — Halaman antarmuka cek kemiripan judul.
+- `POST /plagiarism-check` — Eksekusi algoritma pemindaian kemiripan judul.
 
-| Method | URI | Deskripsi |
-|--------|-----|-----------|
-| GET | `/` | Halaman utama |
-| GET | `/thesis` | Daftar karya ilmiah |
-| GET | `/thesis/{id}` | Detail karya ilmiah |
-| GET | `/plagiarism-check` | Halaman cek plagiarisme |
-| POST | `/plagiarism-check` | Proses cek plagiarisme |
-
-### Rute Autentikasi
-
-| Method | URI | Deskripsi |
-|--------|-----|-----------|
-| GET | `/dashboard` | Dashboard pengguna |
-| GET | `/profile` | Halaman profil |
-| PATCH | `/profile` | Update profil |
-| DELETE | `/profile` | Hapus akun |
-
-### Rute Admin (Middleware: auth, admin)
-
-| Method | URI | Deskripsi |
-|--------|-----|-----------|
-| GET | `/admin/thesis` | Daftar karya ilmiah (admin) |
-| GET | `/admin/thesis/create` | Form tambah karya ilmiah |
-| POST | `/admin/thesis` | Simpan karya ilmiah baru |
-| GET | `/admin/thesis/{id}` | Detail karya ilmiah (admin) |
-| GET | `/admin/thesis/{id}/edit` | Form edit karya ilmiah |
-| PUT/PATCH | `/admin/thesis/{id}` | Update karya ilmiah |
-| DELETE | `/admin/thesis/{id}` | Hapus karya ilmiah |
+### Rute Admin (Middleware: `auth`, `admin`)
+- `GET /admin/thesis` — Manajemen daftar arsip tugas akhir.
+- `GET /admin/thesis/create` — Form tambah tugas akhir baru.
+- `POST /admin/thesis` — Simpan tugas akhir baru.
+- `GET /admin/thesis/{id}` — Detail tugas akhir untuk admin.
+- `GET /admin/thesis/{id}/edit` — Form perbarui data tugas akhir.
+- `PUT/PATCH /admin/thesis/{id}` — Simpan perubahan data tugas akhir.
+- `DELETE /admin/thesis/{id}` — Hapus data tugas akhir.
 
 ---
 
-## 🗄️ Struktur Database
+## 👨‍💻 Kontributor
 
-### Tabel `users`
-
-| Kolom | Tipe | Keterangan |
-|-------|------|------------|
-| id | BIGINT | Primary Key |
-| name | VARCHAR(255) | Nama lengkap |
-| email | VARCHAR(255) | Email (unique) |
-| password | VARCHAR(255) | Password (hashed) |
-| role | ENUM | 'admin' atau 'user' (default: 'user') |
-| created_at | TIMESTAMP | - |
-| updated_at | TIMESTAMP | - |
-
-### Tabel `thesis`
-
-| Kolom | Tipe | Keterangan |
-|-------|------|------------|
-| id | BIGINT | Primary Key |
-| title | VARCHAR(255) | Judul karya ilmiah |
-| abstract | TEXT | Abstrak |
-| type | ENUM | 'skripsi', 'tesis', 'disertasi' |
-| author | VARCHAR(255) | Nama penulis |
-| program_study | VARCHAR(255) | Program studi |
-| year | YEAR | Tahun publikasi |
-| created_at | TIMESTAMP | - |
-| updated_at | TIMESTAMP | - |
+- **Sahrul Raiya** ([@sahrulraiya23](https://github.com/sahrulraiya23))
 
 ---
 
-## 👤 Akun Default
-
-Setelah menjalankan seeder, gunakan akun berikut untuk login:
-
-**Admin**
-- Email: `admin@example.com`
-- Password: `password`
-
-**User**
-- Email: `user@example.com`
-- Password: `password`
-
-> ⚠️ **Penting**: Ubah password default setelah login pertama kali!
-
----
-
-## 📦 Build untuk Production
-
-```bash
-# Build assets
-npm run build
-
-# Optimize aplikasi
-php artisan config:cache
-php artisan route:cache
-php artisan view:cache
-
-# Set environment ke production di .env
-APP_ENV=production
-APP_DEBUG=false
-```
-
----
-
-## 🧪 Testing
-
-```bash
-# Jalankan semua test
-php artisan test
-
-# Test dengan coverage
-php artisan test --coverage
-```
-
----
-
-## 🤝 Kontribusi
-
-Kontribusi selalu diterima dengan baik! Berikut langkah-langkahnya:
-
-1. Fork repositori ini
-2. Buat branch fitur baru (`git checkout -b feature/AmazingFeature`)
-3. Commit perubahan (`git commit -m 'Add some AmazingFeature'`)
-4. Push ke branch (`git push origin feature/AmazingFeature`)
-5. Buat Pull Request
-
----
-
-## 📝 License
+## 📝 Lisensi
 
 Proyek ini dilisensikan di bawah [MIT License](LICENSE).
-
----
-
-## 👨‍💻 Author
-
-**Sahrul Raiya**
-- GitHub: [@sahrulraiya23](https://github.com/sahrulraiya23)
-
----
-
-## 📞 Support
-
-Jika Anda menemukan bug atau memiliki saran, silakan buat [issue](https://github.com/sahrulraiya23/thesis-archive/issues) di repositori ini.
-
----
-
-<div align="center">
-Dibuat dengan ❤️ menggunakan Laravel
-</div>
